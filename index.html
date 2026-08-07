@@ -210,42 +210,28 @@
         <div id="recipeList"></div>
     </div>
 
+	<script src="receptes_dades.js"></script>
+	
     <script>
-        let allRecipes = [];
+	// 2. Com que ja no fem "fetch", agafem la variable directament
+			let allRecipes = receptesData;
+			allRecipes.sort((a, b) => a.name.localeCompare(b.name));
+			displayRecipes(allRecipes);
 
-        fetch('receptes_index.json')
-            .then(response => {
-                if (!response.ok) throw new Error('No es pot carregar el JSON');
-                return response.json();
-            })
-            .then(data => {
-                allRecipes = data.recipes;
-                allRecipes.sort((a, b) => a.name.localeCompare(b.name));
-                displayRecipes(allRecipes);
-            })
-            .catch(error => {
-                document.getElementById('recipeList').innerHTML = `
-                    <div style="border: 1px solid #ffcccc; color: #cc0000; padding: 30px; text-align: center; border-radius: 4px;">
-                        <h3 style="margin-bottom: 15px; font-weight: normal; text-transform: uppercase;">Error de connexió</h3>
-                        <p>No s'ha pogut carregar l'arxiu <b>receptes_index.json</b>.</p>
-                        <p style="margin-top: 15px; font-size: 0.9em; color: #666;">Recorda executar el servidor local: <br><code style="background: #f4f4f4; padding: 4px 8px; border-radius: 3px; display: inline-block; margin-top: 10px;">python -m http.server</code></p>
-                    </div>`;
-            });
-
-        const searchInput = document.getElementById('searchInput');
-        searchInput.addEventListener('input', (e) => {
-            const term = e.target.value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-            
-            const filtered = allRecipes.filter(r => {
-                const textToSearch = `${r.name} ${r.ingredients.join(' ')} ${r.tags.join(' ')} ${r.instructions}`
-                    .toLowerCase()
-                    .normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-                
-                const searchTerms = term.split(' ').filter(t => t.length > 0);
-                return searchTerms.every(t => textToSearch.includes(t));
-            });
-            displayRecipes(filtered);
-        });
+			const searchInput = document.getElementById('searchInput');
+			searchInput.addEventListener('input', (e) => {
+				const term = e.target.value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+				
+				const filtered = allRecipes.filter(r => {
+					const textToSearch = `${r.name} ${r.ingredients.join(' ')} ${r.tags.join(' ')} ${r.instructions}`
+						.toLowerCase()
+						.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+					
+					const searchTerms = term.split(' ').filter(t => t.length > 0);
+					return searchTerms.every(t => textToSearch.includes(t));
+				});
+				displayRecipes(filtered);
+			});
 
         function displayRecipes(recipes) {
             const list = document.getElementById('recipeList');
