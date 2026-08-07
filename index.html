@@ -219,9 +219,11 @@
                 }
                 return response.json();
             })
-            .then(data => {
-                let allRecipes = data;
-                allRecipes.sort((a, b) => a.name.localeCompare(b.name));
+				.then(data => {
+					// El JSON es un objeto {total, recipes, generated}; las recetas van en data.recipes.
+					// El "?? data" lo hace robusto por si algún día el JSON ya es un array plano.
+					let allRecipes = Array.isArray(data) ? data : (data.recipes ?? []);
+					allRecipes.sort((a, b) => a.name.localeCompare(b.name));
                 displayRecipes(allRecipes);
 
                 const searchInput = document.getElementById('searchInput');
