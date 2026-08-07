@@ -209,29 +209,49 @@
         <div id="count">Carregant receptes...</div>
         <div id="recipeList"></div>
     </div>
-
-	<script src="receptes_dades.js"></script>
-	
+    
     <script>
-	// 2. Com que ja no fem "fetch", agafem la variable directament
-			let allRecipes = receptesData;
-			allRecipes.sort((a, b) => a.name.localeCompare(b.name));
-			displayRecipes(allRecipes);
+        // Carreguem directament el fitxer receptes_index.json mitjançant fetch
+        fetch('receptes_index.json')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error("No s'ha pogut carregar l'arxiu JSON");
+                }
+                return response.json();
+            })
+            .then(data => {
+                let allRecipes = data;
+                allRecipes.sort((a, b) => a.name.localeCompare(b.name));
+                displayRecipes(allRecipes);
 
-			const searchInput = document.getElementById('searchInput');
-			searchInput.addEventListener('input', (e) => {
-				const term = e.target.value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-				
-				const filtered = allRecipes.filter(r => {
-					const textToSearch = `${r.name} ${r.ingredients.join(' ')} ${r.tags.join(' ')} ${r.instructions}`
-						.toLowerCase()
-						.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-					
-					const searchTerms = term.split(' ').filter(t => t.length > 0);
-					return searchTerms.every(t => textToSearch.includes(t));
-				});
-				displayRecipes(filtered);
-			});
+                const searchInput = document.getElementById('searchInput');
+                searchInput.addEventListener('input', (e) => {
+                    const term = e.target.value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+                    
+                    const filtered = allRecipes.filter(r => {
+                        const textToSearch = `${r.name} ${r.ingredients.join(' ')} ${r.tags.join(' ')} ${r.instructions}`
+                            .toLowerCase()
+                            .normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+                        
+                        const searchTerms = term.split(' ').filter(t => t.length > 0);
+                        return searchTerms.every(t => textToSearch.includes(t));
+                    });
+                    displayRecipes(filtered);
+                });
+            })
+            .catch(error => {
+                const countEl = document.getElementById('count');
+                countEl.textContent = "ERROR DE CONNEXIÓ";
+                const listEl = document.getElementById('recipeList');
+                listEl.innerHTML = `
+                    <div style="border: 1px solid #ffcccc; background: #fff8f8; padding: 25px; border-radius: 6px; text-align: center; color: #cc0000;">
+                        <h3>ERROR DE CONNEXIÓ</h3>
+                        <p style="margin-top: 10px;">No s'ha pogut carregar l'arxiu <strong>receptes_index.json</strong>.</p>
+                        <p style="font-size: 0.9em; color: #666; margin-top: 5px;">Assegura't que el fitxer està pujat correctament a la ruta principal.</p>
+                    </div>
+                `;
+                console.error("Error:", error);
+            });
 
         function displayRecipes(recipes) {
             const list = document.getElementById('recipeList');
