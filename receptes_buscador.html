@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Receptes</title>
+    <style>
+        /* CSS Variables per a un manteniment fàcil */
+        :root {
+            --bg-color: #ffffff;
+            --text-main: #111111;
+            --text-muted: #666666;
+            --border-color: #e0e0e0;
+            --accent-color: #000000;
+            --hover-bg: #f9f9f9;
+            --tag-bg: #f0f0f0;
+            --card-shadow: 0 4px 12px rgba(0,0,0,0.05);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* Font Helvetica amb fallbacks de seguretat */
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            min-height: 100vh;
+            padding: 40px 20px;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 850px;
+            margin: 0 auto;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.8em;
+            font-weight: 700;
+            letter-spacing: -1px;
+            margin-bottom: 40px;
+            text-transform: uppercase;
+        }
+
+        .search-box {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 18px 24px;
+            font-size: 1.1em;
+            font-family: inherit;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            outline: none;
+            background-color: var(--bg-color);
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+        }
+
+        input[type="text"]::placeholder {
+            color: #999;
+            font-weight: 300;
+        }
+
+        input[type="text"]:focus {
+            border-color: var(--accent-color);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        #count {
+            text-align: right;
+            color: var(--text-muted);
+            font-size: 0.9em;
+            margin-bottom: 25px;
+            font-weight: 400;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .recipe-card {
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 35px;
+            margin-bottom: 25px;
+            background: var(--bg-color);
+            transition: all 0.3s ease;
+        }
+
+        .recipe-card:hover {
+            box-shadow: var(--card-shadow);
+            border-color: #ccc;
+        }
+
+        .recipe-title {
+            font-size: 1.8em;
+            font-weight: 600;
+            letter-spacing: -0.5px;
+            margin-bottom: 15px;
+            color: var(--text-main);
+        }
+
+        .tags {
+            margin-bottom: 25px;
+        }
+
+        .tag {
+            display: inline-block;
+            background: var(--tag-bg);
+            color: var(--text-muted);
+            padding: 6px 14px;
+            border-radius: 3px;
+            font-size: 0.85em;
+            font-weight: 500;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .ingredients {
+            background: var(--hover-bg);
+            padding: 20px 25px;
+            border-radius: 4px;
+            margin-bottom: 25px;
+            border-left: 3px solid var(--accent-color);
+        }
+
+        .ingredients h3 {
+            font-size: 1.1em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+            font-weight: 600;
+            color: var(--text-main);
+        }
+
+        .ingredients ul {
+            list-style-type: none;
+        }
+
+        .ingredients li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+            color: var(--text-main);
+        }
+
+        .ingredients li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--text-muted);
+        }
+
+        .instructions-wrapper {
+            margin-top: 20px;
+        }
+
+        .toggle-btn {
+            background: transparent;
+            color: var(--text-main);
+            border: 1px solid var(--accent-color);
+            padding: 12px 25px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.95em;
+            font-family: inherit;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            width: 100%;
+            transition: all 0.2s ease;
+        }
+
+        .toggle-btn:hover {
+            background: var(--accent-color);
+            color: var(--bg-color);
+        }
+
+        .instructions {
+            margin-top: 25px;
+            padding: 25px 0 0 0;
+            border-top: 1px solid var(--border-color);
+            font-size: 1.05em;
+            line-height: 1.8;
+            color: var(--text-main);
+            white-space: pre-wrap;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Buscador de Receptes</h1>
+        
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Cerca per nom, ingredient, etiqueta...">
+        </div>
+        
+        <div id="count">Carregant receptes...</div>
+        <div id="recipeList"></div>
+    </div>
+
+    <script>
+        let allRecipes = [];
+
+        fetch('receptes_index.json')
+            .then(response => {
+                if (!response.ok) throw new Error('No es pot carregar el JSON');
+                return response.json();
+            })
+            .then(data => {
+                allRecipes = data.recipes;
+                allRecipes.sort((a, b) => a.name.localeCompare(b.name));
+                displayRecipes(allRecipes);
+            })
+            .catch(error => {
+                document.getElementById('recipeList').innerHTML = `
+                    <div style="border: 1px solid #ffcccc; color: #cc0000; padding: 30px; text-align: center; border-radius: 4px;">
+                        <h3 style="margin-bottom: 15px; font-weight: normal; text-transform: uppercase;">Error de connexió</h3>
+                        <p>No s'ha pogut carregar l'arxiu <b>receptes_index.json</b>.</p>
+                        <p style="margin-top: 15px; font-size: 0.9em; color: #666;">Recorda executar el servidor local: <br><code style="background: #f4f4f4; padding: 4px 8px; border-radius: 3px; display: inline-block; margin-top: 10px;">python -m http.server</code></p>
+                    </div>`;
+            });
+
+        const searchInput = document.getElementById('searchInput');
+        searchInput.addEventListener('input', (e) => {
+            const term = e.target.value.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+            
+            const filtered = allRecipes.filter(r => {
+                const textToSearch = `${r.name} ${r.ingredients.join(' ')} ${r.tags.join(' ')} ${r.instructions}`
+                    .toLowerCase()
+                    .normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+                
+                const searchTerms = term.split(' ').filter(t => t.length > 0);
+                return searchTerms.every(t => textToSearch.includes(t));
+            });
+            displayRecipes(filtered);
+        });
+
+        function displayRecipes(recipes) {
+            const list = document.getElementById('recipeList');
+            const count = document.getElementById('count');
+            
+            count.textContent = `${recipes.length} receptes trobades`;
+            list.innerHTML = '';
+            
+            recipes.forEach((r, index) => {
+                const card = document.createElement('div');
+                card.className = 'recipe-card';
+                
+                const tagsHtml = r.tags.map(t => `<span class="tag">${t}</span>`).join('');
+                const ingHtml = r.ingredients.length > 0 
+                    ? `<div class="ingredients"><h3>Ingredients</h3><ul>${r.ingredients.map(i => `<li>${i}</li>`).join('')}</ul></div>` 
+                    : '';
+                
+                card.innerHTML = `
+                    <div class="recipe-title">${r.name}</div>
+                    <div class="tags">${tagsHtml}</div>
+                    ${ingHtml}
+                    <div class="instructions-wrapper">
+                        <button class="toggle-btn" onclick="toggleInstructions(${index})">
+                            Veure la recepta
+                        </button>
+                        <div class="instructions" id="inst-${index}">${r.instructions}</div>
+                    </div>
+                `;
+                list.appendChild(card);
+            });
+        }
+
+        function toggleInstructions(index) {
+            const el = document.getElementById(`inst-${index}`);
+            const btn = el.previousElementSibling;
+            
+            if (el.style.display === 'block') {
+                el.style.display = 'none';
+                btn.innerHTML = 'Veure la recepta';
+                btn.style.background = 'transparent';
+                btn.style.color = 'var(--accent-color)';
+            } else {
+                el.style.display = 'block';
+                btn.innerHTML = 'Tancar recepta';
+                btn.style.background = 'var(--accent-color)';
+                btn.style.color = 'var(--bg-color)';
+            }
+        }
+    </script>
+</body>
+</html>
