@@ -1,5 +1,5 @@
 {
-  "total": 32,
+  "total": 33,
   "recipes": [
     {
       "id": "amanida-de-cabdells-amb-gambes-vermelles-asiatica",
@@ -190,6 +190,32 @@
         "Català",
         "Postres"
       ],
+      "added": "2026-08-08"
+    },
+    {
+      "name": "Espaguetis amb escamarlans",
+      "source": "Gemini",
+      "ingredients": [
+        "500 g d'espaguetis",
+        "750 g d'escamarlans (o cues pelades)",
+        "Sofregit de ceba i all",
+        "Un raig de sake",
+        "1-2 culleradetes de pasta de tomàquet concentrat",
+        "1 culleradeta de maicena",
+        "200 ml d'aigua",
+        "Oli d'oliva verge extra",
+        "Julivert fresc picat",
+        "Sal",
+        "Pimentón picant (opcional, per a l'oli picant dels adults)"
+      ],
+      "instructions": "1. Escalfa el sofregit de ceba i all en una paella gran, aboca-hi un bon raig de sake i deixa reduir 1-2 minuts a foc viu per evaporar l'alcohol.\n2. Afegeix-hi la pasta de tomàquet concentrat i remena-ho durant 1 minut perquè es torri lleugerament.\n3. Aboca 200 ml d'aigua a la paella. Dissol la maicena en un gotet amb aigua freda, afegeix-la a la paella i remena a foc mitjà fins que la salsa quedi cremosa i lligada.\n4. Incorpora les cues d'escamarlà a la salsa calenta durant 30-60 segons perquè es conguin en el seu punt.\n5. Aboca els espaguetis bullits al dente a la paella i remena-ho tot a foc fort durant 1-2 minuts perquè la pasta absorbeixi la salsa. Empolvora amb julivert fresc picat.\n6. Per al picant opcional dels adults: escalfa un parell de cullerades d'oli d'oliva, apaga el foc, barreja-hi pimentón picant i aboca'n un fil directament sobre el plat de cada adult.",
+      "tags": [
+        "Italià",
+        "Principal",
+        "Peix",
+        "Pasta"
+      ],
+      "id": "espaguetis-amb-escamarlans",
       "added": "2026-08-08"
     },
     {
@@ -669,28 +695,6 @@
       "added": "2026-08-08"
     },
     {
-      "id": "solomillo-de-cerdo-en-salsa-hoisin",
-      "name": "Solomillo de cerdo en salsa hoisin",
-      "source": "DOCX",
-      "ingredients": [
-        "2 solomillos de cerdo (de aproximadamente 1 lb cada uno)",
-        "1/4 taza de salsa hoisin",
-        "1/4 taza de miel",
-        "2 cucharadas de salsa de soja",
-        "1 cucharada de aceite de oliva",
-        "2 dientes de ajo picados",
-        "1 cucharada de jengibre fresco rallado"
-      ],
-      "instructions": "Solomillo de cerdo en salsa hoisin\n\nIngredientes:\n2 solomillos de cerdo (de aproximadamente 1 lb cada uno)\n1/4 taza de salsa hoisin\n1/4 taza de miel\n2 cucharadas de salsa de soja\n1 cucharada de aceite de oliva\n2 dientes de ajo picados\n1 cucharada de jengibre fresco rallado\nSal y pimienta negra molida al gusto\nSemillas de sésamo tostadas para decorar\nInstrucciones:\nPrecalienta el horno a 200°C (400°F).\nEn un tazón pequeño, mezcla la salsa hoisin, la miel, la salsa de soja, el aceite de oliva, el ajo picado y el jengibre rallado. Reserva.\nSalpimienta los solomillos de cerdo por todos lados.\nEn una sartén grande y resistente al horno, calienta un poco de aceite a fuego alto. Agrega los solomillos y dora cada lado durante unos 2-3 minutos, hasta que estén bien dorados.\nCepilla generosamente la mezcla de salsa hoisin sobre los solomillos y colócalos en el horno durante unos 20-25 minutos, hasta que estén cocidos por dentro y dorados por fuera.\nSaca del horno y deja reposar los solomillos durante unos 5 minutos antes de cortarlos en rodajas gruesas.\nSirve las rodajas de solomillo de cerdo con la salsa que quedó en la sartén. Decora con semillas de sésamo tostadas y acompaña con arroz o vegetales al vapor.\n¡Buen provecho!",
-      "tags": [
-        "Asiàtic",
-        "Xinès",
-        "Principal",
-        "Carn"
-      ],
-      "added": "2026-08-08"
-    },
-    {
       "id": "sipia-amb-mandonguilles",
       "name": "Sípia amb mandonguilles",
       "source": "DOCX",
@@ -713,6 +717,28 @@
         "Principal",
         "Carn",
         "Peix"
+      ],
+      "added": "2026-08-08"
+    },
+    {
+      "id": "solomillo-de-cerdo-en-salsa-hoisin",
+      "name": "Solomillo de cerdo en salsa hoisin",
+      "source": "DOCX",
+      "ingredients": [
+        "2 solomillos de cerdo (de aproximadamente 1 lb cada uno)",
+        "1/4 taza de salsa hoisin",
+        "1/4 taza de miel",
+        "2 cucharadas de salsa de soja",
+        "1 cucharada de aceite de oliva",
+        "2 dientes de ajo picados",
+        "1 cucharada de jengibre fresco rallado"
+      ],
+      "instructions": "Solomillo de cerdo en salsa hoisin\n\nIngredientes:\n2 solomillos de cerdo (de aproximadamente 1 lb cada uno)\n1/4 taza de salsa hoisin\n1/4 taza de miel\n2 cucharadas de salsa de soja\n1 cucharada de aceite de oliva\n2 dientes de ajo picados\n1 cucharada de jengibre fresco rallado\nSal y pimienta negra molida al gusto\nSemillas de sésamo tostadas para decorar\nInstrucciones:\nPrecalienta el horno a 200°C (400°F).\nEn un tazón pequeño, mezcla la salsa hoisin, la miel, la salsa de soja, el aceite de oliva, el ajo picado y el jengibre rallado. Reserva.\nSalpimienta los solomillos de cerdo por todos lados.\nEn una sartén grande y resistente al horno, calienta un poco de aceite a fuego alto. Agrega los solomillos y dora cada lado durante unos 2-3 minutos, hasta que estén bien dorados.\nCepilla generosamente la mezcla de salsa hoisin sobre los solomillos y colócalos en el horno durante unos 20-25 minutos, hasta que estén cocidos por dentro y dorados por fuera.\nSaca del horno y deja reposar los solomillos durante unos 5 minutos antes de cortarlos en rodajas gruesas.\nSirve las rodajas de solomillo de cerdo con la salsa que quedó en la sartén. Decora con semillas de sésamo tostadas y acompaña con arroz o vegetales al vapor.\n¡Buen provecho!",
+      "tags": [
+        "Asiàtic",
+        "Xinès",
+        "Principal",
+        "Carn"
       ],
       "added": "2026-08-08"
     }
