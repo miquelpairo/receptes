@@ -38,7 +38,18 @@
             margin-bottom: 40px;
             text-transform: uppercase;
         }
-
+        
+        .intro {
+            max-width: 640px;
+            margin: -20px auto 40px;
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 1.02em;
+            line-height: 1.7;
+        }
+        
+        .intro strong { color: var(--text-main); font-weight: 600; }
+        
         .search-box { position: relative; margin-bottom: 25px; }
 
         input[type="text"] {
@@ -270,7 +281,13 @@
 <body>
     <div class="container">
         <h1>Buscador de Receptes</h1>
-
+        
+        <p class="intro">
+            El receptari de casa: les receptes de la família i les que anem cuinant, reunides en un sol lloc.
+            Hi trobaràs plats <strong>catalans</strong>, <strong>asiàtics</strong> i <strong>italians</strong> — principals, entrants, postres i salses.
+            Cerca per nom o ingredient a la barra de dalt, o filtra per <strong>etiquetes</strong> al lateral (en pots combinar diverses alhora). També pots clicar una etiqueta dins d'una recepta per trobar-ne de semblants.
+        </p>
+        
         <div class="search-box">
             <input type="text" id="searchInput" placeholder="Cerca per nom, ingredient, etiqueta...">
         </div>
