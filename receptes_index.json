@@ -1,6 +1,30 @@
 {
-  "total": 36,
+  "total": 41,
   "recipes": [
+    {
+      "name": "Ajoblanco de remolatxa",
+      "source": "Gemini",
+      "ingredients": [
+        "200 gr d'ametlles pelades",
+        "250 gr de remolatxa bullida",
+        "1 gra d'all",
+        "450 gr d'aigua",
+        "1 culleradeta de sucre",
+        "2 cullerades de vinagre de vi negre",
+        "3 cullerades d'oli",
+        "feta",
+        "menta",
+        "sal i pebre"
+      ],
+      "instructions": "Comencem posant al robot de cuina els 200 gr d'ametlles i si volem una mica d'aigua i les triturem el més fines possibles.\nDesprés hi afegim la remolatxa, l'all (traient la part del mig), el vinagre i el sucre i triturem fins fer una pasta de color rosa.\nHi afegim l'aigua, primer la meitat i quan estigui ben barrejat l'altra meitat.\nLlavors hi posem sal al gust i l'oli.\nPosem el robot al màxim durant 5 minuts, perquè tot emulsioni bé.\nHo deixem refredar a la nevera una estoneta.\nAl servir hi posem una mica de feta i menta per sobre.",
+      "tags": [
+        "Internacional",
+        "Entrant",
+        "Vegetarià"
+      ],
+      "id": "ajoblanco-de-remolatxa",
+      "added": "2026-08-08"
+    },
     {
       "id": "amanida-de-cabdells-amb-gambes-vermelles-asiatica",
       "name": "Amanida de cabdells amb gambes vermelles asiàtica",
@@ -21,6 +45,26 @@
         "Entrant",
         "Peix"
       ],
+      "added": "2026-08-08"
+    },
+    {
+      "name": "Amanida de cigrons i pebrots",
+      "source": "Gemini",
+      "ingredients": [
+        "400 gr de cigrons bullits",
+        "1 pot de pebrots del piquillo",
+        "1 llauna de bonítol",
+        "1 ceba tendra gran",
+        "olives negres",
+        "oli, vinagre i sal"
+      ],
+      "instructions": "Comencem tallant la ceba petita i posant-la en un bol amb vinagre i sal, i ho deixem reposar uns 30 minuts.\nTallem els pebrots a tires i si volem les olives a rodanxes.\nBarregem els cigrons, els pebrots, el bonítol i les olives en el bol amb la ceba i ja està!",
+      "tags": [
+        "Català",
+        "Entrant",
+        "Peix"
+      ],
+      "id": "amanida-de-cigrons-i-pebrots",
       "added": "2026-08-08"
     },
     {
@@ -396,6 +440,29 @@
       "added": "2026-08-08"
     },
     {
+      "name": "Pa d'espelta amb nous i figues",
+      "source": "Gemini",
+      "ingredients": [
+        "500 gr de farina d'espelta integral",
+        "300 gr d'aigua",
+        "Suc de 1/2 taronja",
+        "50 gr de nous",
+        "100 gr de figues seques",
+        "1 culleradeta de sal",
+        "1 culleradeta de sucre",
+        "7 gr de llevat ràpid",
+        "1 cullerada d'oli"
+      ],
+      "instructions": "Comencem tallant les nous i les figues en trossos petits i posant-les en remull amb el suc de la taronja.\nEn un bol posem la farina, la sal, el sucre, el llevat i hi afegim l'aigua.\nRemenem una mica, i mentre encara estigui grumullosa hi posem l'oli.\nBarregem bé, i amassem una mica fins que sigui una massa suau i que puguem manejar.\nFem una bola i la deixem en un bol amb net cobert amb un drap fins que dobli el tamany.\nUn cop ha doblat el tamany, traiem la massa del bol i la posem en una superfície enfarinada.\nHi posem les figues i les nous sense el suc de taronja i amassem durant uns 10 minuts.\nLi donem forma en un motlle de cake de 500 ml i hi posem la massa dins.\nI un cop allà tornes a deixar que creixi durant uns 40 minuts o 1 hora.\nPreescalfar el forn a 220º i fornajar durant uns 40-45 minuts.",
+      "tags": [
+        "Internacional",
+        "Entrant",
+        "Vegetarià"
+      ],
+      "id": "pa-d-espelta-amb-nous-i-figues",
+      "added": "2026-08-08"
+    },
+    {
       "id": "pad-kra-prao-adaptat",
       "name": "Pad Kra-Prao Adaptat",
       "source": "DOCX",
@@ -680,6 +747,29 @@
       "added": "2026-08-08"
     },
     {
+      "name": "Rissotto d'ordi amb carbassa i sàlvia",
+      "source": "Gemini",
+      "ingredients": [
+        "1 ceba",
+        "1 carbassa (butternut squash)",
+        "2 grans d'all",
+        "25 gr de mantega",
+        "1 litre d'aigua o caldo",
+        "250 gr d'ordi",
+        "1 grapat de fulles de sàlvia",
+        "1 copa de vi blanc",
+        "sal i pebre"
+      ],
+      "instructions": "Comencem pelant i tallant la carbassa en quadrats petits, entre 1 i 2 cm.\nTallem també la ceba i l'all en trossos petits.\nPosem la meitat de la mantega en una cassola a foc baix i quan estigui desfeta hi afegim la ceba, l'all i la carbassa i hi afegim sal.\nHo deixem fer a foc baix, fins que la ceba estigui translúcida i la carbassa es vagi fent més tova.\nMentrestant en una altra olla posem l'aigua o el caldo a calentar amb la meitat de les fulles de sàlvia.\nQuan la ceba estigui transparent, afegim a la cassola la copa de vi blanc i així desglassem una mica.\nQuan s'hagi evaporat el vi, hi afegim l'altra meitat de la mantega, i l'ordi.\nRemenem durant 3 minuts, i després hi comencem a afegir el caldo.\nIgual com faríem amb un rissotto, ho fem poc a poc, i quan se l'estigui bevent n'afegim una mica més.\nAneu provant fins que no estigui dur.\nQuan estigui fet, corregim de sal, tallem la resta de la sàlvia i la posem per sobre.",
+      "tags": [
+        "Italià",
+        "Principal",
+        "Vegetarià"
+      ],
+      "id": "rissotto-d-ordi-amb-carbassa-i-salvia",
+      "added": "2026-08-08"
+    },
+    {
       "id": "rostit",
       "name": "Rostit",
       "source": "DOCX",
@@ -792,6 +882,33 @@
         "Principal",
         "Carn"
       ],
+      "added": "2026-08-08"
+    },
+    {
+      "name": "Tacos de peix",
+      "source": "Gemini",
+      "ingredients": [
+        "450 gr de peix blanc sense espines ni pell",
+        "3 culleradetes de comí",
+        "20 fulles de coriandre picades",
+        "4 llimes",
+        "1 dent d'all",
+        "1 ou",
+        "1 iogur grec",
+        "1/2 ceba vermella",
+        "1/2 mango (petit)",
+        "1 bitxo vermell",
+        "12 tortillas mexicanes",
+        "sal",
+        "oli"
+      ],
+      "instructions": "Traiem la pell del peix, el triturem amb l'all i una culleradeta de sal sense que quedi una pasta.\nHo posem en un bol amb l'ou, 2 cullerades de comí, el coriandre i la pell de les 3 llimes rallada, i la meitat del coriandre picat.\nHo barregem bé, fem pastissets rodons i ho reservem a la nevera un mínim de 15 minuts.\nPosem en un altre bol el iogur, 1 culleradeta de comí, la pell rallada de les altres dues llimes, i una miqueta de sal.\nTallem la ceba i el mango en juliana, i el chili tallat molt petit i ho barregem tot en un altre bol amb la resta del coriandre.\nPosem oli a una paella i fregir el peix, uns 3 minuts per banda.\nAl treure'l el posem a un plat amb paper de cuina.\nFregim les tortillas uns segons per cada banda i posem una cullerada de salsa de iogur, una de la juliana de ceba i mango, i 2 pastissets.\nExprimim una mica de suc de llima per sobre.",
+      "tags": [
+        "Internacional",
+        "Principal",
+        "Peix"
+      ],
+      "id": "tacos-de-peix",
       "added": "2026-08-08"
     },
     {
