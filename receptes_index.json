@@ -1,5 +1,5 @@
 {
-  "total": 34,
+  "total": 35,
   "recipes": [
     {
       "id": "amanida-de-cabdells-amb-gambes-vermelles-asiatica",
@@ -85,6 +85,33 @@
         "Entrant",
         "Peix"
       ],
+      "added": "2026-08-08"
+    },
+    {
+      "name": "Calamars a l'estil asiàtic",
+      "source": "Gemini",
+      "ingredients": [
+        "400 g de potes i aletes de calamar (netes i trossejades)",
+        "1 cullerada de maicena (midó de blat de moro)",
+        "1 cullerada d'oli de sèsam (o de gira-sol)",
+        "Un toc de pebre blanc o negre",
+        "3 grans d'all finament picats",
+        "1 tros de gingebre fresc (uns 2 cm), ratllat o picat molt fi",
+        "1/2 pebrot vermell o verd tallat a tires fines o daus (opcional)",
+        "2 cebes tendres (la part verda i la blanca separades), tallades a rodanxes",
+        "3 cullerades de salsa de soja",
+        "1 cullerada de salsa d'ostres",
+        "1 culleradeta de sucre (o mel)",
+        "1 cullerada de vi d'arròs de cuina (Shaoxing) o xerès sec"
+      ],
+      "instructions": "1. Assecar i preparar el calamar: Asseca molt bé les potes i les aletes amb paper de cuina. Talla-les a trossos de mos.\n2. El truc de la textura: Empolvora la cullerada de maicena sobre el calamar sec i barreja-ho bé amb les mans perquè es creï una fina capa.\n3. El saltat ràpid (Wok o paella gran): Escalfa la paella a foc molt alt amb l'oli. Quan fumegi, afegeix el calamar. Cuina'l sense moure'l durant 1 minut perquè es dauri, gira'l i salta 1 minut més. Retira'l i reserva'l.\n4. Els aromàtics: A la mateixa paella, baixa un punt el foc i afegeix l'all, el gingebre, el pebrot i la part blanca de la ceba tendra. Salta durant 1 minut fins que desprengui l'aroma.\n5. Integrar i lligar: Retorna el calamar a la paella amb els sucs. Aboca la barreja de salsa de soja, salsa d'ostres, sucre i vi. Salta tot junt a foc fort durant 30-45 segons fins que la salsa redueixi i brilli.\n6. Toc final: Apaga el foc, afegeix la part verda de la ceba tendra i unes llavors de sèsam torrat si en tens. Serveix sobre una base d'arròs blanc calent.",
+      "tags": [
+        "Asiàtic",
+        "Xinès",
+        "Principal",
+        "Peix"
+      ],
+      "id": "calamars-a-l-estil-asiatic",
       "added": "2026-08-08"
     },
     {
