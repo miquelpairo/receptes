@@ -1,5 +1,5 @@
 {
-  "total": 33,
+  "total": 34,
   "recipes": [
     {
       "id": "amanida-de-cabdells-amb-gambes-vermelles-asiatica",
@@ -740,6 +740,31 @@
         "Principal",
         "Carn"
       ],
+      "added": "2026-08-08"
+    },
+    {
+      "name": "Yakizake Don",
+      "source": "Gemini",
+      "ingredients": [
+        "1 llom de salmó sencer (800g - 1kg, amb pell i escatat)",
+        "Arròs per a sushi",
+        "Salsa de soja",
+        "Mirin",
+        "Sake",
+        "Sucre",
+        "Llavors de sèsam torrat",
+        "Alga nori en tires",
+        "Sal gruixuda"
+      ],
+      "instructions": "1. Cuina l'arròs en el donabe amb una proporció d'1 part d'arròs per 1 1/4 d'aigua.\n2. Prepara la salsa teriyaki barrejant parts iguals de soja, mirin, sake i sucre. Redueix-ho en un cassó a foc mitjà fins a obtenir una textura de xarop.\n3. Rosteix el salmó a la brasa amb una mica de sal gruixuda, començant per la part de la pell perquè quedi ben cruixent.\n4. Posa l'arròs calent al fons d'un bol (donburi).\n5. Col·loca el salmó acabat de fer a la brasa sobre l'arròs.\n6. Pinta el salmó generosament amb la reducció de teriyaki fent servir un pinzell de cuina.\n7. Ruixa una mica més de salsa directament sobre l'arròs.\n8. Empolvora amb les llavors de sèsam torrat.\n9. Just abans de menjar, afegeix l'alga nori en tires per evitar que s'estovi amb el vapor.",
+      "tags": [
+        "Asiàtic",
+        "Japonès",
+        "Principal",
+        "Peix",
+        "Arròs"
+      ],
+      "id": "yakizake-don",
       "added": "2026-08-08"
     }
   ],
