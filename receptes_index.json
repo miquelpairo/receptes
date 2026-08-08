@@ -1,5 +1,5 @@
 {
-  "total": 41,
+  "total": 42,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -331,6 +331,31 @@
         "Principal",
         "Carn"
       ],
+      "added": "2026-08-08"
+    },
+    {
+      "name": "Fricandó",
+      "source": "Gemini",
+      "ingredients": [
+        "600g de vedella per a fricandó",
+        "Un grapat de moixernons secs",
+        "1 ceba gran",
+        "2 tomàquets madurs",
+        "2 grans d'all",
+        "Un raig de vi ranci o blanc",
+        "Farina",
+        "Oli d'oliva",
+        "Sal",
+        "Pebre negre",
+        "Brou de carn"
+      ],
+      "instructions": "Poseu els moixernons secs en remull amb aigua calenta durant mitja hora.\nSalpebreu i enfarineu lleugerament els talls de vedella.\nEn una cassola amb oli calent, fregiu la carn volta i volta perquè quedi segellada. Reserveu-la.\nEn el mateix oli, feu un sofregit amb la ceba trinxada i els alls ben picats. Quan estigui daurat, afegiu-hi els tomàquets ratllats.\nDeixeu coure el sofregit a foc lent fins que quedi confitat.\nAboqueu el vi i deixeu evaporar l'alcohol.\nIncorporeu la carn a la cassola i cobriu-la amb el brou calent i una mica de l'aigua de remullar els bolets.\nDeixeu fer xup-xup a foc suau durant uns 45-60 minuts, fins que la carn sigui ben tendra.\nUns minuts abans d'apagar el foc, afegiu els moixernons escorreguts a la cassola i deixeu que s'integrin els sabors.",
+      "tags": [
+        "Català",
+        "Principal",
+        "Carn"
+      ],
+      "id": "fricando",
       "added": "2026-08-08"
     },
     {
