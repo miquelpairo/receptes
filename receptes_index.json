@@ -1,5 +1,5 @@
 {
-  "total": 35,
+  "total": 36,
   "recipes": [
     {
       "id": "amanida-de-cabdells-amb-gambes-vermelles-asiatica",
@@ -413,6 +413,31 @@
         "Principal",
         "Carn"
       ],
+      "added": "2026-08-08"
+    },
+    {
+      "name": "Pad Thai de pollastre",
+      "source": "Gemini",
+      "ingredients": [
+        "400 g de fideus d'arròs (o barreja amb fideus de wok)",
+        "3 contramusclos de pollastre desossats",
+        "Bolets shimeji",
+        "Alls tendres",
+        "1 o 2 ous",
+        "Salsa Pad Thai preparada (o barreja de 3 cs de soja, 1 cs de salsa de peix, suc de 1 llima i 2 cs de sucre morè)",
+        "Cacauets torrats (poc salats/sense sal)",
+        "Brots de soja frescos (opcional)",
+        "Un rajolí de sake (per desglasar)"
+      ],
+      "instructions": "1. Hidrata els fideus d'arròs en aigua calenta segons el paquet i escorre'ls.\n2. Talla els contramusclos de pollastre a tires o daus, neteja els shimeji i pica els alls tendres. Pica grossos els cacauets torrats.\n3. En un wok o paella gran a foc viu amb una mica d'oli suau, salta el pollastre fins que comenci a daurar-se.\n4. Afegeix un rajolí de sake per desglasar el fons de la paella i incorporar tots els sabors concentrats.\n5. Afegeix els bolets shimeji i els alls tendres i salta-ho tot plegat uns minuts.\n6. Posa l'ou directament a la paella i remena-l ràpidament per fer un rebirat a trossets.\n7. Incorpora els fideus ja escorreguts i aboca la salsa de Pad Thai per sobre.\n8. Salta-ho tot a foc viu durant 1 o 2 minuts fins que els fideus absorbeixin bé la salsa.\n9. Apaga el foc, afegeix els brots de soja frescos i dóna-li una última remenada.\n10. Serveix-ho al plat amb els cacauets picats per sobre i un tall de llima al costat.",
+      "tags": [
+        "Asiàtic",
+        "Thai",
+        "Principal",
+        "Carn",
+        "Pasta"
+      ],
+      "id": "pad-thai-de-pollastre",
       "added": "2026-08-08"
     },
     {
