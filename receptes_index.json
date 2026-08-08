@@ -1,5 +1,5 @@
 {
-  "total": 42,
+  "total": 45,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -23,6 +23,26 @@
         "Vegetarià"
       ],
       "id": "ajoblanco-de-remolatxa",
+      "added": "2026-08-08"
+    },
+    {
+      "name": "Amanida d'espinacs i maduixes",
+      "source": "Gemini",
+      "ingredients": [
+        "150 gr d'espinacs baby",
+        "400 gr de maduixes",
+        "formatge de cabra",
+        "125 ml de vinagre de vi blanc",
+        "1 cullerada de sucre",
+        "oli i sal"
+      ],
+      "instructions": "Comencem fent un vinagre de maduixes. Agafem 100 gr de maduixes, els traiem la part verda i les triturem amb una cullerada de sucre, hi afegim el vinagre de vi blanc i ho reservem a la nevera.\nPer altra banda tallem les maduixes a quarts i les barregem amb els espinacs i el formatge de cabra.\nAbans de servir amanim amb sal, oli i el vinagre de maduixes i ja està!",
+      "tags": [
+        "Internacional",
+        "Entrant",
+        "Vegetarià"
+      ],
+      "id": "amanida-d-espinacs-i-maduixes",
       "added": "2026-08-08"
     },
     {
@@ -261,6 +281,55 @@
         "Català",
         "Postres"
       ],
+      "added": "2026-08-08"
+    },
+    {
+      "name": "Cus-cus amb bròquil i gambes",
+      "source": "Gemini",
+      "ingredients": [
+        "300 gr de gambes crues",
+        "800 gr de bròquil",
+        "150 gr de cus-cus",
+        "1 llimona (el suc)",
+        "1 ceba tendra",
+        "1 grapat d'ametlles",
+        "1 xili (opcional)",
+        "oli i sal"
+      ],
+      "instructions": "Comencem posant la ceba a remullar amb el suc de llimona i una mica de sal. Reservem.\nTallem el bròquil, quedant-nos només amb les branques molt petites.\nPosem una olla a bullir, quan l'aigua bulli apaguem el foc, hi posem les gambes i les deixem 3 minuts. Les traiem, però deixem l'aigua a l'olla.\nLa posem a bullir altra vegada i escaldem el bròquil 1 minut. El colem (reservant l'aigua de la cocció) i el passem per aigua freda.\nAmb l'aigua reservada fem el cus cus, segons indiqui el fabricant.\nEn un bol barregem el cus cus, el bròquil i les ametlles.\nAfegim oli i sal a la ceba amb llimona, i si volem el xili ben tallat, i just abans de menjar ho afegim.",
+      "tags": [
+        "Internacional",
+        "Principal",
+        "Peix"
+      ],
+      "id": "cus-cus-amb-broquil-i-gambes",
+      "added": "2026-08-08"
+    },
+    {
+      "name": "Empanada gallega",
+      "source": "Gemini",
+      "ingredients": [
+        "700 gr de farina de força",
+        "7 gr de llevar sec (21 llevat fresc)",
+        "200 gr d'oli d'oliva",
+        "200 ml d'aigua a temperatura ambient",
+        "14 gr de sal",
+        "1 pebrot vermell",
+        "1 pebrot verd",
+        "600 gr de ceba",
+        "600 gr de bonito del norte (o tonyina)",
+        "400 gr de tomàquet triturat",
+        "180 ml d'oli",
+        "1 ou batut",
+        "sal"
+      ],
+      "instructions": "Comencem tallant la ceba i el pebrot. Els posem amb l'oli i una mica de sal a una paella i fem un sofregit durant uns 10 minuts.\nUn cop fet, colem l'oli que sobra i el guardem, deixant que es refredi. Afegim el tomàquet i el deixem fer uns 20 minuts més.\nEn aquest moment afegim el bonito o la tonyina i reservem.\nPer fer la massa posem els 700 gr de farina de força en un bol, hi afegim la sal a un costat i el llevat a l'altre, i llavors posem l'oli.\nAprofitem l'oli del sofregit refredat i hi afegim oli normal fins arribar als 200 gr.\nHi posem primer la meitat de l'aigua, i la resta l'anem afegint mica en mica fins que es pugui fer una bola.\nEnfarinem una superfície i amassem durant 10-15 minuts, fins que tingui textura de massa de pa i ho posem en un bol enfarinat 1 hora o fins que dobli el seu tamany.\nEscalfem el forn a 180º.\nDividim la massa en dues parts i amb l'ajuda del rodet les aplanem.\nHo posem en una safata de forn, primer la gran. Després posem el farcit de tonyina i tapem amb la petita, ajuntant les dues masses i apretant amb una forquilla.\nFem un forat petit al mig i ho pintem amb l'ou batut.\nHo posem al forn durant uns 45 minuts, fins que quedi daurada.",
+      "tags": [
+        "Internacional",
+        "Principal",
+        "Peix"
+      ],
+      "id": "empanada-gallega",
       "added": "2026-08-08"
     },
     {
