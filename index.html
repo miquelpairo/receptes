@@ -165,7 +165,7 @@
         .chip .chip-count { font-size: 0.85em; color: var(--text-muted); }
         .chip.active .chip-count { color: #bbb; }
 
-        .admin-toggle {
+        .admin-toggle, .admin-new {
             width: 100%;
             margin-top: 6px;
             padding: 10px;
@@ -180,6 +180,7 @@
             color: var(--text-muted);
         }
         .admin-toggle.on { border-style: solid; border-color: var(--accent-color); color: var(--text-main); }
+        .admin-new { border-style: solid; border-color: var(--accent-color); color: var(--text-main); }
 
         .main { flex: 1; min-width: 0; }
 
@@ -232,7 +233,7 @@
         .tag.active { background: var(--accent-color); color: var(--bg-color); }
 
         /* ---------- Controls d'administració ---------- */
-        .admin-bar { display: flex; gap: 10px; margin-bottom: 20px; }
+        .admin-bar { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 20px; }
         .admin-bar button {
             font-family: inherit;
             font-size: 0.8em;
@@ -265,7 +266,7 @@
             margin-bottom: 8px;
             font-weight: 600;
         }
-        .edit-chip {
+        .edit-chip, .form-chip {
             background: var(--bg-color);
             border: 1px solid #cfcfcf;
             color: var(--text-main);
@@ -276,7 +277,7 @@
             cursor: pointer;
             margin: 0 6px 6px 0;
         }
-        .edit-chip.sel { background: var(--accent-color); color: var(--bg-color); border-color: var(--accent-color); }
+        .edit-chip.sel, .form-chip.sel { background: var(--accent-color); color: var(--bg-color); border-color: var(--accent-color); }
         .edit-actions { margin-top: 8px; display: flex; gap: 10px; }
         .btn-save {
             background: var(--accent-color); color: #fff; border: none;
@@ -349,6 +350,58 @@
             display: none;
         }
 
+        /* ---------- Modal formulari recepta ---------- */
+        .modal {
+            display: none;
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,0.5);
+            z-index: 900;
+            padding: 30px 15px;
+            overflow-y: auto;
+        }
+        .modal.show { display: block; }
+        .modal-box {
+            background: var(--bg-color);
+            max-width: 680px;
+            margin: 0 auto;
+            border-radius: 8px;
+            padding: 35px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.25);
+        }
+        .modal-box h3 {
+            font-size: 1.4em;
+            margin-bottom: 22px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .modal-box label {
+            display: block;
+            font-size: 0.75em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            font-weight: 600;
+            margin: 18px 0 7px;
+        }
+        .modal-box label .hint { text-transform: none; letter-spacing: 0; font-weight: 400; }
+        .modal-box input[type="text"],
+        .modal-box textarea {
+            width: 100%;
+            padding: 12px 14px;
+            font-size: 1em;
+            font-family: inherit;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            outline: none;
+            resize: vertical;
+            line-height: 1.6;
+        }
+        .modal-box input[type="text"]:focus,
+        .modal-box textarea:focus { border-color: var(--accent-color); }
+        .form-tags { display: block; }
+        .modal-actions { margin-top: 26px; display: flex; gap: 12px; }
+
         /* ---------- Toast ---------- */
         .toast {
             position: fixed;
@@ -401,6 +454,7 @@
                     <button class="clear-btn" id="clearFilters" hidden>Neteja els filtres</button>
                     <div id="filterGroups"></div>
                     <button class="admin-toggle" id="adminToggle">Admin</button>
+                    <button class="admin-new" id="newRecipeBtn" hidden>+ Nova recepta</button>
                 </div>
             </aside>
 
@@ -411,17 +465,33 @@
         </div>
     </div>
 
+    <!-- Modal formulari crear/editar recepta -->
+    <div id="recipeModal" class="modal">
+        <div class="modal-box">
+            <h3 id="fTitle">Nova recepta</h3>
+            <label>Nom</label>
+            <input type="text" id="fName" placeholder="Nom de la recepta">
+            <label>Ingredients <span class="hint">— un per línia</span></label>
+            <textarea id="fIngredients" rows="8" placeholder="500 g d'espaguetis&#10;2 grans d'all&#10;..."></textarea>
+            <label>Instruccions</label>
+            <textarea id="fInstructions" rows="10" placeholder="Pas a pas de l'elaboració..."></textarea>
+            <label>Tags</label>
+            <div id="fTags" class="form-tags"></div>
+            <div class="modal-actions">
+                <button class="btn-save" id="fSave">Desar</button>
+                <button class="btn-cancel" id="fCancel">Cancel·lar</button>
+            </div>
+        </div>
+    </div>
+
     <div id="toast" class="toast"></div>
 
     <script>
-        // URL del teu Apps Script desplegat com a Web App.
         const ADMIN_ENDPOINT = 'https://script.google.com/macros/s/AKfycbyCuw_H6nVkSquHwURfn8feYnvfm6R02TN4pnvndS6FXtEFUVsvxjkzc8pUgQiQbwx4kA/exec';
 
-        // Vocabulari (ha de coincidir amb el de l'Apps Script).
         const CUINA = ['Asiàtic', 'Català', 'Italià', 'Internacional'];
         const TIPUS = ['Principal', 'Entrant', 'Postres', 'Salsa'];
 
-        // Ordre i agrupació de les tags (mateixos eixos que la taxonomia).
         const TAG_GROUPS = [
             { title: 'Cuina',          tags: ['Català', 'Asiàtic', 'Italià', 'Internacional'] },
             { title: 'Estil asiàtic',  tags: ['Japonès', 'Xinès', 'Thai'] },
@@ -442,10 +512,14 @@
         const activeTags = new Set();
         let searchTerm = '';
 
-        // Estat d'administració
+        // Estat admin
         let adminPassword = null;
-        let editingId = null;
+        let editingId = null;          // editor de tags inline
         let editDraft = new Set();
+        // Estat formulari
+        let formMode = null;           // 'create' | 'edit'
+        let formId = null;
+        let formDraft = new Set();
 
         const norm = s => (s || '').toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
 
@@ -480,14 +554,16 @@
                 });
 
                 document.getElementById('adminToggle').addEventListener('click', toggleAdmin);
+                document.getElementById('newRecipeBtn').addEventListener('click', openCreateForm);
 
                 document.getElementById('filterGroups').addEventListener('click', (e) => {
                     const chip = e.target.closest('.chip');
                     if (chip) toggleTag(chip.dataset.tag);
                 });
 
-                // Delegació de tots els clics dins de la llista de receptes.
                 document.getElementById('recipeList').addEventListener('click', (e) => {
+                    const editR = e.target.closest('[data-editrec]');
+                    if (editR) { openEditForm(editR.dataset.editrec); return; }
                     const del = e.target.closest('[data-del]');
                     if (del) { deleteRecipe(del.dataset.del); return; }
                     const edit = e.target.closest('[data-edit]');
@@ -503,6 +579,17 @@
                         toggleTag(tag.dataset.tag);
                         window.scrollTo({ top: 0, behavior: 'smooth' });
                     }
+                });
+
+                // Modal
+                document.getElementById('fSave').addEventListener('click', submitForm);
+                document.getElementById('fCancel').addEventListener('click', closeForm);
+                document.getElementById('fTags').addEventListener('click', (e) => {
+                    const c = e.target.closest('.form-chip');
+                    if (c) toggleFormChip(c.dataset.tag);
+                });
+                document.getElementById('recipeModal').addEventListener('click', (e) => {
+                    if (e.target.id === 'recipeModal') closeForm();
                 });
             })
             .catch(error => {
@@ -527,17 +614,14 @@
         function buildFilterBar() {
             const counts = {};
             allRecipes.forEach(r => (r.tags || []).forEach(t => { counts[t] = (counts[t] || 0) + 1; }));
-
             const grouped = new Set();
             const container = document.getElementById('filterGroups');
             container.innerHTML = '';
-
             TAG_GROUPS.forEach(group => {
                 const present = group.tags.filter(t => counts[t]);
                 present.forEach(t => grouped.add(t));
                 if (present.length) container.appendChild(renderGroup(group.title, present, counts));
             });
-
             const others = Object.keys(counts).filter(t => !grouped.has(t)).sort();
             if (others.length) container.appendChild(renderGroup('Altres', others, counts));
         }
@@ -571,7 +655,6 @@
         function updateFilterUI(filtered) {
             const counts = {};
             filtered.forEach(r => (r.tags || []).forEach(t => { counts[t] = (counts[t] || 0) + 1; }));
-
             document.querySelectorAll('#filterGroups .chip').forEach(chip => {
                 const tag = chip.dataset.tag;
                 const n = counts[tag] || 0;
@@ -580,7 +663,6 @@
                 chip.classList.toggle('active', active);
                 chip.classList.toggle('empty', n === 0 && !active);
             });
-
             const countEl = document.getElementById('activeCount');
             const clearBtn = document.getElementById('clearFilters');
             if (activeTags.size) {
@@ -598,7 +680,6 @@
         function displayRecipes(recipes) {
             const list = document.getElementById('recipeList');
             const count = document.getElementById('count');
-
             count.textContent = `${recipes.length} receptes trobades`;
             list.innerHTML = '';
 
@@ -612,6 +693,7 @@
 
                 const adminHtml = adminPassword ? `
                     <div class="admin-bar">
+                        <button class="admin-edit" data-editrec="${r.id}">Editar recepta</button>
                         <button class="admin-edit" data-edit="${r.id}">Editar tags</button>
                         <button class="admin-del" data-del="${r.id}">Esborrar</button>
                     </div>` : '';
@@ -629,9 +711,7 @@
                     ${editorHtml}
                     ${ingHtml}
                     <div class="instructions-wrapper">
-                        <button class="toggle-btn" onclick="toggleInstructions(${index})">
-                            Veure la recepta
-                        </button>
+                        <button class="toggle-btn" onclick="toggleInstructions(${index})">Veure la recepta</button>
                         <div class="instructions" id="inst-${index}">${r.instructions}</div>
                     </div>
                 `;
@@ -649,7 +729,7 @@
             return `<div class="tag-editor">
                 ${groups}
                 <div class="edit-actions">
-                    <button class="btn-save" data-save="${r.id}">Desar</button>
+                    <button class="btn-save" data-save="${r.id}">Desar tags</button>
                     <button class="btn-cancel" data-cancel="1">Cancel·lar</button>
                 </div>
             </div>`;
@@ -671,24 +751,29 @@
             }
         }
 
-        // ---------------- Administració ----------------
+        // ---------------- Admin: mode ----------------
 
         function toggleAdmin() {
             const btn = document.getElementById('adminToggle');
+            const newBtn = document.getElementById('newRecipeBtn');
             if (adminPassword) {
                 adminPassword = null;
                 editingId = null;
                 btn.textContent = 'Admin';
                 btn.classList.remove('on');
+                newBtn.hidden = true;
             } else {
                 const p = window.prompt("Contrasenya d'administrador:");
                 if (!p) return;
                 adminPassword = p;
                 btn.textContent = 'Admin ✓ (sortir)';
                 btn.classList.add('on');
+                newBtn.hidden = false;
             }
             applyFilters();
         }
+
+        // ---------------- Editor de tags inline ----------------
 
         function startEdit(id) {
             const r = allRecipes.find(x => x.id === id);
@@ -697,61 +782,139 @@
             editDraft = new Set(r.tags || []);
             applyFilters();
         }
-
-        function cancelEdit() {
-            editingId = null;
-            applyFilters();
-        }
-
+        function cancelEdit() { editingId = null; applyFilters(); }
         function toggleEditChip(tag) {
-            if (editDraft.has(tag)) editDraft.delete(tag);
-            else editDraft.add(tag);
+            if (editDraft.has(tag)) editDraft.delete(tag); else editDraft.add(tag);
             applyFilters();
         }
 
-        async function adminApi(payload) {
-            // Sense capçaleres personalitzades -> content-type text/plain -> sense preflight CORS.
-            const res = await fetch(ADMIN_ENDPOINT, {
-                method: 'POST',
-                body: JSON.stringify({ ...payload, password: adminPassword }),
-            });
-            return res.json();
+        async function saveEdit(id) {
+            const tags = orderTags([...editDraft]);
+            if (!validTags(tags)) return;
+            const res = await callApi({ action: 'updateTags', id, tags });
+            if (!res) return;
+            const r = allRecipes.find(x => x.id === id);
+            if (r) r.tags = tags;
+            editingId = null;
+            buildFilterBar(); applyFilters();
+            toast('Tags actualitzades.');
         }
+
+        // ---------------- Esborrar ----------------
 
         async function deleteRecipe(id) {
             const r = allRecipes.find(x => x.id === id);
             if (!r) return;
             if (!confirm(`Esborrar "${r.name}"? Actualitzarà el web.`)) return;
-            try {
-                const res = await adminApi({ action: 'delete', id });
-                if (!res.ok) { toast(res.error || 'Error', false); return; }
-                allRecipes = allRecipes.filter(x => x.id !== id);
-                if (editingId === id) editingId = null;
-                buildFilterBar();
-                applyFilters();
-                toast('Esborrada. Total: ' + res.total);
-            } catch (e) {
-                toast('Error de connexió amb el servidor.', false);
-            }
+            const res = await callApi({ action: 'delete', id });
+            if (!res) return;
+            allRecipes = allRecipes.filter(x => x.id !== id);
+            if (editingId === id) editingId = null;
+            buildFilterBar(); applyFilters();
+            toast('Esborrada. Total: ' + res.total);
         }
 
-        async function saveEdit(id) {
-            const tags = orderTags([...editDraft]);
+        // ---------------- Formulari crear/editar ----------------
+
+        function openCreateForm() {
+            formMode = 'create'; formId = null; formDraft = new Set();
+            document.getElementById('fTitle').textContent = 'Nova recepta';
+            document.getElementById('fName').value = '';
+            document.getElementById('fIngredients').value = '';
+            document.getElementById('fInstructions').value = '';
+            renderFormTags();
+            document.getElementById('recipeModal').classList.add('show');
+        }
+
+        function openEditForm(id) {
+            const r = allRecipes.find(x => x.id === id);
+            if (!r) return;
+            formMode = 'edit'; formId = id; formDraft = new Set(r.tags || []);
+            document.getElementById('fTitle').textContent = 'Editar recepta';
+            document.getElementById('fName').value = r.name;
+            document.getElementById('fIngredients').value = (r.ingredients || []).join('\n');
+            document.getElementById('fInstructions').value = r.instructions || '';
+            renderFormTags();
+            document.getElementById('recipeModal').classList.add('show');
+        }
+
+        function closeForm() {
+            document.getElementById('recipeModal').classList.remove('show');
+            formMode = null; formId = null;
+        }
+
+        function renderFormTags() {
+            const cont = document.getElementById('fTags');
+            cont.innerHTML = TAG_GROUPS.map(g => {
+                const chips = g.tags.map(t =>
+                    `<button type="button" class="form-chip${formDraft.has(t) ? ' sel' : ''}" data-tag="${t}">${t}</button>`
+                ).join('');
+                return `<div class="edit-group"><span>${g.title}</span><div>${chips}</div></div>`;
+            }).join('');
+        }
+
+        function toggleFormChip(tag) {
+            if (formDraft.has(tag)) formDraft.delete(tag); else formDraft.add(tag);
+            renderFormTags();
+        }
+
+        async function submitForm() {
+            const name = document.getElementById('fName').value.trim();
+            const ingredients = document.getElementById('fIngredients').value
+                .split('\n').map(s => s.trim()).filter(s => s);
+            const instructions = document.getElementById('fInstructions').value.trim();
+            const tags = orderTags([...formDraft]);
+
+            if (!name) { toast('Cal un nom.', false); return; }
+            if (!instructions) { toast('Calen instruccions.', false); return; }
+            if (!validTags(tags)) return;
+
+            const res = await callApi({
+                action: 'saveRecipe',
+                recipe: { id: formId, name, ingredients, instructions, tags },
+            });
+            if (!res) return;
+
+            if (formMode === 'edit') {
+                const r = allRecipes.find(x => x.id === formId);
+                if (r) { r.name = name; r.ingredients = ingredients; r.instructions = instructions; r.tags = tags; }
+                toast('Recepta actualitzada.');
+            } else {
+                allRecipes.push({
+                    id: res.id, name, source: 'Web',
+                    ingredients, instructions, tags,
+                    added: new Date().toISOString().slice(0, 10),
+                });
+                toast('Recepta creada. Total: ' + res.total);
+            }
+            allRecipes.sort((a, b) => a.name.localeCompare(b.name, 'ca'));
+            closeForm();
+            buildFilterBar(); applyFilters();
+        }
+
+        // ---------------- Helpers admin ----------------
+
+        function validTags(tags) {
             const nc = tags.filter(t => CUINA.includes(t)).length;
             const nt = tags.filter(t => TIPUS.includes(t)).length;
-            if (nc !== 1) { toast('Cal exactament 1 cuina.', false); return; }
-            if (nt !== 1) { toast('Cal exactament 1 tipus de plat.', false); return; }
+            if (nc !== 1) { toast('Cal exactament 1 cuina.', false); return false; }
+            if (nt !== 1) { toast('Cal exactament 1 tipus de plat.', false); return false; }
+            return true;
+        }
+
+        // Envia al servidor. Retorna l'objecte de resposta si ok, o null (i mostra error).
+        async function callApi(payload) {
             try {
-                const res = await adminApi({ action: 'updateTags', id, tags });
-                if (!res.ok) { toast(res.error || 'Error', false); return; }
-                const r = allRecipes.find(x => x.id === id);
-                if (r) r.tags = tags;
-                editingId = null;
-                buildFilterBar();
-                applyFilters();
-                toast('Tags actualitzades.');
+                const res = await fetch(ADMIN_ENDPOINT, {
+                    method: 'POST',
+                    body: JSON.stringify({ ...payload, password: adminPassword }),
+                });
+                const json = await res.json();
+                if (!json.ok) { toast(json.error || 'Error', false); return null; }
+                return json;
             } catch (e) {
                 toast('Error de connexió amb el servidor.', false);
+                return null;
             }
         }
 
