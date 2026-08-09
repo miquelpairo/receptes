@@ -1,5 +1,5 @@
 {
-  "total": 45,
+  "total": 48,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -25,6 +25,29 @@
       ],
       "id": "ajoblanco-de-remolatxa",
       "added": "2026-08-08"
+    },
+    {
+      "name": "Albergínia amb Tahina",
+      "source": "Gemini",
+      "ingredients": [
+        "1 albergínia gran",
+        "70 gr de tahina",
+        "2 cullerades de pasta de magrana",
+        "suc de mitja llimona",
+        "1 all",
+        "2 cullerades d'aigua",
+        "Julivert",
+        "sal, oli i pebre",
+        "1/2 magrana per a decorar"
+      ],
+      "instructions": "Comencem escalivant l'albergínia. Per fer-ho al foc, cal que posem a foc mitjà i l'albergínia directament a la flama. L'anem girant durant uns 15 minuts perquè es faci per a tots els cantons.\nEsperem que es refredi i la pelem.\nLa posem al vas del minipimer amb la pasta de magrana, la tahina, el suc de la llimona, les fulles de julivert, l'all si el volem posar, l'aigua, sal i pebre.\nHo triturem tot i ho tastem, podem corregir del què ens vingui de gust i ja està!\nPer decorar posem els grans de 1/2 magrana i si volem una mica més de julivert i oli d'oliva.",
+      "tags": [
+        "Internacional",
+        "Entrant",
+        "Vegetarià"
+      ],
+      "id": "alberginia-amb-tahina",
+      "added": "2026-08-09"
     },
     {
       "name": "Amanida d'espinacs i maduixes",
@@ -414,6 +437,34 @@
         "Erola"
       ],
       "added": "2026-08-08"
+    },
+    {
+      "name": "Fideus soba amb albergínia i mango",
+      "source": "Gemini",
+      "ingredients": [
+        "250 gr de fideus soba",
+        "2 albergínies",
+        "2 mangos madurs",
+        "1/2 xili vermell",
+        "1 gra d'all",
+        "120 ml de vinagre d'arròs",
+        "40 gr sucre",
+        "1 cullerada d'oli de sèsam",
+        "40 gr de fulles d'alfàbrega",
+        "40 gr de fulles de coriandre",
+        "1/2 ceba vermella",
+        "oli i sal"
+      ],
+      "instructions": "Comencem preparant la salsa per amanir. Posem en una olla petita el vinagre d'arròs i el sucre, ho calentem i barregem durant 1 minut o menys, fins que el sucre es desfaci.\nHo posem en un bol i hi afegim el xili, el gra d'all matxacat i l'oli de sèsam.\nHo reservem i quan estigui fred hi afegim la pell i el suc d'una llima.\nMentrestant podem anar fent l'albergínia. La tallem a daus de 2 cm de costat.\nEscalfem oli a la paella i la fregim, en diferents tandes, fins que estigui daurada pels dos costats.\nUn cop acabat la posem en un colador amb bastanta sal, i la deixem allà, que vagi perdent oli.\nBullim els fideus, segons les instruccions. I quan estiguin fets els posem sota un raig d'aigua freda per refredar-los.\nEls hi traiem tota l'aigua possible i els emboliquem amb un drap de cuina per ajudar que això passi.\nTallem la ceba a tires i la posem en un bol, tallem finetes l'alfàbrega i el coriandre i ho posem al mateix bol.\nDesprés barregem aquí tots els altres ingredients sense oblidar l'amanit.",
+      "tags": [
+        "Asiàtic",
+        "Japonès",
+        "Principal",
+        "Vegetarià",
+        "Pasta"
+      ],
+      "id": "fideus-soba-amb-alberginia-i-mango",
+      "added": "2026-08-09"
     },
     {
       "name": "Fricandó",
@@ -1028,6 +1079,27 @@
       ],
       "id": "tacos-de-peix",
       "added": "2026-08-08"
+    },
+    {
+      "name": "Vedella al curri thai",
+      "source": "Gemini",
+      "ingredients": [
+        "1 kg de escalopins de vedella",
+        "1/2 cullerada de pasta de curri verd",
+        "1 cullerada de gingebre fresc",
+        "1 manat de coriandre",
+        "400 ml de llet de coco",
+        "sal, pebre i oli"
+      ],
+      "instructions": "Posem oli en una cassola, i l'escalfem.\nQuan estigui calent hi tirem el gingebre, el remenem 1 minut i hi afegim la pasta de curri verd, ho fregim tot durant 1 parell de minuts.\nLlavors afegim 300 ml de llet de coco i les fulles de la meitat del coriandre.\nSalpebrem la carn i la posem dins la cassola.\nBaixem el foc, ho tapem, i ho deixem fer uns 50 minuts.\nUn cop passat aquest temps obrim la cassola i deixem reduir el suc, fins que quedi una salsa espessa, en cas que es necessiti.\nAfegim la resta de la llet de coco i el coriandre i fet!",
+      "tags": [
+        "Asiàtic",
+        "Thai",
+        "Principal",
+        "Carn"
+      ],
+      "id": "vedella-al-curri-thai",
+      "added": "2026-08-09"
     },
     {
       "name": "Yakizake Don",
