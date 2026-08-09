@@ -1,5 +1,5 @@
 {
-  "total": 77,
+  "total": 78,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -252,6 +252,31 @@
         "Àvia"
       ],
       "added": "2026-08-08"
+    },
+    {
+      "name": "Calamares en salsa",
+      "source": "Gemini",
+      "ingredients": [
+        "1 kg de calamares medianos",
+        "1 cucharada de harina de maíz",
+        "1 cebolla mediana",
+        "2 dientes de ajo",
+        "1 tomate rallado",
+        "10 ml de coñac",
+        "100 ml de agua",
+        "Sal y pimienta al gusto",
+        "100 ml de vino blanco",
+        "1 cucharada de harina de maíz",
+        "5 cucharadas de aceite de oliva virgen"
+      ],
+      "instructions": "1. Limpiamos los calamares y los cortamos en anillas más o menos gruesas, dependiendo de cómo nos guste. Cuando estén listos, los reservamos para más adelante. 2. Ponemos una cacerola en el fuego con aceite de oliva virgen en ella y, cuando esté caliente, echamos la cebolla, previamente picada muy finita. Cuando coja color, echamos el ajo, también picado, y dejamos que ambos se doren. 3. Echamos el tomate rallado a la cacerola, aliñamos la salsa con la sal y la pimienta al gusto, y la removemos bien, dejándola sofreírse entre 5 y 10 minutos a fuego medio. 4. Añadimos una cucharada de harina de maíz a la salsa, la removemos y echamos los calamares en ella. Cuando los calamares comiencen a soltar el agua, corregimos de sal y pimienta la salsa, y añadimos el vino y el coñac dejando que se evaporen a fuego medio. 5. Entonces, añadimos agua a la cacerola, la tapamos, bajamos el fuego y dejamos que los calamares se cuezan con la salsa de tomate hasta que el agua se haya consumido.",
+      "tags": [
+        "Català",
+        "Principal",
+        "Peix"
+      ],
+      "id": "calamares-en-salsa",
+      "added": "2026-08-09"
     },
     {
       "name": "Calamars a l'estil asiàtic",
