@@ -1,5 +1,5 @@
 {
-  "total": 63,
+  "total": 67,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -163,6 +163,27 @@
       "added": "2026-08-09"
     },
     {
+      "name": "Baba ganoush",
+      "source": "Gemini",
+      "ingredients": [
+        "2-3 berenjenas (aprox. 300 g cadascuna)",
+        "1-2 dientes de ajo",
+        "25 g de aceite de oliva virgen extra",
+        "10 g de zumo de limón",
+        "40 g de sésamo tostado o 2 cucharadas de tahine",
+        "½ cucharadita de comino en grano",
+        "1 cucharadita de sal (o al gusto)"
+      ],
+      "instructions": "Obrir les albergínies per la meitat, fer uns talls a la carn i col·locar els alls. Enfornar a 200ºC durant 30 minuts fins que estiguin tendres. Retirar la carn de l'albergínia. Posar al vas de la batedora la carn, els alls rostits, oli, suc de llimona, sèsam, comí i sal. Triturar fins obtenir una textura suau. Servir en un plat, decorar amb una mica d'oli, pebre vermell i comí. Acompanyar amb verdures crues o pa.",
+      "tags": [
+        "Internacional",
+        "Entrant",
+        "Vegetarià"
+      ],
+      "id": "baba-ganoush",
+      "added": "2026-08-09"
+    },
+    {
       "id": "bacalla-de-quaresma",
       "name": "Bacallà de quaresma",
       "source": "DOCX",
@@ -185,6 +206,29 @@
         "Àvia"
       ],
       "added": "2026-08-08"
+    },
+    {
+      "name": "Bonito en escabeche",
+      "source": "Gemini",
+      "ingredients": [
+        "1 kg de bonito del norte",
+        "250 g de aceite de oliva",
+        "1 cebolla grande en juliana",
+        "3 hojas de laurel",
+        "5 ajos con piel",
+        "1 cucharada de pimienta negra en grano",
+        "350 g de vinagre de Jerez",
+        "250 g de vino blanco",
+        "Sal gorda"
+      ],
+      "instructions": "Netejar el bonítol, treure pell i espines i salar. En una olla, posar l'oli, vinagre, vi, llorer, pebre i alls; bullir 5 minuts. Afegir la ceba i el bonítol, bullir 15 minuts i deixar refredar dins l'olla tapat. Consumir després de 24 hores. Per a la conserva, posar en pots, cobrir amb l'escabetx eliminant bombolles d'aire, segellar i coure al bany maria 20 minuts.",
+      "tags": [
+        "Internacional",
+        "Principal",
+        "Peix"
+      ],
+      "id": "bonito-en-escabeche",
+      "added": "2026-08-09"
     },
     {
       "id": "bunyols-de-bacalla",
@@ -984,6 +1028,38 @@
       "added": "2026-08-08"
     },
     {
+      "name": "Pollastre amb gambes",
+      "source": "Gemini",
+      "ingredients": [
+        "1 pollastre de pagès tallat per a rostir",
+        "12 gambes vermelles",
+        "5 tomàquets ratllats",
+        "1 ceba de Figueres gran trinxada",
+        "Un raig de brandi",
+        "1 copa de vi blanc",
+        "Oli d'oliva",
+        "Pebre negre",
+        "Sal",
+        "4 quadradets de xocolata",
+        "3 llesques de pa fregit",
+        "3 grans d'all laminats",
+        "Un grapat d'avellanes",
+        "Un grapat d'ametlles",
+        "Un grapat de pinyons",
+        "Julivert"
+      ],
+      "instructions": "Daurar el pollastre i reservar. Saltar les gambes i reservar. Sofregir la ceba i el tomàquet, incorporar el pollastre, el brandi i el vi blanc. Afegir aigua i coure 35-40 minuts. Preparar la picada amb xocolata, pa fregit, alls, avellanes, ametlles, pinyons i julivert. Afegir la picada i les gambes 5 minuts abans d'acabar la cocció.",
+      "tags": [
+        "Català",
+        "Principal",
+        "Carn",
+        "Peix",
+        "Àvia"
+      ],
+      "id": "pollastre-amb-gambes",
+      "added": "2026-08-09"
+    },
+    {
       "id": "pollo-con-curry-tailandes",
       "name": "Pollo con curry tailandes",
       "source": "DOCX",
@@ -1347,6 +1423,34 @@
         "Carn"
       ],
       "added": "2026-08-08"
+    },
+    {
+      "name": "Suquet de rap",
+      "source": "Gemini",
+      "ingredients": [
+        "1 cua de rap gran",
+        "3 patates blanques (noves) de mida mitjana",
+        "2 tomàquets madurs",
+        "2 nyores",
+        "Oli d'oliva",
+        "Sal",
+        "Aigua o brou de peix",
+        "Un grapat d'ametlles torrades (per a la picada)",
+        "Un grapat d'avellanes torrades (per a la picada)",
+        "2 llesques de pa torrat o fregit (per a la picada)",
+        "Un parell de branques de julivert fresc (per a la picada)",
+        "1 cullerada de farina (per a la picada)",
+        "4 alls fregits (per a la picada)"
+      ],
+      "instructions": "Fregir alls i pa i posar-los al morter amb ametlles, avellanes, julivert, farina i una mica de suc de la cassola per fer la picada. Escaldar les nyores, treure la carn i barrejar-la amb el tomàquet ratllat. Escapçar i marcar les patates, afegir el tomàquet amb les nyores i reduir. Afegir vi blanc, reduir i cobrir amb el brou. Quan les patates s'estovin, afegir el rap salpebrat i la picada. Coure 10 minuts i acabar al forn (grill) 5 minuts.",
+      "tags": [
+        "Català",
+        "Principal",
+        "Peix",
+        "Àvia"
+      ],
+      "id": "suquet-de-rap",
+      "added": "2026-08-09"
     },
     {
       "name": "Tacos de peix",
