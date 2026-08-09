@@ -1,5 +1,5 @@
 {
-  "total": 78,
+  "total": 79,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -939,6 +939,30 @@
         "Àvia"
       ],
       "added": "2026-08-08"
+    },
+    {
+      "name": "Nyoquis de ricotta",
+      "source": "Gemini",
+      "ingredients": [
+        "450 gr de ricotta",
+        "30 gr de parmesà ratllat",
+        "1 culleradeta de sal",
+        "1 ou gran (o 2 petits)",
+        "40-60 gr de farina",
+        "1 tomàquet madur",
+        "4-5 fulles de sàlvia",
+        "oli d'oliva (3 o 4 cullerades, o al gust)",
+        "sal"
+      ],
+      "instructions": "Comencem deixant assecar el ricota en un colador durant 1 hora. Ho barregem en un bol amb l'ou batut, el parmesà, la sal i 40 gr de farina fins a fer una massa, i a la nevera 15 minuts. Si s'enganxa, afegir-hi més farina fins a poder fer una bola, i deixar-ho 15 minuts més a la nevera. Per a la salsa, triturar el tomàquet, sàlvia, oli i sal. Fer boles de massa, estirar en forma de rodet en una superfície enfarinada i tallar-ho a trossos de 2 cm. Bullir aigua i tirar-hi els nyoquis. Quan pugin a la superfície, deixar-los 2 minuts més. Barrejar amb la salsa i formatge ratllat.",
+      "tags": [
+        "Italià",
+        "Principal",
+        "Pasta",
+        "Vegetarià"
+      ],
+      "id": "nyoquis-de-ricotta",
+      "added": "2026-08-09"
     },
     {
       "name": "Pa d'espelta amb nous i figues",
