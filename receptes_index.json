@@ -1,5 +1,5 @@
 {
-  "total": 73,
+  "total": 75,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -757,6 +757,29 @@
       "added": "2026-08-08"
     },
     {
+      "name": "Macarrons de dia de partit",
+      "source": "Gemini",
+      "ingredients": [
+        "Ceba",
+        "Tomàquet",
+        "Xoriç",
+        "Macarrons",
+        "Parmesà ratllat",
+        "Pebrot (opcional)",
+        "Xampinyons (opcional)",
+        "Pastanaga (opcional)"
+      ],
+      "instructions": "Feu un sofregit amb la ceba (s'hi pot afegir pebrot, xampinyons i pastanaga). Quan sigui tova, afegiu-hi el tomàquet i el xoriç. Deixeu que es faci bé la salsa. Bulliu els macarrons i tireu-los a la salsa. Poseu-hi parmesà ratllat per sobre i gratineu-ho 5 minuts al forn.",
+      "tags": [
+        "Internacional",
+        "Principal",
+        "Pasta",
+        "Carn"
+      ],
+      "id": "macarrons-de-dia-de-partit",
+      "added": "2026-08-09"
+    },
+    {
       "id": "mandonguilles-de-l-avia",
       "name": "Mandonguilles de l'Àvia",
       "source": "DOCX",
@@ -1436,6 +1459,24 @@
         "Salsa"
       ],
       "added": "2026-08-08"
+    },
+    {
+      "name": "Salsa Teriyaki",
+      "source": "Gemini",
+      "ingredients": [
+        "1 part de salsa de soja",
+        "1 part de mirin",
+        "1 part de sake",
+        "1 part de sucre morè"
+      ],
+      "instructions": "Posar a escalfar tots els ingredients fins que bulli uns minuts i tingui textura de xarop.",
+      "tags": [
+        "Asiàtic",
+        "Salsa",
+        "Japonès"
+      ],
+      "id": "salsa-teriyaki",
+      "added": "2026-08-09"
     },
     {
       "name": "Salsa tonkatsu",
