@@ -1,5 +1,5 @@
 {
-  "total": 86,
+  "total": 92,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -113,6 +113,51 @@
       ],
       "id": "amanida-de-cigrons-i-pebrots",
       "added": "2026-08-08"
+    },
+    {
+      "name": "Amanida de llenties i julivert",
+      "source": "Gemini",
+      "ingredients": [
+        "250 gr de llenties crues (negres)",
+        "8 tomàquets petits",
+        "4 cebetes tendres",
+        "200 gr de formatge feta",
+        "1 manat de julivert",
+        "1 cogombre",
+        "1 llimona",
+        "sal, pebre, oli"
+      ],
+      "instructions": "1. La nit anterior posem les llenties en remull. 2. Esbandim les llenties, els afegim aigua que les cobreixi i el doble, sal, i les posem a bullir. Quan bulli l'aigua, esperar 5 minuts, baixar el foc, tapar i coure a foc lent durant 25 minuts. Escórrer i deixar refredar. 3. Mentrestant, pelar una mica el cogombre i tallar-lo en triangles. Tallar el tomàquet, la ceba, el formatge feta i el julivert. 4. Un cop les llenties siguin fredes, afegir tots els ingredients en un bol. 5. Preparar una vinagreta amb el suc de la llimona, 6 cullerades d'oli, sal i pebre. 6. En el moment de servir, afegir la vinagreta, barrejar bé i servir.",
+      "tags": [
+        "Internacional",
+        "Entrant",
+        "Vegetarià"
+      ],
+      "id": "amanida-de-llenties-i-julivert",
+      "added": "2026-08-09"
+    },
+    {
+      "name": "Amanida de remolatxa i carbassa rostides",
+      "source": "Gemini",
+      "ingredients": [
+        "1 manat de remolatxes (4 unitats)",
+        "1 carbassa petita (butternut squash)",
+        "barreja de fulles petites (espinacs baby, rúcula, creixen)",
+        "150 gr de formatge de cabra de rulo",
+        "1 culleradeta de comí en pols",
+        "1 culleradeta de coriandre en pols",
+        "1 culleradeta de curry en pols",
+        "sal",
+        "oli"
+      ],
+      "instructions": "1. Escalfar el forn a 200ºC. 2. Pelar i tallar les remolatxes a quarts. Posar-les en una safata amb sal, la meitat de les espècies (curri, comí, coriandre) i un raig d'oli. Enfornar. 3. Després de 20 minuts, afegir la carbassa (pelada i tallada) amb la resta de les espècies, sal i oli. 4. Coure tot junt 40 minuts més. 5. Deixar refredar fins que estigui tebi. 6. Barrejar en un bol la remolatxa, la carbassa, el formatge de cabra i les fulles. Servir amb un raig d'oli d'oliva.",
+      "tags": [
+        "Internacional",
+        "Entrant",
+        "Vegetarià"
+      ],
+      "id": "amanida-de-remolatxa-i-carbassa-rostides",
+      "added": "2026-08-09"
     },
     {
       "id": "arros-a-la-cubana",
@@ -471,6 +516,31 @@
       "added": "2026-08-09"
     },
     {
+      "name": "Costelles de porc a les cinc espècies",
+      "source": "Gemini",
+      "ingredients": [
+        "1.2 Kg de costelles de porc",
+        "4 cullerades de salsa de soja",
+        "2 cullerades de vinagre d'arròs (o vinagre blanc)",
+        "2 cullerades de mel",
+        "1 cullerada de salsa de mongetes negres",
+        "2 culleradetes d'oli de sèsam",
+        "1 cullerada de vi d'arròs o vi de xerès",
+        "1 culleradeta de gingebre tallat molt petit",
+        "2 culleradetes de cinc espècies",
+        "sal"
+      ],
+      "instructions": "1. Fer la marinada barrejant tots els ingredients en un bol. 2. Afegir les costelles de porc, impregnar-les bé i posar una miqueta de sal. Deixar marinar mitja hora a temperatura ambient. 3. Calentar el forn a 200º. 4. Enfornar les costelles uns 25 minuts, girar-les i deixar-les uns 15 minuts més.",
+      "tags": [
+        "Asiàtic",
+        "Principal",
+        "Carn",
+        "Xinès"
+      ],
+      "id": "costelles-de-porc-a-les-cinc-especies",
+      "added": "2026-08-09"
+    },
+    {
       "id": "crema-catalana",
       "name": "Crema catalana",
       "source": "DOCX",
@@ -732,6 +802,50 @@
       ],
       "id": "fricando",
       "added": "2026-08-08"
+    },
+    {
+      "name": "Fringe: pasta filo amb espinacs i ricotta",
+      "source": "Gemini",
+      "ingredients": [
+        "1 paquet de làmines de pasta filo",
+        "500 gr d'espinaques fresques",
+        "200 gr de ricotta",
+        "150 gr de feta",
+        "50 gr de pinyons",
+        "50 gr de panses",
+        "mantega, per pinzellar",
+        "oli, sal, pebre"
+      ],
+      "instructions": "1. Cuinar les espinaques en una cassola tapades amb una mica d'oli uns 5 minuts fins que estiguin tendres. Escorrir l'aigua i reservar. 2. Fregir els pinyons fins que estiguin torrats, afegir les panses i coure 2 minuts més. 3. En un bol, barrejar les espinaques, les panses, els pinyons, la ricotta i el feta esmicolat. 4. Tallar les làmines de pasta filo en 4 parts, col·locar farcit a l'interior i enrollar per formar els paquetets. 5. Pinzellar els paquetets amb mantega desfeta. 6. Coure al forn preescalfat a 180º durant uns 15 minuts fins que estiguin daurats.",
+      "tags": [
+        "Internacional",
+        "Entrant",
+        "Vegetarià",
+        "Pasta"
+      ],
+      "id": "fringe-pasta-filo-amb-espinacs-i-ricotta",
+      "added": "2026-08-09"
+    },
+    {
+      "name": "Hamburgueses d'ànec",
+      "source": "Gemini",
+      "ingredients": [
+        "2 pits d'ànec (500 gr)",
+        "2 prunes",
+        "2 cebes tendres petites",
+        "2 cullerades de salsa de soja",
+        "75 gr de farina de galeta",
+        "sal",
+        "pebre"
+      ],
+      "instructions": "1. Treure la pell dels pits d'ànec. 2. Picar a la picadora la carn, les cebes (pelades) i les prunes (pelades i sense pinyol). 3. Barrejar en un bol amb la salsa de soja i la farina de galeta. Salpebrar al gust. 4. Dividir la massa en 4 parts i donar forma d'hamburguesa. 5. Cuinar a la barbacoa o a la planxa uns 5 minuts per banda fins que estiguin ben cuites.",
+      "tags": [
+        "Internacional",
+        "Principal",
+        "Carn"
+      ],
+      "id": "hamburgueses-d-anec",
+      "added": "2026-08-09"
     },
     {
       "name": "Lassanya",
@@ -1840,6 +1954,32 @@
         "Vegetarià"
       ],
       "id": "sopa-de-celeriac-i-poma",
+      "added": "2026-08-09"
+    },
+    {
+      "name": "Suquet de llamàntol",
+      "source": "Gemini",
+      "ingredients": [
+        "5 llamàntols de 1/2 kilo",
+        "1 kilo i mig de patates",
+        "1 cabeça i mitja d'all",
+        "2 llesquetes de pa",
+        "75 grms. ametlles",
+        "75 grms. avellanes",
+        "3 nyores",
+        "julivert",
+        "300 mili-litres de xerès sec",
+        "Aigua mineral",
+        "all i julivert picat",
+        "oli d'oliva, sal i pebre"
+      ],
+      "instructions": "1. Sofregir els alls, el pa, el julivert i la polpa de les nyores amb un raig d'oli. Retirar. 2. Triturar aquests ingredients amb les ametlles, les avellanes, el xerès sec i una mica d'aigua. 3. Preparar el brou barrejant la picada triturada amb aigua mineral, sal i pebre a la cassola i fer arrencar el bull. 4. Pelar i esqueixar les patates. Partir els llamàntols. 5. Marcar els llamàntols amb oli a la cassola gran i retirar. Sofregir all i julivert picat. 6. Afegir les patates i cobrir amb el brou. Coure 15 minuts. 7. Incorporar els llamàntols, coure 3 minuts més, rectificar de sal i deixar reposar 3 minuts abans de servir.",
+      "tags": [
+        "Català",
+        "Principal",
+        "Peix"
+      ],
+      "id": "suquet-de-llamantol",
       "added": "2026-08-09"
     },
     {
