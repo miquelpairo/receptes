@@ -1,5 +1,5 @@
 {
-  "total": 49,
+  "total": 52,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -440,6 +440,30 @@
       "added": "2026-08-08"
     },
     {
+      "name": "Fideus a la cassola",
+      "source": "Gemini",
+      "ingredients": [
+        "400 gr de fideus",
+        "300 gr de salsitxes",
+        "300 gr de costella de porc",
+        "1 ceba gran, 2 petites",
+        "3 tomàquets",
+        "6 grans d'all",
+        "ametlles torrades",
+        "julivert",
+        "1l d'aigua",
+        "Oli, sal i pebre"
+      ],
+      "instructions": "Piquem la ceba i 3 grans d'all (en reservem 3 per la picada) i ratllem el tomàquet. Tallem les salsitxes i les costelles a trossos.\nSalpebrem la carn, posem un raig d'oli a la cassola i la fregim fins que estigui enrossida. Hi afegim la ceba i l'all, deixem que es faci uns 5 minuts i hi posem el tomàquet. Quan estigui sofregit, hi tirem l'aigua.\nQuan l'aigua bulli, hi posem els fideus. A mitja cocció (als 5 minuts), hi afegim la picada feta amb 3 grans d'all, les ametlles i el julivert, i remenem. Deixem coure fins al final.",
+      "tags": [
+        "Català",
+        "Principal",
+        "Arròs"
+      ],
+      "id": "fideus-a-la-cassola",
+      "added": "2026-08-09"
+    },
+    {
       "name": "Fideus soba amb albergínia i mango",
       "source": "Gemini",
       "ingredients": [
@@ -491,6 +515,31 @@
       ],
       "id": "fricando",
       "added": "2026-08-08"
+    },
+    {
+      "name": "Lassanya",
+      "source": "Gemini",
+      "ingredients": [
+        "fulles de lassanya pre-cuinades (en el meu cas 8)",
+        "1 kg de carn picada de vedella",
+        "1 l de tomàquet trossejat",
+        "pernil dolç, 100 gr",
+        "3 boles de mozzarella fresca",
+        "200 gr de parmesà ratllat",
+        "1 ceba picada",
+        "1 ramat fulles alfàbrega",
+        "500 ml de llet",
+        "40 gr de farina",
+        "sal, sucre i una mica de mantega"
+      ],
+      "instructions": "Comencem fent la salsa de tomàquet. Posem un raig d'oli en una cassola, hi afegim el tomàquet trossejat, una mica de sal i un grapat de sucre i ho deixem fer a foc baix (tapat) uns 15 minutets, remenant de tant en tant.\nEn una altra cassola hi posem oli, la ceba picada, també amb una mica de sal i la sofregim fins que estigui tova. Llavors hi afegim la carn i la coem fins que estigui tota marró, li afegim la salsa de tomàquet, l'alfàbrega i deixem que es faci uns 10 minuts més. Després hi afegim la farina i la llet (poc a poc), i barregem bé, traient els grumolls. Quan estigui tot fet, reservem.\nFem la pasta de la lassanya, segons les instruccions del fabricant, i comencem a preparar-la en un recipient que pugui anar al forn. Preparem el forn a 180º.\nMuntatge:\n1. Capa de tomàquet i carn molt petita.\n2. Capa de lassanya.\n3. Talls de pernil dolç.\n4. Talls de mozzarella.\n5. Carn picada amb salsa.\n6. Una mica de parmesà.\nTornem a posar capa de lassanya i repetim fins acabar. Per sobre posem altra vegada tomàquet amb carn i parmesà ratllat. Posem una mica de mantega per sobre, ho posem al forn i ho deixem uns 15 o 20 minuts fins que el formatge estigui gratinat.",
+      "tags": [
+        "Italià",
+        "Principal",
+        "Pasta"
+      ],
+      "id": "lassanya",
+      "added": "2026-08-09"
     },
     {
       "id": "macarrons",
@@ -1105,6 +1154,26 @@
       ],
       "id": "tacos-de-peix",
       "added": "2026-08-08"
+    },
+    {
+      "name": "Tassen",
+      "source": "Gemini",
+      "ingredients": [
+        "dues llesques de pa de motlle",
+        "1 llesca de pernil dolç",
+        "1 llesca de formatge (per exemple un tranchete), jo vaig fer servir emmental",
+        "1 ou",
+        "Mantega",
+        "oli d'oliva"
+      ],
+      "instructions": "Comencem preparant l'ou fregit. posem oli en una paella i quan estigui calent i posem l'ou. Important que el rovell no quedi fet, si no, no podrem gaudir de l'autèntic tassen. Després preparem el pa, fent un forat a una de les llesques amb una tassa (d'aquí ve el nom!)\nFinalment posem el formatge i el pernil entre les llesques de pa, una mica de mantega per fora, calentem una paella al foc i quan estigui calenta fem l'entrepà., apretant una miqueta amb un estri de cuina. Quan estigui fet l'obrim, hi posem l'ou a dins amb el rovell al forat i ja tenim el nostre tassen.",
+      "tags": [
+        "Català",
+        "Principal",
+        "Àvia"
+      ],
+      "id": "tassen",
+      "added": "2026-08-09"
     },
     {
       "name": "Vedella al curri thai",
