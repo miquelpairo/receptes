@@ -1,5 +1,5 @@
 {
-  "total": 62,
+  "total": 63,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -935,6 +935,29 @@
         "Àvia"
       ],
       "added": "2026-08-08"
+    },
+    {
+      "name": "Pepinillos en vinagre",
+      "source": "Gemini",
+      "ingredients": [
+        "2-3 pepinos pequeños",
+        "250 ml de vinagre de vino",
+        "250 ml de agua",
+        "1 cucharada de semillas de mostaza",
+        "1 hoja de laurel",
+        "4 cucharadas de sal (más una cantidad extra para los pepinos)",
+        "1/2 cucharadita de cúrcuma",
+        "2 cucharadas de pimienta en grano (roja y negra)",
+        "Tomillo"
+      ],
+      "instructions": "Netejar els cogombres, tallar-los i deixar-los escórrer en un colador amb sal. Bullir el vinagre amb l'aigua, mostassa, cúrcuma, llorer, sal i pebre durant uns minuts. Col·locar els cogombres en pots esterilitzats, afegir el líquid i el timó, deixant espai fins a la tapa. Tancar i esterilitzar al bany maria per a la conservació.",
+      "tags": [
+        "Internacional",
+        "Entrant",
+        "Vegetarià"
+      ],
+      "id": "pepinillos-en-vinagre",
+      "added": "2026-08-09"
     },
     {
       "id": "peus-de-porc",
