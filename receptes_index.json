@@ -1,5 +1,5 @@
 {
-  "total": 57,
+  "total": 58,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -946,6 +946,32 @@
         "Carn"
       ],
       "added": "2026-08-08"
+    },
+    {
+      "name": "Quiche de porros i gorgonzola",
+      "source": "Gemini",
+      "ingredients": [
+        "270 gr de farina",
+        "1/2 culleradeta de sucre",
+        "1/2 culleradeta de sal",
+        "1/2 culleradeta de llevat químic (royal)",
+        "125 gr de mantega freda tallada a daus",
+        "4 cullerades soperes d'aigua freda",
+        "4 porros",
+        "Un grapat d'espinacs baby",
+        "150 gr de gorgonzola",
+        "3 ous L o 4 M",
+        "150 ml de nata per cuinar (18%) de matèria grassa",
+        "sal, pebre i oli"
+      ],
+      "instructions": "Pasta brisa: Barregem farina, sal, sucre, llevat i mantega fins a obtenir una textura de molles. Afegim l'aigua a poc a poc fins a obtenir una bola manejable. Reposem a la nevera 30 minuts.\nFarciment: Netegem i tallem els porros longitudinalment. Els coem en una paella amb oli i sal uns 10 minuts. Afegim els espinacs a l'últim minut. Batem els ous amb la nata i el gorgonzola, i hi afegim els porros i espinacs.\nMuntatge: Aplanem la pasta brisa i cobrim un motlle de 20 cm. Punxem amb una forquilla, cobrim amb paper de forn i pesos, i enfornem 15 minuts a 180º. Traiem els pesos, afegim la barreja de porros, ous i formatge, i enfornem 20 minuts més. Deixem reposar abans de servir.",
+      "tags": [
+        "Internacional",
+        "Principal",
+        "Vegetarià"
+      ],
+      "id": "quiche-de-porros-i-gorgonzola",
+      "added": "2026-08-09"
     },
     {
       "id": "ramen-caldos",
