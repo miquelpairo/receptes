@@ -1,5 +1,5 @@
 {
-  "total": 67,
+  "total": 69,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -830,6 +830,28 @@
       "added": "2026-08-08"
     },
     {
+      "name": "Pa de pessic",
+      "source": "Gemini",
+      "ingredients": [
+        "125 g de farina fluixa o de rebosteria",
+        "125 g de sucre",
+        "4 ous",
+        "1 pell de llimona ratllada",
+        "1 cullerada de llevat en pols",
+        "mantega",
+        "canyella (opcional)",
+        "sucre de llustre (opcional)"
+      ],
+      "instructions": "1. Preparem tots els ingredients.\n2. Dins el bol de l'amassadora, hi abocarem el sucre i els ous.\n3. Hi ratllarem la pell d'una llimona.\n4. Col·loquem el batedor i batem a velocitat baixa primer i després a màxima per muntar els ous i que agafin volum.\n5. Passem la farina per un sedàs i la barrejem amb el llevat químic.\n6. Desfem una mica de mantega per pintar el motlle, hi tirarem una mica de farina i retirarem la sobrera.\n7. Amb molta cura, afegirem la farina a poc a poc als ous muntats perquè no baixin massa.\n8. Escudellem la barreja dins el motlle.\n9. Escalfem el forn a 180°C i enfornem durant uns 30 minuts.\n10. Comprovem la cocció amb una punxa, deixem refredar una mica, desemmotllem amb compte i deixem refredar completament.\n11. Hi posem sucre llustre per sobre abans de servir.",
+      "tags": [
+        "Català",
+        "Postres",
+        "Àvia"
+      ],
+      "id": "pa-de-pessic",
+      "added": "2026-08-09"
+    },
+    {
       "id": "pad-kra-prao-adaptat",
       "name": "Pad Kra-Prao Adaptat",
       "source": "DOCX",
@@ -1401,6 +1423,32 @@
         "Àvia"
       ],
       "added": "2026-08-08"
+    },
+    {
+      "name": "Sípia amb patates",
+      "source": "Gemini",
+      "ingredients": [
+        "1 kg de sípia",
+        "1 kg de patates esbocinades",
+        "2 tomàquets madurs",
+        "1 ceba",
+        "3 grans d'all",
+        "1 got de vi blanc",
+        "1 fulla de llorer",
+        "julivert fresc",
+        "aigua",
+        "oli d'oliva",
+        "sal"
+      ],
+      "instructions": "1. Renteu i talleu la sípia a daus, reserveu la melsa. 2. Sofregiu all, llorer, ceba i julivert. 3. Afegiu opcionalment xocolata i pebre vermell, i la melsa. 4. Incorporeu la sípia, el vi i sal, guisat 20 minuts. 5. Afegiu les patates esbocinades i aigua fins a cobrir. 6. Coeu 30-35 minuts, reposeu 2 hores i serviu.",
+      "tags": [
+        "Català",
+        "Principal",
+        "Peix",
+        "Àvia"
+      ],
+      "id": "sipia-amb-patates",
+      "added": "2026-08-09"
     },
     {
       "id": "solomillo-de-cerdo-en-salsa-hoisin",
