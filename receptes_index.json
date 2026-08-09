@@ -1,5 +1,5 @@
 {
-  "total": 92,
+  "total": 93,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -1954,6 +1954,40 @@
         "Vegetarià"
       ],
       "id": "sopa-de-celeriac-i-poma",
+      "added": "2026-08-09"
+    },
+    {
+      "name": "Sopa Harira",
+      "source": "Gemini",
+      "ingredients": [
+        "500 gr de xai tallat a daus",
+        "2 patates mitjanes",
+        "2 carbassons",
+        "2 pastanagues",
+        "2 naps (o xirivia)",
+        "2 cebes",
+        "2 dents d'all",
+        "2 tomàquets",
+        "1 branca d'api",
+        "70 gr de concentrat de tomàquet",
+        "70 gr de cigrons (sense coure)",
+        "1 tassa de fideus",
+        "1 manat de cilantre fresc",
+        "1 branca de menta fresca",
+        "1 cullerada de ras-el-hanout",
+        "1 cullerada de comí mòlt",
+        "1 cullerada de gingebre mòlt",
+        "oli i sal",
+        "2 litres d'aigua",
+        "Llimones (per servir)"
+      ],
+      "instructions": "1. Remull: Posar els cigrons a remullar la nit anterior (mínim 12 hores). 2. Preparació: Pelar i tallar a trossos grans les patates, el carbassó, la pastanaga i el nap/xirivia. Tallar el tomàquet, picar l'api, la ceba, l'all, el cilantre i la menta. 3. Cocció: En una olla amb oli d'oliva, daurar el xai uns 5 minuts. Afegir les verdures, les herbes, les espècies, els cigrons, la sal i l'aigua. Portar a ebullició i coure a foc baix 50 minuts. 4. Fideus: Afegir els fideus i coure segons el temps del paquet (uns 6 minuts). Apagar i servir amb llimona.",
+      "tags": [
+        "Internacional",
+        "Principal",
+        "Carn"
+      ],
+      "id": "sopa-harira",
       "added": "2026-08-09"
     },
     {
