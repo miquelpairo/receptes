@@ -1,5 +1,5 @@
 {
-  "total": 79,
+  "total": 86,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -922,6 +922,29 @@
       "added": "2026-08-08"
     },
     {
+      "name": "Mc Pairó",
+      "source": "Gemini",
+      "ingredients": [
+        "4 hamburgueses",
+        "4 panets",
+        "1 tomàquet",
+        "4-8 fulles d'enciam",
+        "4 cogombrets en vinagre",
+        "4 ous (opcional)",
+        "ceba caramel·litzada",
+        "4 trossos de bacon",
+        "4 làmines de formatge"
+      ],
+      "instructions": "1. Ceba: Caramel·litzar la ceba a foc molt baix amb una mica d'oli fins que estigui marronosa. 2. Ingredients: Fregir el bacon fins que estigui cruixent. Tallar els cogombrets, l'enciam i el tomàquet. Fregir els ous (opcional). 3. Hamburguesa: Coure l'hamburguesa a la planxa calenta 3 minuts per banda. En girar-la, posar el formatge a sobre perquè es desfaci. 4. Muntatge: Muntar l'hamburguesa amb els ingredients al gust (enciam, cogombrets, tomàquet, hamburguesa amb formatge, bacon i ou).",
+      "tags": [
+        "Internacional",
+        "Principal",
+        "Carn"
+      ],
+      "id": "mc-pairo",
+      "added": "2026-08-09"
+    },
+    {
       "id": "mongetes-amb-almejas",
       "name": "Mongetes amb \"almejas\"",
       "source": "DOCX (recuperada)",
@@ -1056,6 +1079,45 @@
       "added": "2026-08-08"
     },
     {
+      "name": "Pairomesco",
+      "source": "Gemini",
+      "ingredients": [
+        "60 ametlles torrades pelades",
+        "10 avellanes torrades pelades",
+        "1 tomàquet",
+        "1 cabeça d'all",
+        "1 nyora",
+        "vinagre de xerès",
+        "oli",
+        "1 culleradeta de sal",
+        "tabasco, chili (opcional)"
+      ],
+      "instructions": "1. Preparació nyora: Remullar les nyores prèviament (opcional: escalfar-les uns segons al microones abans). 2. Escalivar: Coure l'all i el tomàquet al forn a 200º durant 25-30 minuts. Deixar refredar i pelar. Treure la carn de la nyora. 3. Triturar: Posar en el got de la batedora els fruits secs, l'all, el tomàquet, la nyora, el chili/tabasco, el vinagre de xerès i la sal. Cobrir amb oli (almenys un dit per sobre dels ingredients) i triturar fins que quedi lligat.",
+      "tags": [
+        "Català",
+        "Salsa"
+      ],
+      "id": "pairomesco",
+      "added": "2026-08-09"
+    },
+    {
+      "name": "Panellets de coco",
+      "source": "Gemini",
+      "ingredients": [
+        "250 gr de coco",
+        "200 gr de sucre",
+        "2 ous i un rovell d'ou"
+      ],
+      "instructions": "1. Preparació de la massa: Separar les clares dels rovells. Batre les clares lleugerament, afegir un rovell i batre fort. Afegir el sucre i batre fins que quedi espumós. Incorporar el coco i amassar amb les mans fortament durant uns 5 minuts fins que la massa sigui consistent. 2. Modelat i pintat: Donar forma de bolet als panellets i col·locar-los en una safata de forn. Pintar-los amb un rovell d'ou batut per a què agafin color. 3. Cocció: Coure al forn preescalfat a 200º durant 10 minuts.",
+      "tags": [
+        "Català",
+        "Postres",
+        "Àvia"
+      ],
+      "id": "panellets-de-coco",
+      "added": "2026-08-09"
+    },
+    {
       "id": "pasta-d-anxoves-magda",
       "name": "Pasta d'anxoves Magda",
       "source": "DOCX (recuperada)",
@@ -1093,6 +1155,30 @@
         "Erola"
       ],
       "id": "pastis-de-3-xocolates",
+      "added": "2026-08-09"
+    },
+    {
+      "name": "Pastís de fruits vermells",
+      "source": "Gemini",
+      "ingredients": [
+        "150 gr de farina",
+        "110 gr de mantega",
+        "1 pessic de sal",
+        "1 cullerada de sucre (per fer la massa)",
+        "3 cullerades d'aigua",
+        "1 ou",
+        "150 gr de fruits vermells",
+        "1 culleradeta de gingebre en pols",
+        "1 llimona (pell i suc de mitja)",
+        "1 cullerada de maizena",
+        "3 cullerades de sucre"
+      ],
+      "instructions": "1. Pasta brisa: Barrejar farina, sal i 1 cullerada de sucre. Afegir mantega freda a daus i barrejar amb les mans fins a obtenir molles. Afegir aigua gradualment fins que la massa lligui. Fer una bola, embolicar amb paper film i refrigerar 1 hora. 2. Farcit: Barrejar els fruits vermells amb la pell de llimona, el suc de llimona, el gingebre i la maizena. Deixar macerar. 3. Muntatge: Escalfar el forn a 190º. Estirar la massa en forma rodona. Posar el farcit al centre i doblegar les vores cap al centre per formar un saquet. 4. Coure: Pintar la massa amb ou batut. Coure al forn uns 45 minuts fins que estigui daurat.",
+      "tags": [
+        "Internacional",
+        "Postres"
+      ],
+      "id": "pastis-de-fruits-vermells",
       "added": "2026-08-09"
     },
     {
@@ -1402,6 +1488,31 @@
       "added": "2026-08-08"
     },
     {
+      "name": "Risotto de gorgonzola i espàrrecs",
+      "source": "Gemini",
+      "ingredients": [
+        "500 g d'arròs de risotto",
+        "100 g de gorgonzola",
+        "20 g de mantega",
+        "2 o 3 manats d'espàrrecs verds",
+        "1 gra d'all",
+        "2 cebes tendres",
+        "un raig d'oli d'oliva",
+        "1 L de caldo de pollastre",
+        "sal",
+        "pebre"
+      ],
+      "instructions": "1. Preparar els espàrrecs: tallar la part fibrosa, fregir 3 minuts i reservar. 2. Sofregir: fregir la ceba i l'all picats, afegir l'arròs i coure un minut. 3. Coure: afegir caldo calent progressivament, remenant durant 15-18 minuts. 4. Finalitzar: 5 minuts abans del final, afegir els espàrrecs. Un cop cuit, apartar del foc i barrejar amb mantega i gorgonzola. Rectificar de sal i pebre.",
+      "tags": [
+        "Italià",
+        "Principal",
+        "Arròs",
+        "Vegetarià"
+      ],
+      "id": "risotto-de-gorgonzola-i-esparrecs",
+      "added": "2026-08-09"
+    },
+    {
       "name": "Rissotto d'ordi amb carbassa i sàlvia",
       "source": "Gemini",
       "ingredients": [
@@ -1424,6 +1535,28 @@
       ],
       "id": "rissotto-d-ordi-amb-carbassa-i-salvia",
       "added": "2026-08-08"
+    },
+    {
+      "name": "Roast beef",
+      "source": "Gemini",
+      "ingredients": [
+        "1-1.5 kg de carn de bou",
+        "2 grans d'all",
+        "sal",
+        "pebre",
+        "oli",
+        "1 branca de romaní",
+        "1 fulla de llorer",
+        "1 branca de farigola"
+      ],
+      "instructions": "1. Preparació: Preescalfar el forn a 230º. Salpebrar la carn. 2. Sofregit: Posar oli en una cassola, afegir la carn, el romaní, el llorer, la farigola i els alls xafats. 3. Cocció: Coure al forn amb la cassola tapada (aprox. 20 minuts per cada 500g o fins a arribar a 50º al centre). 4. Servei: Tallar en làmines i servir amb el suc de la cassola.",
+      "tags": [
+        "Internacional",
+        "Principal",
+        "Carn"
+      ],
+      "id": "roast-beef",
+      "added": "2026-08-09"
     },
     {
       "id": "rostit",
@@ -1686,6 +1819,28 @@
         "Carn"
       ],
       "added": "2026-08-08"
+    },
+    {
+      "name": "Sopa de celeriac i poma",
+      "source": "Gemini",
+      "ingredients": [
+        "1 celeriac (aprox. 1.2 kg)",
+        "4 pomes",
+        "1 ceba gran",
+        "1 branca d'api",
+        "100 gr de crema de llet (o iogur, o creme fraiche)",
+        "Farigola (fresca o seca)",
+        "1.5 l d'aigua o brou (verdures o pollastre)",
+        "Oli"
+      ],
+      "instructions": "1. Preparació: Tallar el celeriac i la poma a trossos. Tallar la ceba i l'api. 2. Sofregit: En una cassola gran amb oli, sofregir la ceba i l'api fins que estiguin tous. Afegir el celeriac, la poma i la farigola, i coure 5 minuts més. 3. Cocció: Afegir l'aigua o brou i coure uns 30 minuts fins que el celeriac estigui tou. 4. Acabat: Afegir la crema de llet, retirar del foc i triturar amb la batedora fins que quedi fi.",
+      "tags": [
+        "Internacional",
+        "Entrant",
+        "Vegetarià"
+      ],
+      "id": "sopa-de-celeriac-i-poma",
+      "added": "2026-08-09"
     },
     {
       "name": "Suquet de rap",
