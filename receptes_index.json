@@ -1,5 +1,5 @@
 {
-  "total": 58,
+  "total": 62,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -235,6 +235,36 @@
       ],
       "id": "calamars-a-l-estil-asiatic",
       "added": "2026-08-08"
+    },
+    {
+      "name": "Calamars farcits",
+      "source": "Gemini",
+      "ingredients": [
+        "8 calamars mitjans",
+        "500 g de carn de porc picada (es recomana barreja de porc i vedella)",
+        "3 cebes trinxades",
+        "3 tomàquets ratllats",
+        "1 ou dur",
+        "Un raig de vi blanc",
+        "Farina",
+        "Oli d'oliva",
+        "Aigua o brou de peix",
+        "Pebre negre",
+        "Sal",
+        "2 grans d'all (per a la picada)",
+        "Julivert fresc (per a la picada)",
+        "Un grapat d'ametlles torrades (per a la picada)"
+      ],
+      "instructions": "Netejar els calamars i tallar les potes i aletes ben petites. Sofregir ceba, afegir la carn picada, les potes i aletes trossejades, l'ou dur trinxat, sal i pebre. Farcir els calamars, segellar amb un escuradents, enfarinar i fregir. En una cassola amb l'oli de fregir, fer un sofregit amb la ceba restant i el tomàquet. Afegir el vi, deixar evaporar, posar els calamars i el brou de peix calent. Coure 30-35 minuts. Afegir una picada d'all, ametlles, julivert i una mica del suc dels calamars 5 minuts abans d'acabar la cocció. Deixar reposar abans de servir.",
+      "tags": [
+        "Català",
+        "Principal",
+        "Peix",
+        "Carn",
+        "Àvia"
+      ],
+      "id": "calamars-farcits",
+      "added": "2026-08-09"
     },
     {
       "id": "callos",
@@ -1186,6 +1216,47 @@
       "added": "2026-08-08"
     },
     {
+      "name": "Salsa tonkatsu",
+      "source": "Gemini",
+      "ingredients": [
+        "25 g de salsa Worcestershire",
+        "30 g de salsa de ostras",
+        "30 g de kétchup",
+        "5 g de azúcar"
+      ],
+      "instructions": "En un bol, posar tots els ingredients (salsa Worcestershire, salsa d'ostres, kétchup i sucre). Barrejar bé amb unes varetes fins que s'integrin perfectament i quedi una salsa llisa, homogènia i brillant.",
+      "tags": [
+        "Asiàtic",
+        "Salsa",
+        "Japonès"
+      ],
+      "id": "salsa-tonkatsu",
+      "added": "2026-08-09"
+    },
+    {
+      "name": "Sardines escabetxades",
+      "source": "Gemini",
+      "ingredients": [
+        "1kg de sardines",
+        "4 o 5 grans d'all",
+        "2 o 3 fulles de llorer",
+        "1 got de vinagre",
+        "1/2 got d'aigua",
+        "1 cullerada sopera de pebre vermell dolç",
+        "sal",
+        "oli",
+        "farina"
+      ],
+      "instructions": "Netejar les sardines, treure el cap, vísceres i escates. Salar i enfarinar. Fregir-les i col·locar-les en una cassola o recipient. En el mateix oli, fregir els alls a trossos i el llorer. Afegir el pebre vermell, coure breument, i abocar l'aigua i el vinagre. Deixar bullir 3-4 minuts. Escampar la salsa sobre les sardines i deixar refredar. Guardar a la nevera 24 hores abans de consumir.",
+      "tags": [
+        "Català",
+        "Principal",
+        "Peix"
+      ],
+      "id": "sardines-escabetxades",
+      "added": "2026-08-09"
+    },
+    {
       "name": "Scones",
       "source": "Gemini",
       "ingredients": [
@@ -1300,6 +1371,33 @@
         "Erola"
       ],
       "id": "tassen",
+      "added": "2026-08-09"
+    },
+    {
+      "name": "Tonkatsu",
+      "source": "Gemini",
+      "ingredients": [
+        "2 chuletas de cerdo",
+        "1 huevo",
+        "50 g de Panko",
+        "2 cucharadas de harina de trigo",
+        "Aceite vegetal",
+        "Sal y pimienta negra",
+        "100 g de col",
+        "Arroz japonés (opcional)",
+        "2.5 cucharadas de salsa Worcestershire",
+        "2 cucharadas de ketchup",
+        "2 cucharadas de salsa de ostras",
+        "1 cucharadita de azúcar blanco"
+      ],
+      "instructions": "Tallar la col fina i reservar en aigua freda. Preparar les chuletes fent talls a la part del greix, colpejant-les per estovar, i salpebrar. Empanar passant per farina, ou i Panko. Fregir en abundant oli a foc mitjà uns 2-2.5 minuts per banda. Preparar la salsa barrejant la Worcestershire, el ketchup, la salsa d'ostres i el sucre. Servir la carn tallada a trossos acompanyada de la col i la salsa.",
+      "tags": [
+        "Asiàtic",
+        "Principal",
+        "Japonès",
+        "Carn"
+      ],
+      "id": "tonkatsu",
       "added": "2026-08-09"
     },
     {
