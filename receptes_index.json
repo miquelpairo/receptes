@@ -1,5 +1,5 @@
 {
-  "total": 69,
+  "total": 70,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -468,6 +468,47 @@
       ],
       "id": "empanada-gallega",
       "added": "2026-08-08"
+    },
+    {
+      "name": "Escudella i carn d'olla de Nadal",
+      "source": "Gemini",
+      "ingredients": [
+        "1 tros de costella de vedella",
+        "1 punta de costella de xai",
+        "2 botifarres negres",
+        "2 botifarres blanques",
+        "2 talls de cansalada viada",
+        "1 careta de porc",
+        "1 tros de cua o d'os d'espinada",
+        "1 tros d'os de pernil",
+        "1 quarter de gallina o de pollastre",
+        "4 patates",
+        "2 pastanagues",
+        "1 branca d'api",
+        "1 xirivia / nap",
+        "1 porro",
+        "1 grapat de cigrons remullats",
+        "1/2 col",
+        "300 g de galets de Nadal",
+        "Sal",
+        "Aigua",
+        "Farina",
+        "150 g de carn de porc picada",
+        "150 g de carn de vedella picada",
+        "1 gra d'all trinxat",
+        "Julivert picat",
+        "Pa",
+        "Llet"
+      ],
+      "instructions": "Bullir les carns i ossos amb aigua i verdures durant hores per fer el brou. Preparar la pilota barrejant les carns picades, all, julivert, pa amb llet i ou; formar boles i enfarinar. Afegir al caldo les patates, la col, les botifarres, els cigrons i les pilotes durant l'última mitja hora. Omplir els galets i coure-los a la sopa. Colar el brou, coure-hi els galets i servir la sopa acompanyada de la carn d'olla.",
+      "tags": [
+        "Català",
+        "Principal",
+        "Carn",
+        "Àvia"
+      ],
+      "id": "escudella-i-carn-d-olla-de-nadal",
+      "added": "2026-08-09"
     },
     {
       "name": "Espaguetis amb escamarlans",
