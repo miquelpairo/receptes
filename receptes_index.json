@@ -1,5 +1,5 @@
 {
-  "total": 48,
+  "total": 49,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -536,6 +536,30 @@
         "Carn"
       ],
       "added": "2026-08-08"
+    },
+    {
+      "name": "Mandonguilles de salmó amb salsa d'anet",
+      "source": "Gemini",
+      "ingredients": [
+        "500 gr de salmó fresc",
+        "1 cullerada de mostassa",
+        "2 cullerades de farina de galeta (aproximadament)",
+        "1 ou",
+        "1 cullerada d'Anet picat (eneldo, dill en anglès)",
+        "2 cullerades de maionesa",
+        "1 cullerada d'aigua",
+        "1/2 cullerada de suc de llimona",
+        "2 cullerades d'Anet picat (per a la salsa)",
+        "farina, sal i oli"
+      ],
+      "instructions": "Comencem picant el salmó amb un ganivet. Si no us importa que quedi més pastós, o us sentiu una mica ganduls (com jo si no hagués volgut fer fotos), podeu fer servir la picadora.\nUn cop picat hi afegim un ou, sal, 1 cullerada de mostassa i 1 d'anet i 2 cullerades de farina de galeta. Aquí la farina de galeta té una textura una mica diferent, per tant he posat fins a 3 cullerades però comenceu amb una i afegiu fins que es puguin formar mandonguilles amb la mà. Formem les pilotes (si no en comences a fer d'enormes en surten unes 16).\nAra podem preparar la salsa. Barregem la maionesa amb l'aigua, el suc de llimona i l'anet picat, i ja la tenim!\nPosem una paella al foc amb oli, enfarinem les mandonguilles i quan l'oli estigui calent anem fregint les mandonguilles, fins que quedin daurades per als 2 cantons.\nJo les vaig acompanyar amb unes espinaques i la salsa i em van agradar força!",
+      "tags": [
+        "Internacional",
+        "Principal",
+        "Peix"
+      ],
+      "id": "mandonguilles-de-salmo-amb-salsa-d-anet",
+      "added": "2026-08-09"
     },
     {
       "id": "mandonguilles-xai",
