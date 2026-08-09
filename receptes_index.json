@@ -1,5 +1,5 @@
 {
-  "total": 55,
+  "total": 57,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -133,6 +133,33 @@
         "Àvia"
       ],
       "added": "2026-08-08"
+    },
+    {
+      "name": "Arròs de marisc",
+      "source": "Gemini",
+      "ingredients": [
+        "10 gambes",
+        "10 escamarlans",
+        "1 sípia",
+        "4 filets de rap",
+        "200 gr de xirla",
+        "3 carxofes",
+        "300 gr de pèsols",
+        "100 gr de mongeta tendra",
+        "6 alls tendres",
+        "1,5 l de caldo de peix",
+        "Una mica de safrà",
+        "600 gr d'arròs bomba"
+      ],
+      "instructions": "Es fa el caldo de peix amb cap de rap, espina de gall, un cap de lluç i una ceba.\nEs fregeixen els escamarlans i les gambes i es reserven.\nA la paella es dora la sípia i s'afegeixen el rap i la verdura amb sal al gust. Quan està sofregit, es posa el safrà i la melsa de la sípia, es deixa 5 minuts a foc baix. S'afegeix l'arròs i es remena un parell de minuts.\nS'afegeix el caldo calent i es deixa 8 minuts a foc alt sense remenar. Es col·loquen a sobre les gambes, els escamarlans i les xirles (obertes prèviament a part). Es deixa 10 minuts a foc baix sense remenar.\nS'apaga el foc, es tapa amb paper vegetal i es deixa reposar 5 minuts.",
+      "tags": [
+        "Català",
+        "Principal",
+        "Arròs",
+        "Peix"
+      ],
+      "id": "arros-de-marisc",
+      "added": "2026-08-09"
     },
     {
       "id": "bacalla-de-quaresma",
@@ -1123,6 +1150,25 @@
         "Salsa"
       ],
       "added": "2026-08-08"
+    },
+    {
+      "name": "Scones",
+      "source": "Gemini",
+      "ingredients": [
+        "225 gr de self-rising flour (farina amb el llevat incorporat)",
+        "125 ml de buttermilk",
+        "4 cullerades de llet",
+        "50 gr de mantega freda tallada a daus",
+        "un polsim de sal",
+        "25 gr de sucre"
+      ],
+      "instructions": "Calentem el forn a 170º. Barregem la farina i la mantega en un bol amb les mans desfent la mantega fins que quedi com a molles. Afegim el sucre i barregem.\nEn un vas barregem el buttermilk i la llet. Fem un forat al centre de la farina, hi tirem la barreja líquida i barregem fins que quedi una massa manejable.\nAplanem la massa amb uns 2 cm de gruix, tallem amb talladors rodons (o un got). Posem els scones sobre una safata enfarinada i enfornem uns 12 minuts o fins que estiguin daurats.\nEs serveixen amb clotted cream (o mantega) i melmelada.",
+      "tags": [
+        "Internacional",
+        "Postres"
+      ],
+      "id": "scones",
+      "added": "2026-08-09"
     },
     {
       "id": "sipia-amb-mandonguilles",
