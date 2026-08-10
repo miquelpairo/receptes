@@ -1,5 +1,5 @@
 {
-  "total": 93,
+  "total": 94,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -562,6 +562,33 @@
         "Àvia"
       ],
       "added": "2026-08-08"
+    },
+    {
+      "id": "curry-japones-amb-pollastre",
+      "name": "Curry japonès amb pollastre",
+      "source": "Web",
+      "ingredients": [
+        "400 g de contracuixa de pollastre",
+        "½ paquet de curry japonès",
+        "2 fulles de llorer (opcional)",
+        "1 ceba mitjana",
+        "2 patates mitjanes (uns 400 g)",
+        "2 pastanagues (uns 250 g)",
+        "2 dents d'all",
+        "4 rodanxes de gingebre",
+        "½ culleradeta de sal",
+        "½ culleradeta de pebre negre",
+        "Aigua (fins a cobrir el pollastre)",
+        "Oli vegetal"
+      ],
+      "instructions": "Tallar el pollastre en dalls bastant grans. Pelar les patates, tallar-les en trossos grans i posar-les en aigua amb sal perquè no s'oxidin. Tallar la ceba en juliana i la pastanaga en trossos d'una mossegada. Picar els alls i el gingebre.\nEn una olla, posar un poc d'oli vegetal i saltejar l'all i el gingebre. Quan comenci a treure aroma, afegir la ceba i la pastanaga. Saltejar fins que la ceba s'estovi.\nAfegir el pollastre, un mica de sal, pebre negre i saltejar fins que el pollastre estigui gairebé cuit.\nAfegir l'aigua fins a cobrir el pollastre, incorporar les fulles de llorer i la patata, i deixar coure durant 20 minuts a foc mitjà.\nPartir la pastilla de curry per ajudar a dissoldre-la fàcilment i afegir-la a l'olla. Remenar bé i deixar coure a foc lent durant 20 minuts més.\nServir posant un poc d'arròs japonès acabat de coure en un plat amb el curry al costat i, opcionalment, decorar amb un poc d'alga Nori en pols pel damunt.",
+      "tags": [
+        "Asiàtic",
+        "Japonès",
+        "Principal",
+        "Carn"
+      ],
+      "added": "2026-08-10"
     },
     {
       "name": "Cus-cus amb bròquil i gambes",
