@@ -1,5 +1,5 @@
 {
-  "total": 95,
+  "total": 96,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -255,6 +255,26 @@
         "Àvia"
       ],
       "added": "2026-08-08"
+    },
+    {
+      "id": "batut-de-fruits-vermells",
+      "name": "Batut de fruits vermells",
+      "source": "Web",
+      "ingredients": [
+        "125 g fruits vermells congelats",
+        "200 g llet (vegetal d'ametlla o civada o vaca)",
+        "2 cullerades de llavors de cànyem",
+        "1 cullerada de chia (si pot ser, remullada amb antelació amb aigua)",
+        "per endolcir: 2 dàtils o 1/2 plàtan"
+      ],
+      "instructions": "Fica tots els ingredients en la batedora / thermomix i bat aproximadament durant un minut o minut i mig fins que quede una textura cremosa.\nServeix acabat de fer.",
+      "tags": [
+        "Internacional",
+        "Postres",
+        "Vegetarià",
+        "Miquelet"
+      ],
+      "added": "2026-08-10"
     },
     {
       "name": "Bonito en escabeche",
