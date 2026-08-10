@@ -1,5 +1,5 @@
 {
-  "total": 94,
+  "total": 95,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -856,6 +856,25 @@
       ],
       "id": "fringe-pasta-filo-amb-espinacs-i-ricotta",
       "added": "2026-08-09"
+    },
+    {
+      "id": "frite-caldereta-de-xai",
+      "name": "Frite - Caldereta de xai",
+      "source": "Web",
+      "ingredients": [
+        "Cuixa i coll de xai",
+        "Pebrot vermell",
+        "Vi blanc",
+        "All",
+        "Pebre vermell"
+      ],
+      "instructions": "Cobreix el fons d'una cassola amb oli.\nQuan s'hagi escalfat, afegeix-hi el pebrot vermell tallat i, quan estigui a mig fregir, posa-hi el xai per sofregir-lo.\nUn cop estigui segellat, afegeix-hi sal, pebre vermell i remena-ho tot.\nAfegeix-hi un vas gran de vi blanc i l'aigua necessària fins que tota la carn quedi coberta.\nQuan comenci a bullir, posa-hi dos o tres dalls aixafats i deixa-ho bullir.",
+      "tags": [
+        "Internacional",
+        "Principal",
+        "Carn"
+      ],
+      "added": "2026-08-10"
     },
     {
       "name": "Hamburgueses d'ànec",
