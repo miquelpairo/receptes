@@ -2277,5 +2277,62 @@
       "added": "2026-08-08"
     }
   ],
-  "generated": false
+  "generated": false,
+  "taxonomy": {
+    "Cuina": {
+      "select": "one",
+      "required": true,
+      "tags": [
+        "Català",
+        "Asiàtic",
+        "Italià",
+        "Internacional"
+      ]
+    },
+    "Estil asiàtic": {
+      "select": "many",
+      "required": false,
+      "tags": [
+        "Japonès",
+        "Xinès",
+        "Thai"
+      ]
+    },
+    "Tipus de plat": {
+      "select": "one",
+      "required": true,
+      "tags": [
+        "Principal",
+        "Entrant",
+        "Postres",
+        "Salsa"
+      ]
+    },
+    "Ingredient": {
+      "select": "many",
+      "required": false,
+      "tags": [
+        "Carn",
+        "Peix",
+        "Vegetarià"
+      ]
+    },
+    "Base": {
+      "select": "many",
+      "required": false,
+      "tags": [
+        "Arròs",
+        "Pasta"
+      ]
+    },
+    "Família": {
+      "select": "many",
+      "required": false,
+      "tags": [
+        "Àvia",
+        "Erola",
+        "Miki"
+      ]
+    }
+  }
 }
