@@ -286,6 +286,11 @@
             margin: 0 6px 6px 0;
         }
         .edit-chip.sel, .form-chip.sel { background: var(--accent-color); color: var(--bg-color); border-color: var(--accent-color); }
+        .addtag-btn {
+            background: transparent; border: 1px dashed var(--accent-color);
+            color: var(--accent-color); padding: 4px 10px; border-radius: 3px;
+            font-size: 0.82em; font-family: inherit; cursor: pointer; margin: 0 6px 6px 0;
+        }
         .edit-actions { margin-top: 8px; display: flex; gap: 10px; }
         .btn-save {
             background: var(--accent-color); color: #fff; border: none;
@@ -519,7 +524,9 @@
     <script>
         const ADMIN_ENDPOINT = 'https://script.google.com/macros/s/AKfycbyCuw_H6nVkSquHwURfn8feYnvfm6R02TN4pnvndS6FXtEFUVsvxjkzc8pUgQiQbwx4kA/exec';
 
-const FALLBACK_TAXONOMY = {
+        // Taxonomia de reserva: només si el JSON encara no porta "taxonomy".
+        // La font de veritat és la secció "taxonomy" de receptes_index.json.
+        const FALLBACK_TAXONOMY = {
           "Cuina":         {"select":"one",  "required":true,  "tags":["Català","Asiàtic","Italià","Internacional"]},
           "Estil asiàtic": {"select":"many", "required":false, "tags":["Japonès","Xinès","Thai"]},
           "Tipus de plat": {"select":"one",  "required":true,  "tags":["Principal","Entrant","Postres","Salsa"]},
@@ -528,19 +535,20 @@ const FALLBACK_TAXONOMY = {
           "Família":       {"select":"many", "required":false, "tags":["Àvia","Erola"]}
         };
 
+        // Es reconstrueixen des de la taxonomia en carregar el JSON (applyTaxonomy).
         let TAG_GROUPS = [];
         let TAG_ORDER = [];
-        let SINGLE_AXES = [];   // eixos select:"one", per validar 1 cuina / 1 tipus
+        let SINGLE_AXES = [];   // eixos select:"one" (validació 1 cuina / 1 tipus)
 
         function applyTaxonomy(data) {
-          const tax = (data && data.taxonomy && Object.keys(data.taxonomy).length)
-            ? data.taxonomy : FALLBACK_TAXONOMY;
-          TAG_GROUPS = Object.keys(tax).map(name => ({ title: name, tags: tax[name].tags || [] }));
-          TAG_ORDER = [];
-          TAG_GROUPS.forEach(g => g.tags.forEach(t => TAG_ORDER.push(t)));
-          SINGLE_AXES = Object.keys(tax)
-            .filter(name => tax[name].select === 'one')
-            .map(name => ({ title: name, required: !!tax[name].required, tags: tax[name].tags || [] }));
+            const tax = (data && data.taxonomy && Object.keys(data.taxonomy).length)
+                ? data.taxonomy : FALLBACK_TAXONOMY;
+            TAG_GROUPS = Object.keys(tax).map(name => ({ title: name, tags: tax[name].tags || [] }));
+            TAG_ORDER = [];
+            TAG_GROUPS.forEach(g => g.tags.forEach(t => TAG_ORDER.push(t)));
+            SINGLE_AXES = Object.keys(tax)
+                .filter(name => tax[name].select === 'one')
+                .map(name => ({ title: name, required: !!tax[name].required, tags: tax[name].tags || [] }));
         }
 
         const orderTags = arr => [...arr].sort((a, b) => {
@@ -554,6 +562,8 @@ const FALLBACK_TAXONOMY = {
 
         // Estat admin
         let adminPassword = null;
+        let currentRole = null;        // 'admin' | 'family' | null
+        function isAdmin() { return currentRole === 'admin'; }
         let editingId = null;          // editor de tags inline
         let editDraft = new Set();
         // Estat formulari
@@ -619,6 +629,8 @@ const FALLBACK_TAXONOMY = {
                     if (save) { saveEdit(save.dataset.save); return; }
                     const cancel = e.target.closest('[data-cancel]');
                     if (cancel) { cancelEdit(); return; }
+                    const at = e.target.closest('[data-addtag-axis]');
+                    if (at) { promptAddTag(at.dataset.addtagAxis); return; }
                     const ec = e.target.closest('.edit-chip');
                     if (ec) { toggleEditChip(ec.dataset.tag); return; }
                     const tag = e.target.closest('.tag');
@@ -632,6 +644,8 @@ const FALLBACK_TAXONOMY = {
                 document.getElementById('fSave').addEventListener('click', submitForm);
                 document.getElementById('fCancel').addEventListener('click', closeForm);
                 document.getElementById('fTags').addEventListener('click', (e) => {
+                    const at = e.target.closest('[data-addtag-axis]');
+                    if (at) { promptAddTag(at.dataset.addtagAxis); return; }
                     const c = e.target.closest('.form-chip');
                     if (c) toggleFormChip(c.dataset.tag);
                 });
@@ -738,14 +752,14 @@ const FALLBACK_TAXONOMY = {
                     `<span class="tag${activeTags.has(t) ? ' active' : ''}" data-tag="${t}">${t}</span>`
                 ).join('');
 
-                const adminHtml = adminPassword ? `
+                const adminHtml = isAdmin() ? `
                     <div class="admin-bar">
                         <button class="admin-edit" data-editrec="${r.id}">Editar recepta</button>
                         <button class="admin-edit" data-edit="${r.id}">Editar tags</button>
                         <button class="admin-del" data-del="${r.id}">Esborrar</button>
                     </div>` : '';
 
-                const editorHtml = (adminPassword && editingId === r.id) ? renderEditor(r) : '';
+                const editorHtml = (isAdmin() && editingId === r.id) ? renderEditor(r) : '';
 
                 const ingHtml = r.ingredients.length > 0
                     ? `<div class="ingredients"><h3>Ingredients</h3><ul>${r.ingredients.map(i => `<li>${i}</li>`).join('')}</ul></div>`
@@ -771,7 +785,9 @@ const FALLBACK_TAXONOMY = {
                 const chips = g.tags.map(t =>
                     `<button class="edit-chip${editDraft.has(t) ? ' sel' : ''}" data-tag="${t}">${t}</button>`
                 ).join('');
-                return `<div class="edit-group"><span>${g.title}</span><div>${chips}</div></div>`;
+                const add = isAdmin()
+                    ? `<button type="button" class="addtag-btn" data-addtag-axis="${g.title}">+ etiqueta</button>` : '';
+                return `<div class="edit-group"><span>${g.title}</span><div>${chips}${add}</div></div>`;
             }).join('');
             return `<div class="tag-editor">
                 ${groups}
@@ -800,22 +816,26 @@ const FALLBACK_TAXONOMY = {
 
         // ---------------- Admin: mode ----------------
 
-        function toggleAdmin() {
+        async function toggleAdmin() {
             const btn = document.getElementById('adminToggle');
             const newBtn = document.getElementById('newRecipeBtn');
             const pBtn = document.getElementById('pasteBtn');
             if (adminPassword) {
                 adminPassword = null;
+                currentRole = null;
                 editingId = null;
                 btn.textContent = 'Admin';
                 btn.classList.remove('on');
                 newBtn.hidden = true;
                 pBtn.hidden = true;
             } else {
-                const p = window.prompt("Contrasenya d'administrador:");
+                const p = window.prompt('Contrasenya:');
                 if (!p) return;
+                const res = await callApi({ action: 'auth', password: p });
+                if (!res) return;                      // contrasenya incorrecta (ja avisat)
                 adminPassword = p;
-                btn.textContent = 'Admin ✓ (sortir)';
+                currentRole = res.role;
+                btn.textContent = (currentRole === 'admin' ? 'Admin' : 'Família') + ' ✓ (sortir)';
                 btn.classList.add('on');
                 newBtn.hidden = false;
                 pBtn.hidden = false;
@@ -893,13 +913,28 @@ const FALLBACK_TAXONOMY = {
             formMode = null; formId = null;
         }
 
+        // Afegir etiqueta nova a un eix (només admin). Reutilitza el mateix endpoint amb SHA al servidor.
+        async function promptAddTag(axis) {
+            const name = (prompt('Nova etiqueta per a l\'eix "' + axis + '":') || '').trim();
+            if (!name) return;
+            const res = await callApi({ action: 'addTag', axis, tag: name });
+            if (!res) return;
+            applyTaxonomy({ taxonomy: res.taxonomy });   // refresca TAG_GROUPS / SINGLE_AXES
+            if (document.getElementById('recipeModal').classList.contains('show')) renderFormTags();
+            applyFilters();                              // re-renderitza la llista (i l'editor per-recepta obert)
+            buildFilterBar();
+            toast('Etiqueta "' + res.tag + '" afegida a ' + res.axis + '.');
+        }
+
         function renderFormTags() {
             const cont = document.getElementById('fTags');
             cont.innerHTML = TAG_GROUPS.map(g => {
                 const chips = g.tags.map(t =>
                     `<button type="button" class="form-chip${formDraft.has(t) ? ' sel' : ''}" data-tag="${t}">${t}</button>`
                 ).join('');
-                return `<div class="edit-group"><span>${g.title}</span><div>${chips}</div></div>`;
+                const add = isAdmin()
+                    ? `<button type="button" class="addtag-btn" data-addtag-axis="${g.title}">+ etiqueta</button>` : '';
+                return `<div class="edit-group"><span>${g.title}</span><div>${chips}${add}</div></div>`;
             }).join('');
         }
 
@@ -987,19 +1022,20 @@ const FALLBACK_TAXONOMY = {
         // ---------------- Helpers admin ----------------
 
         function validTags(tags) {
-                    for (const ax of SINGLE_AXES) {
-                        const n = tags.filter(t => ax.tags.includes(t)).length;
-                        if (ax.required && n !== 1) { toast('Cal exactament 1 ' + ax.title.toLowerCase() + '.', false); return false; }
-                        if (!ax.required && n > 1)  { toast('Màxim 1 ' + ax.title.toLowerCase() + '.', false); return false; }
-                    }
-                    return true;
-                }
+            for (const ax of SINGLE_AXES) {
+                const n = tags.filter(t => ax.tags.includes(t)).length;
+                if (ax.required && n !== 1) { toast('Cal exactament 1 ' + ax.title.toLowerCase() + '.', false); return false; }
+                if (!ax.required && n > 1)  { toast('Màxim 1 ' + ax.title.toLowerCase() + '.', false); return false; }
+            }
+            return true;
+        }
+
         // Envia al servidor. Retorna l'objecte de resposta si ok, o null (i mostra error).
         async function callApi(payload) {
             try {
                 const res = await fetch(ADMIN_ENDPOINT, {
                     method: 'POST',
-                    body: JSON.stringify({ ...payload, password: adminPassword }),
+                    body: JSON.stringify({ ...payload, password: payload.password || adminPassword }),
                 });
                 const json = await res.json();
                 if (!json.ok) { toast(json.error || 'Error', false); return null; }
