@@ -519,20 +519,30 @@
     <script>
         const ADMIN_ENDPOINT = 'https://script.google.com/macros/s/AKfycbyCuw_H6nVkSquHwURfn8feYnvfm6R02TN4pnvndS6FXtEFUVsvxjkzc8pUgQiQbwx4kA/exec';
 
-        const CUINA = ['Asiàtic', 'Català', 'Italià', 'Internacional'];
-        const TIPUS = ['Principal', 'Entrant', 'Postres', 'Salsa'];
+const FALLBACK_TAXONOMY = {
+          "Cuina":         {"select":"one",  "required":true,  "tags":["Català","Asiàtic","Italià","Internacional"]},
+          "Estil asiàtic": {"select":"many", "required":false, "tags":["Japonès","Xinès","Thai"]},
+          "Tipus de plat": {"select":"one",  "required":true,  "tags":["Principal","Entrant","Postres","Salsa"]},
+          "Ingredient":    {"select":"many", "required":false, "tags":["Carn","Peix","Vegetarià"]},
+          "Base":          {"select":"many", "required":false, "tags":["Arròs","Pasta"]},
+          "Família":       {"select":"many", "required":false, "tags":["Àvia","Erola"]}
+        };
 
-        const TAG_GROUPS = [
-            { title: 'Cuina',          tags: ['Català', 'Asiàtic', 'Italià', 'Internacional'] },
-            { title: 'Estil asiàtic',  tags: ['Japonès', 'Xinès', 'Thai'] },
-            { title: 'Tipus de plat',  tags: ['Principal', 'Entrant', 'Postres', 'Salsa'] },
-            { title: 'Ingredient',     tags: ['Carn', 'Peix', 'Vegetarià'] },
-            { title: 'Base',           tags: ['Arròs', 'Pasta'] },
-            { title: 'Família',        tags: ['Àvia', 'Erola'] },
-        ];
+        let TAG_GROUPS = [];
+        let TAG_ORDER = [];
+        let SINGLE_AXES = [];   // eixos select:"one", per validar 1 cuina / 1 tipus
 
-        const TAG_ORDER = [];
-        TAG_GROUPS.forEach(g => g.tags.forEach(t => TAG_ORDER.push(t)));
+        function applyTaxonomy(data) {
+          const tax = (data && data.taxonomy && Object.keys(data.taxonomy).length)
+            ? data.taxonomy : FALLBACK_TAXONOMY;
+          TAG_GROUPS = Object.keys(tax).map(name => ({ title: name, tags: tax[name].tags || [] }));
+          TAG_ORDER = [];
+          TAG_GROUPS.forEach(g => g.tags.forEach(t => TAG_ORDER.push(t)));
+          SINGLE_AXES = Object.keys(tax)
+            .filter(name => tax[name].select === 'one')
+            .map(name => ({ title: name, required: !!tax[name].required, tags: tax[name].tags || [] }));
+        }
+
         const orderTags = arr => [...arr].sort((a, b) => {
             const ia = TAG_ORDER.indexOf(a), ib = TAG_ORDER.indexOf(b);
             return (ia === -1 ? 999 : ia) - (ib === -1 ? 999 : ib);
@@ -559,6 +569,7 @@
                 return response.json();
             })
             .then(data => {
+                applyTaxonomy(data);
                 allRecipes = Array.isArray(data) ? data : (data.recipes ?? []);
                 allRecipes.sort((a, b) => a.name.localeCompare(b.name, 'ca'));
 
@@ -976,13 +987,13 @@
         // ---------------- Helpers admin ----------------
 
         function validTags(tags) {
-            const nc = tags.filter(t => CUINA.includes(t)).length;
-            const nt = tags.filter(t => TIPUS.includes(t)).length;
-            if (nc !== 1) { toast('Cal exactament 1 cuina.', false); return false; }
-            if (nt !== 1) { toast('Cal exactament 1 tipus de plat.', false); return false; }
-            return true;
-        }
-
+                    for (const ax of SINGLE_AXES) {
+                        const n = tags.filter(t => ax.tags.includes(t)).length;
+                        if (ax.required && n !== 1) { toast('Cal exactament 1 ' + ax.title.toLowerCase() + '.', false); return false; }
+                        if (!ax.required && n > 1)  { toast('Màxim 1 ' + ax.title.toLowerCase() + '.', false); return false; }
+                    }
+                    return true;
+                }
         // Envia al servidor. Retorna l'objecte de resposta si ok, o null (i mostra error).
         async function callApi(payload) {
             try {
