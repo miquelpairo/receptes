@@ -1,5 +1,5 @@
 {
-  "total": 96,
+  "total": 97,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -591,6 +591,25 @@
         "Àvia"
       ],
       "added": "2026-08-08"
+    },
+    {
+      "id": "crema-de-xocolata-negra-70",
+      "name": "Crema de xocolata negra 70%",
+      "source": "Web",
+      "ingredients": [
+        "1 tauleta (170 g) de xocolata negra 70%",
+        "250 ml de nata líquida",
+        "250 ml de llet",
+        "25 g de sucre",
+        "40 g de maicena"
+      ],
+      "instructions": "Bullir la llet i, fora del foc, afegir la xocolata trocejada. Deixar-ho reposar uns minuts i barrejar-ho bé, fins que la xocolata s'hagi dissolt.\nDissoldre la farina de blat de moro en una mica de nata, afegir el sucre i la resta de la nata i abocar-ho a la xocolata.\nCoure-ho, a foc suau, durant uns minuts (2-3'), remenant contínuament, fins que comenci a espessir.\nAbocar la barreja en bols i deixar-ho reposar una hora a la nevera.",
+      "tags": [
+        "Internacional",
+        "Postres",
+        "Vegetarià"
+      ],
+      "added": "2026-08-10"
     },
     {
       "id": "curry-japones-amb-pollastre",
