@@ -455,6 +455,7 @@
                     <div id="filterGroups"></div>
                     <button class="admin-toggle" id="adminToggle">Admin</button>
                     <button class="admin-new" id="newRecipeBtn" hidden>+ Nova recepta</button>
+                    <button class="admin-new" id="pasteBtn" hidden>⧉ Enganxa recepta (IA)</button>
                 </div>
             </aside>
 
@@ -480,6 +481,24 @@
             <div class="modal-actions">
                 <button class="btn-save" id="fSave">Desar</button>
                 <button class="btn-cancel" id="fCancel">Cancel·lar</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal enganxar text -> IA -->
+    <div id="pasteModal" class="modal">
+        <div class="modal-box">
+            <h3>Enganxa una recepta</h3>
+            <p style="color:var(--text-muted);font-size:0.95em;margin-bottom:8px;">
+                Enganxa el text tal qual (pots incloure introduccions o història del blog).
+                La IA n'extraurà la recepta i podràs repassar-la abans de desar.
+            </p>
+            <label>Text de la recepta</label>
+            <textarea id="pasteText" rows="12" placeholder="Enganxa aquí tot el text de la recepta..."></textarea>
+            <div id="pasteStatus" style="margin-top:10px;color:var(--text-muted);font-size:0.9em;"></div>
+            <div class="modal-actions">
+                <button class="btn-save" id="pasteConvert">Convertir</button>
+                <button class="btn-cancel" id="pasteCancel">Cancel·lar</button>
             </div>
         </div>
     </div>
@@ -555,6 +574,12 @@
 
                 document.getElementById('adminToggle').addEventListener('click', toggleAdmin);
                 document.getElementById('newRecipeBtn').addEventListener('click', openCreateForm);
+                document.getElementById('pasteBtn').addEventListener('click', openPasteForm);
+                document.getElementById('pasteConvert').addEventListener('click', convertPaste);
+                document.getElementById('pasteCancel').addEventListener('click', closePaste);
+                document.getElementById('pasteModal').addEventListener('click', (e) => {
+                    if (e.target.id === 'pasteModal') closePaste();
+                });
 
                 document.getElementById('filterGroups').addEventListener('click', (e) => {
                     const chip = e.target.closest('.chip');
@@ -756,12 +781,14 @@
         function toggleAdmin() {
             const btn = document.getElementById('adminToggle');
             const newBtn = document.getElementById('newRecipeBtn');
+            const pBtn = document.getElementById('pasteBtn');
             if (adminPassword) {
                 adminPassword = null;
                 editingId = null;
                 btn.textContent = 'Admin';
                 btn.classList.remove('on');
                 newBtn.hidden = true;
+                pBtn.hidden = true;
             } else {
                 const p = window.prompt("Contrasenya d'administrador:");
                 if (!p) return;
@@ -769,6 +796,7 @@
                 btn.textContent = 'Admin ✓ (sortir)';
                 btn.classList.add('on');
                 newBtn.hidden = false;
+                pBtn.hidden = false;
             }
             applyFilters();
         }
@@ -892,6 +920,48 @@
             buildFilterBar(); applyFilters();
         }
 
+        // ---------------- Enganxar text -> IA ----------------
+
+        function openPasteForm() {
+            document.getElementById('pasteText').value = '';
+            document.getElementById('pasteStatus').textContent = '';
+            document.getElementById('pasteConvert').disabled = false;
+            document.getElementById('pasteModal').classList.add('show');
+        }
+
+        function closePaste() {
+            document.getElementById('pasteModal').classList.remove('show');
+        }
+
+        async function convertPaste() {
+            const text = document.getElementById('pasteText').value.trim();
+            if (!text) { toast('Enganxa primer el text.', false); return; }
+            const btn = document.getElementById('pasteConvert');
+            const status = document.getElementById('pasteStatus');
+            btn.disabled = true;
+            status.textContent = 'Convertint amb IA… (pot trigar uns segons)';
+
+            const res = await callApi({ action: 'parseText', text });
+            btn.disabled = false;
+            if (!res) { status.textContent = ''; return; }
+
+            status.textContent = '';
+            closePaste();
+            openParsedForm(res.recipe);   // obre el formulari amb la recepta ja plena per repassar
+        }
+
+        // Obre el formulari de creació amb dades pre-omplertes per la IA.
+        function openParsedForm(recipe) {
+            formMode = 'create'; formId = null;
+            formDraft = new Set(recipe.tags || []);
+            document.getElementById('fTitle').textContent = 'Nova recepta (repassa-la)';
+            document.getElementById('fName').value = recipe.name || '';
+            document.getElementById('fIngredients').value = (recipe.ingredients || []).join('\n');
+            document.getElementById('fInstructions').value = recipe.instructions || '';
+            renderFormTags();
+            document.getElementById('recipeModal').classList.add('show');
+        }
+
         // ---------------- Helpers admin ----------------
 
         function validTags(tags) {
@@ -929,4 +999,3 @@
     </script>
 </body>
 </html>
-
