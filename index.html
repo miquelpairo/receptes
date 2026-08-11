@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Receptes de la família</title>
+    <title>Receptes de la Família</title>
     <style>
         :root {
             --bg-color: #ffffff;
@@ -85,7 +85,10 @@
             background: var(--sidebar-bg);
             border: 1px solid #d5d5d5;
             border-radius: 6px;
+            scrollbar-width: none;           /* Firefox */
+            -ms-overflow-style: none;        /* IE/Edge */
         }
+        .sidebar::-webkit-scrollbar { display: none; } /* Chrome/Safari */
         .sidebar:not(.open) { width: auto; }
 
         .sidebar-toggle {
@@ -485,14 +488,14 @@
 </head>
 <body>
     <div class="container">
-        <h1>Buscador de Receptes</h1>
+        <h1>Receptes de la Família</h1>
 
         <p class="intro">
             El receptari de casa: les receptes de la família i les que anem cuinant, reunides en un sol lloc.
             Cerca per nom o ingredient a la barra de dalt, o filtra per <strong>etiquetes</strong> al lateral
             (en pots combinar diverses alhora). També pots clicar una etiqueta dins d'una recepta per trobar-ne de semblants.
             Pots afegir receptes manualment o <strong>enganxar el text</strong> d'una recepta
-            de qualsevol text — la web l'estructurarà automàticament i podràs repassar-la abans de desar.
+            — la web l'estructurarà automàticament i podràs repassar-la abans de desar.
         </p>
 
         <div class="admin-actions" id="adminActions">
@@ -868,7 +871,7 @@
                 adminPassword = null;
                 currentRole = null;
                 editingId = null;
-                btn.textContent = 'Admin';
+                btn.textContent = 'Login';
                 btn.classList.remove('on');
                 newBtn.hidden = true;
                 pBtn.hidden = true;
