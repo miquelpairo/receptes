@@ -1,5 +1,5 @@
 {
-  "total": 99,
+  "total": 100,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -521,6 +521,32 @@
         "Miki"
       ],
       "added": "2026-08-08"
+    },
+    {
+      "id": "cigrons-amb-espinacs-i-ou",
+      "name": "Cigrons amb espinacs i ou",
+      "source": "Web",
+      "ingredients": [
+        "500 gr de cigrons cuits",
+        "4 tomàquets madurs grans",
+        "4 ous",
+        "500 gr espinacs frescos",
+        "300 ml de caldo (vegetal o pollastre)",
+        "3 grans d'all",
+        "1 culleradeta de comí",
+        "1 cullerada de maizena",
+        "Oli",
+        "Sal",
+        "Pebre"
+      ],
+      "instructions": "Posem tots els espinacs en una cassola sense aigua a foc baix durant 4-5 minuts fins que deixin anar la seva aigua.\nBullim un pot amb aigua i hi coem els ous durant 10 minuts (o 6-7 minuts si es prefereix el rovell a mig fer).\nRallem o triturem els tomàquets i els passem per un colador fi per treure'n l'aigua. Piquem els alls fins.\nEscalfem oli en una cassola i hi sofregim l'all, el tomàquet i el comí.\nAfegim els cigrons, remenem durant 1 minut, hi aboquem el caldo i ho portem a ebullició.\nQuan comenci a bullir, hi afegim els espinacs, remenem bé i ho salpebrem.\nAfegim la maizena perquè el caldo espessi i quedi una salseta.\nPelem els ous, els col·loquem a sobre i ja podem servir.",
+      "tags": [
+        "Català",
+        "Principal",
+        "Vegetarià",
+        "Erola"
+      ],
+      "added": "2026-08-11"
     },
     {
       "name": "Cookies americanes autèntiques",
