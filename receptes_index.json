@@ -1,5 +1,5 @@
 {
-  "total": 98,
+  "total": 99,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -1299,6 +1299,39 @@
       ],
       "id": "pad-thai-de-pollastre",
       "added": "2026-08-08"
+    },
+    {
+      "id": "pad-thai-llagostins",
+      "name": "Pad Thai llagostins",
+      "source": "Web",
+      "ingredients": [
+        "70 g de tallarins d'arròs",
+        "50 g de brots de soja",
+        "50 g de tofu dur",
+        "20 g d'all tendre xinès",
+        "1 ou",
+        "1 escalunya (1 c.da)",
+        "5 llangostins",
+        "1 c.da de gambetes seques",
+        "1 c.da de rave en conserva (opcional)",
+        "2 c.des de salsa de peix",
+        "2 c.des de sucre de palma",
+        "1.5 c.des de pasta de tamarinde",
+        "Xili torrat en pols (al gust)",
+        "Llima",
+        "Cacauets",
+        "Xili torrat en pols"
+      ],
+      "instructions": "Posem els tallarins d'arròs a remull en aigua a temperatura ambient durant 1 hora.\nTallem els alls tendres xinesos en troços d'uns 2 centímetres, piquem l'escalunya i el rave en conserva, tallem el tofu en trossets petits, pelem els llangostins deixant la part final de la cua.\nEn una paella amb un poc d'oli vegetal fregim els llangostins i quan estiguin gairebé cuinats els reservem per a més tard.\nEn la mateixa paella fregim el tofu. Quan estigui daurat afegim l'escalunya i el rave en conserva, i quan comenci a fer bona olor hi afegim les gambetes seques i ho fregim 1 minut més.\nAfegim els tallarins d'arròs i ho barregem tot bé. Anem afegint aigua molt a poc a poc perquè els tallarins es vagin estovant.\nIncorporem la pasta de tamarinde, el sucre de palma, la salsa de peix i xili torrat en pols al gust, i ho barregem tot bé.\nApartem els tallarins a un costat, posem un poquet d'oli vegetal i fregim l'ou. Afegim els brots de soja, l'all tendre xinès, els llangostins, els cacauets torrats, ho saltegem un minut més i ja està llest per servir.",
+      "tags": [
+        "Asiàtic",
+        "Thai",
+        "Principal",
+        "Peix",
+        "Pasta",
+        "Miki"
+      ],
+      "added": "2026-08-11"
     },
     {
       "name": "Pairomesco",
