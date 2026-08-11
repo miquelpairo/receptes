@@ -1,5 +1,5 @@
 {
-  "total": 97,
+  "total": 98,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -1550,6 +1550,31 @@
       ],
       "id": "pollastre-amb-gambes",
       "added": "2026-08-09"
+    },
+    {
+      "id": "pollastre-fregit-japones-karaage",
+      "name": "Pollastre fregit japonès (Karaage)",
+      "source": "Web",
+      "ingredients": [
+        "4 contracuitxos de pollastre (uns 600 g)",
+        "50 g de farina de blat",
+        "50 g de maizena",
+        "1 ou",
+        "1 cullerada de gingebre ratllat (uns 2 cm)",
+        "2 dents d'all ratllades",
+        "2 cullerades de salsa de soja japonesa \"Shoyu\"",
+        "3 cullerades de sake",
+        "Un poc de pebre blanc"
+      ],
+      "instructions": "Preparem els ingredients: tallem els contracuitxos en trossos grans, ratllem el gingebre i l'all.\nPer marinar: posem el pollastre en un bol, hi afegim l'all i el gingebre ratllats, la salsa de soja japonesa, el sake, un poc de pebre blanc i un ou, i ho barregem tot molt bé.\nHo tapem i ho deixem marinar a la nevera almenys 30 minuts.\nEn un plat barregem la farina de blat i la maizena i enfarinem el pollastre per tots dos costats.\nEn abundant oli vegetal a foc mitjà, a uns 160 ºC, fregim el pollastre de 6 a 8 minuts, depenent de la mida.\nEl traiem a una reixeta o paper absorbent i el deixem refredar.\nPerquè quedi molt més cruixent, farem un doble fregit. L'ideal és deixar refredar el pollastre completament, però si no tenim molt de temps n'hi ha prou amb 5 minuts.\nPugem el foc i, quan l'oli arribi a uns 180 ºC, fregim el pollastre fins que estigui ben daurat i cruixent.\nI ja està lllest per emplatar, l'acompanyem amb un trosset de llimona.",
+      "tags": [
+        "Asiàtic",
+        "Japonès",
+        "Principal",
+        "Carn",
+        "Miki"
+      ],
+      "added": "2026-08-11"
     },
     {
       "id": "pollo-con-curry-tailandes",
