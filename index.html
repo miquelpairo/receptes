@@ -89,7 +89,7 @@
             -ms-overflow-style: none;        /* IE/Edge */
         }
         .sidebar::-webkit-scrollbar { display: none; } /* Chrome/Safari */
-        .sidebar:not(.open) { width: fit-content; }
+        .sidebar:not(.open) { width: fit-content; min-width: 0; }
 
         .sidebar-toggle {
             width: 100%;
@@ -126,6 +126,7 @@
             grid-template-rows: 0fr;
             transition: grid-template-rows 0.25s ease;
             padding: 0 20px;
+            overflow: hidden;
         }
         .sidebar-body > .sidebar-inner {
             overflow: hidden;
