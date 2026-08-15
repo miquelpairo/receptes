@@ -1,5 +1,5 @@
 {
-  "total": 108,
+  "total": 109,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -181,6 +181,35 @@
         "Àvia"
       ],
       "added": "2026-08-08"
+    },
+    {
+      "id": "arros-caldos-de-rap-i-escamarlans",
+      "name": "Arròs caldós de rap i escamarlans",
+      "source": "Web",
+      "ingredients": [
+        "8 escamarlans",
+        "Dues cues de rap netes i tallades",
+        "400 grams d’arròs",
+        "4 carxofes",
+        "1 pebrot verd",
+        "Dues cebes",
+        "Oli",
+        "Julivert",
+        "1 gra d’all",
+        "Ametlla torrada",
+        "1 tomàquet madur",
+        "1 Litre de caldo de peix",
+        "Sal"
+      ],
+      "instructions": "1. Per començar fem una picada amb les ametlles, el julivert, l’all i oli i prepararem les verdures, tallant el pebrot petit, ratllant la ceba, ratllant el tomàquet i netejant i tallant les carxofes (6 trossos per carxofa).\n2. Quan ja està tot preparat fregim els escamarlans una miqueta a la cassola que farem servir per fer l’arròs (no s’han de fer del tot) i els apartem.\n3. Fem el mateix amb el rap, que tampoc s’ha d’acabar de fer.\n4. A la mateixa cassola hi tirem el pebrot i les carxofes que es facin una mica i al cap de poc la ceba.\n5. Quan creiem que ja està fet hi tirem el tomàquet i donem unes quantes voltes més perquè es redueixi una mica.\n6. Quan està preparat hi tirem l’arròs, donem un parell de voltes barrejant una mica i després hi afegim el caldo de peix calent.\n7. Anem barrejant i al cap de 13 minuts hi afegim la picada, barregem una mica més i ja hi podem tirar el peix i els escamarlans.\n8. Ho deixem 5 minuts més fent-se (en total són uns 20 minuts de cocció), ho provem i si l’arròs ja està fet ja ho podem servir! En cas que el caldo escassegi hi podem anar afegint aigua calenta.",
+      "tags": [
+        "Català",
+        "Principal",
+        "Peix",
+        "Arròs",
+        "Erola"
+      ],
+      "added": "2026-08-15"
     },
     {
       "name": "Arròs de marisc",
