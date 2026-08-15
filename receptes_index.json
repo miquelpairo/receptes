@@ -1,5 +1,5 @@
 {
-  "total": 103,
+  "total": 104,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -275,6 +275,25 @@
         "Miquelet"
       ],
       "added": "2026-08-10"
+    },
+    {
+      "id": "bollos-mantecados",
+      "name": "Bollos Mantecados",
+      "source": "Web",
+      "ingredients": [
+        "1 kg de farina",
+        "1 kg de llard (manteca)",
+        "Pell de llimona",
+        "Sucre",
+        "3 o 4 rovells d'ou",
+        "1 clara d'ou"
+      ],
+      "instructions": "1. Amassar tots els ingredients.\n2. Estirar la massa i fer-ne la forma.\n3. Coure al forn.\n4. Arrebossar amb sucre un cop fets.",
+      "tags": [
+        "Extremeny",
+        "Postres"
+      ],
+      "added": "2026-08-15"
     },
     {
       "name": "Bonito en escabeche",
