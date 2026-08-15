@@ -85,7 +85,10 @@
             background: var(--sidebar-bg);
             border: 1px solid #d5d5d5;
             border-radius: 6px;
+            scrollbar-width: none;      /* Firefox */
+            -ms-overflow-style: none;   /* IE/Edge antic */
         }
+        .sidebar::-webkit-scrollbar { width: 0; height: 0; display: none; }  /* Chrome/Safari */
         .sidebar:not(.open) { width: auto; }
 
         .sidebar-toggle {
@@ -202,6 +205,16 @@
             letter-spacing: 1px;
         }
 
+        .list-header { display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap; margin-bottom:12px; }
+        .view-toggle { display:flex; gap:6px; }
+        .view-toggle button { background:transparent; border:1px solid var(--accent-color); color:var(--accent-color); border-radius:6px; padding:4px 10px; font-family:inherit; font-size:0.85em; cursor:pointer; }
+        .view-toggle button.on { background:var(--accent-color); color:var(--bg-color); }
+        .compact-list { column-width:240px; column-gap:28px; }
+        .compact-item { display:block; width:100%; text-align:left; background:transparent; border:none; border-bottom:1px solid var(--border-color,#e6e6e6); padding:8px 2px; margin:0; cursor:pointer; font-family:inherit; break-inside:avoid; -webkit-column-break-inside:avoid; }
+        .compact-item:hover .compact-name { text-decoration:underline; }
+        .compact-name { display:block; font-weight:600; color:var(--text-color,#222); font-size:0.98em; }
+        .compact-tags { display:block; font-size:0.78em; color:var(--text-muted,#888); margin-top:2px; }
+        .recipe-card.flash { outline:2px solid var(--accent-color); outline-offset:2px; }
         .recipe-card {
             border: 1px solid var(--border-color);
             border-radius: 6px;
@@ -476,7 +489,13 @@
             </aside>
 
             <main class="main">
-                <div id="count">Carregant receptes...</div>
+                <div class="list-header">
+                    <div id="count">Carregant receptes...</div>
+                    <div class="view-toggle">
+                        <button id="viewCards" class="on" title="Vista de targetes">▦ Targetes</button>
+                        <button id="viewCompact" title="Vista compacta">☰ Compacta</button>
+                    </div>
+                </div>
                 <div id="recipeList"></div>
             </main>
         </div>
@@ -570,6 +589,7 @@
         let adminPassword = null;
         let currentRole = null;        // 'admin' | 'family' | null
         function isAdmin() { return currentRole === 'admin'; }
+        let viewMode = 'cards';       // 'cards' | 'compact'
         let editingId = null;          // editor de tags inline
         let editDraft = new Set();
         // Estat formulari
@@ -611,6 +631,8 @@
                 });
 
                 document.getElementById('adminToggle').addEventListener('click', toggleAdmin);
+                document.getElementById('viewCards').addEventListener('click', () => setViewMode('cards'));
+                document.getElementById('viewCompact').addEventListener('click', () => setViewMode('compact'));
                 document.getElementById('newRecipeBtn').addEventListener('click', openCreateForm);
                 document.getElementById('pasteBtn').addEventListener('click', openPasteForm);
                 document.getElementById('photoBtn').addEventListener('click', () => document.getElementById('photoInput').click());
@@ -627,6 +649,8 @@
                 });
 
                 document.getElementById('recipeList').addEventListener('click', (e) => {
+                    const goto = e.target.closest('[data-goto]');
+                    if (goto) { gotoRecipe(goto.dataset.goto); return; }
                     const editR = e.target.closest('[data-editrec]');
                     if (editR) { openEditForm(editR.dataset.editrec); return; }
                     const del = e.target.closest('[data-del]');
@@ -711,6 +735,24 @@
             updateFilterUI(filtered);
         }
 
+        function setViewMode(mode) {
+            viewMode = mode;
+            document.getElementById('viewCards').classList.toggle('on', mode === 'cards');
+            document.getElementById('viewCompact').classList.toggle('on', mode === 'compact');
+            applyFilters();
+        }
+
+        // De la vista compacta a la targeta completa (canvia a targetes i hi salta).
+        function gotoRecipe(id) {
+            if (viewMode !== 'cards') setViewMode('cards');
+            const el = document.getElementById('rec-' + id);
+            if (el) {
+                el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                el.classList.add('flash');
+                setTimeout(() => el.classList.remove('flash'), 1200);
+            }
+        }
+
         function currentFiltered() {
             const terms = norm(searchTerm).split(' ').filter(t => t.length > 0);
             return allRecipes.filter(r => {
@@ -750,11 +792,22 @@
             const list = document.getElementById('recipeList');
             const count = document.getElementById('count');
             count.textContent = `${recipes.length} receptes trobades`;
+
+            if (viewMode === 'compact') {
+                list.className = 'compact-list';
+                list.innerHTML = recipes.map(r => {
+                    const tags = orderTags(r.tags || []).join(' · ');
+                    return `<button class="compact-item" data-goto="${r.id}"><span class="compact-name">${r.name}</span>${tags ? `<span class="compact-tags">${tags}</span>` : ''}</button>`;
+                }).join('');
+                return;
+            }
+            list.className = '';
             list.innerHTML = '';
 
             recipes.forEach((r, index) => {
                 const card = document.createElement('div');
                 card.className = 'recipe-card';
+                card.id = 'rec-' + r.id;
 
                 const tagsHtml = r.tags.map(t =>
                     `<span class="tag${activeTags.has(t) ? ' active' : ''}" data-tag="${t}">${t}</span>`
