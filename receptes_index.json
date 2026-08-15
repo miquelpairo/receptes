@@ -1,5 +1,5 @@
 {
-  "total": 104,
+  "total": 105,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -1112,6 +1112,25 @@
       ],
       "id": "macarrons-de-dia-de-partit",
       "added": "2026-08-09"
+    },
+    {
+      "id": "magdalenes",
+      "name": "Magdalenes",
+      "source": "Web",
+      "ingredients": [
+        "12 ous",
+        "1/2 litre d'oli",
+        "Pell de llimona",
+        "1/2 kg de sucre",
+        "Farina"
+      ],
+      "instructions": "1. Batre els ous, l'oli, la pell de llimona i el sucre.\n2. Afegir-hi la farina i barrejar-ho tot.\n3. Repartir la massa als motlles i posar-hi sucre per sobre.\n4. Coure al forn.",
+      "tags": [
+        "Extremeny",
+        "Postres",
+        "Vegetarià"
+      ],
+      "added": "2026-08-15"
     },
     {
       "id": "mandonguilles-de-l-avia",
