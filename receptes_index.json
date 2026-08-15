@@ -1,5 +1,5 @@
 {
-  "total": 106,
+  "total": 107,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -504,6 +504,30 @@
       ],
       "id": "carne-con-tomate",
       "added": "2026-08-09"
+    },
+    {
+      "id": "champaina",
+      "name": "Champaina",
+      "source": "Web",
+      "ingredients": [
+        "Tripes de porc",
+        "Freixura (asadura)",
+        "Sang cuita",
+        "Ceba",
+        "Pebrot",
+        "Pebre negre",
+        "Aigua",
+        "2 o 3 ous",
+        "Comí",
+        "Julivert"
+      ],
+      "instructions": "1. Coure i picar les tripes de porc.\n2. Preparar la freixura i la sang cuita.\n3. Fer un sofregit de ceba i pebrot.\n4. Afegir les tripes al sofregit, ofegar-ho tot i posar-hi pebre.\n5. Afegir-hi aigua.\n6. Coure 2 o 3 ous; un cop cuits, aixafar els rovells i picar les clares.\n7. Afegir els ous, el comí (picat en un morter) i el julivert a la cassola.\n8. Deixar-ho coure tot junt.",
+      "tags": [
+        "Extremeny",
+        "Principal",
+        "Carn"
+      ],
+      "added": "2026-08-15"
     },
     {
       "id": "chop-suey-de-ternera",
