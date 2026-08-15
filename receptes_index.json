@@ -1,5 +1,5 @@
 {
-  "total": 107,
+  "total": 108,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -701,6 +701,25 @@
         "Vegetarià"
       ],
       "added": "2026-08-10"
+    },
+    {
+      "id": "creps-al-gust-dels-nens",
+      "name": "Creps al gust dels nens",
+      "source": "Web",
+      "ingredients": [
+        "250 g de farina",
+        "1/2 litre de llet",
+        "3 ous",
+        "30 g de mantega",
+        "sal",
+        "Per farcir: sucre, melmelada, mató, xocolata, sobrassada, formatge ratllat, mel, etc."
+      ],
+      "instructions": "Per fer la massa de les creps, barregeu en un bol la llet, la mantega fosa, la sal, la farina i els ous, i poseu la barreja una estona a la nevera.\nA continuació, unteu la paella amb una mica de mantega, poseu-hi una mica de la massa, escampeu-la bé per la paella i quan ja estigui una mica daurada, doneu-li la volta.\nI ja per acabar, farciu les creps de tots aquests ingredients i enrotlleu-les com si fossin una truita.",
+      "tags": [
+        "Internacional",
+        "Postres"
+      ],
+      "added": "2026-08-15"
     },
     {
       "id": "curry-japones-amb-pollastre",
