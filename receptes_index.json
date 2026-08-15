@@ -1,5 +1,5 @@
 {
-  "total": 105,
+  "total": 106,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -1690,6 +1690,30 @@
       ],
       "id": "pollastre-amb-gambes",
       "added": "2026-08-09"
+    },
+    {
+      "id": "pollastre-en-pepitoria",
+      "name": "Pollastre en pepitòria",
+      "source": "Web",
+      "ingredients": [
+        "Pollastre",
+        "Ceba",
+        "Pebrot vermell",
+        "All",
+        "Fulla de llorer",
+        "Oli",
+        "Ametlles",
+        "Branca de safrà",
+        "Vi blanc",
+        "Aigua"
+      ],
+      "instructions": "1. Fer un sofregit de ceba, pebrot vermell i all.\n2. Treure el sofregit de la paella i posar una fulla de llorer a l'oli.\n3. En aquest mateix oli, ofegar el pollastre.\n4. Triturar el sofregit per fer-ne un puré juntament amb unes ametlles.\n5. Afegir el puré de sofregit al pollastre, incorporar-hi una branca de safrà i abocar-hi vi blanc.\n6. Afegir-hi aigua i deixar fer xup-xup.",
+      "tags": [
+        "Extremeny",
+        "Principal",
+        "Carn"
+      ],
+      "added": "2026-08-15"
     },
     {
       "id": "pollastre-fregit-japones-karaage",
