@@ -1,5 +1,5 @@
 {
-  "total": 100,
+  "total": 101,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -1188,6 +1188,27 @@
       ],
       "id": "mc-pairo",
       "added": "2026-08-09"
+    },
+    {
+      "name": "Migas",
+      "ingredients": [
+        "All picat",
+        "Pebrot vermell picat",
+        "Cansalada a trossos",
+        "Pebre vermell",
+        "Aigua",
+        "Sal",
+        "Molles de pa"
+      ],
+      "instructions": "1. Preparar un sofregit amb l'all picat, el pebrot vermell picat, la cansalada a trossos i el pebre vermell.\n2. Dissoldre sal en aigua i afegir-ho al sofregit.\n3. Mullar les molles abans d'afegir-les a la paella.\n4. Incorporar les molles al sofregit i donar-hi voltes constantment fins que estiguin ben daurades.",
+      "tags": [
+        "Internacional",
+        "Principal",
+        "Carn"
+      ],
+      "id": "migas",
+      "source": "Gemini",
+      "added": "2026-08-15"
     },
     {
       "id": "mongetes-amb-almejas",
