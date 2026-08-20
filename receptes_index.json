@@ -1,5 +1,5 @@
 {
-  "total": 109,
+  "total": 110,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -1360,6 +1360,31 @@
         "Àvia"
       ],
       "added": "2026-08-08"
+    },
+    {
+      "id": "nasu-dengaku-alberginies-amb-miso",
+      "name": "Nasu dengaku (albergínies amb miso)",
+      "source": "Web",
+      "ingredients": [
+        "4 albergínies",
+        "Oli",
+        "Sal",
+        "1 cullerada de sake, vi d'arròs o xerès sec",
+        "1 cullerada de pasta de miso vermell",
+        "1 cullerada de mirin",
+        "1 cullerada de sucre",
+        "2 cullerades de sèsam blanc",
+        "1-2 cebetes tendres"
+      ],
+      "instructions": "Rentar les albergínies, tallar-les per la meitat de dalt a baix i fer talls en forma de reixeta sense arribar a traspassar la pell. Untar la superfície del tall amb oli, salar lleugerament i coure en una graella a foc mitjà amb la part tallada cap avall durant 4-6 minuts (o daurar en una paella antiadherent amb 6-8 cullerades d'oli durant 6 minuts).\nGirar les albergínies, tapar i coure 3 minuts més. Mentrestant, preparar una pasta barrejant el sake, el mirin, la pasta de miso i el sucre, i untar-la sobre les albergínies. Coure 5 minuts més amb la graella tapada (o en una safata al forn a 200 °C).\nDaurar el sèsam en una paella sense oli. Netejar les cebetes tendres i tallar-les en anelles fines en diagonal. Empolsar per sobre de les albergínies abans de servir.",
+      "tags": [
+        "Asiàtic",
+        "Japonès",
+        "Entrant",
+        "Vegetarià",
+        "Miki"
+      ],
+      "added": "2026-08-20"
     },
     {
       "name": "Nyoquis de ricotta",
