@@ -1,5 +1,5 @@
 {
-  "total": 110,
+  "total": 111,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -1559,6 +1559,29 @@
       ],
       "id": "pairomesco",
       "added": "2026-08-09"
+    },
+    {
+      "id": "pancakes",
+      "name": "Pancakes",
+      "source": "Web",
+      "ingredients": [
+        "1 ou",
+        "120 g farina",
+        "200 ml llet",
+        "30 ml oli vegetal",
+        "20 g sucre",
+        "15 g llevat en pols",
+        "2,5 g sal",
+        "5 g canyella"
+      ],
+      "instructions": "Barrejar-ho tot amb la batedora. Posar una paella amb una mica de mantega i cuinar-les.",
+      "tags": [
+        "Internacional",
+        "Rebosteria",
+        "Vegetarià",
+        "Miquelet"
+      ],
+      "added": "2026-09-06"
     },
     {
       "name": "Panellets de coco",
