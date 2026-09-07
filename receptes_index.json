@@ -1,5 +1,5 @@
 {
-  "total": 112,
+  "total": 113,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -800,6 +800,25 @@
       ],
       "id": "cus-cus-amb-broquil-i-gambes",
       "added": "2026-08-08"
+    },
+    {
+      "id": "dashi",
+      "name": "Dashi",
+      "source": "Web",
+      "ingredients": [
+        "1 l d'aigua",
+        "10 g d'encenalls de katsuobushi (bonítol sec)",
+        "10 g d'alga kombu seca, tallada per la meitat"
+      ],
+      "instructions": "Aboca l'aigua en una cassola i posa-hi en remull l'alga kombu com a mínim 30 minuts (i fins a una nit sencera).\nEscalfa l'aigua a foc baix uns 15 minuts, fins que comenci a tremolar. Retira l'alga kombu just abans que comenci a bullir (per evitar que el gust iodat de l'alga sigui massa intens) i afegeix-hi el katsuobushi.\nMantén-ho al foc durant 1 minut. Retira-ho del foc i deixa-ho infusionar 10 minuts.\nFiltra el dashi sobre un bol gran amb l'ajuda d'un colador. Pressiona amb cura per extreure'n fins a l'última gota.",
+      "tags": [
+        "Asiàtic",
+        "Japonès",
+        "Entrant",
+        "Peix",
+        "Miki"
+      ],
+      "added": "2026-09-07"
     },
     {
       "name": "Empanada gallega",
