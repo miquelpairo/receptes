@@ -1,5 +1,5 @@
 {
-  "total": 111,
+  "total": 112,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -1360,6 +1360,32 @@
         "Àvia"
       ],
       "added": "2026-08-08"
+    },
+    {
+      "name": "Musclos a la marinera estil asiàtic",
+      "source": "Gemini",
+      "ingredients": [
+        "1 kg de musclos frescos, nets i sense barbes",
+        "4 grans d'all, picats fins",
+        "1 tros (uns 3 cm) de gingebre fresc, tallat en juliana fina o picat",
+        "2-3 cebes tendres (separa la part blanca picada de la verda tallada al biaix per acabar)",
+        "1 bitxo vermell fresc, a rodanxes fines",
+        "1 cullerada sopera d'oli vegetal neutre (gira-sol o cacauet)",
+        "60 ml de vi Shaoxing (o sake sec / xerès sec)",
+        "1,5 cullerades soperes de salsa de soja clara",
+        "1 culleradeta de salsa de soja fosca",
+        "1 cullerada sopera de salsa d'ostres",
+        "1/2 culleradeta de sucre",
+        "1 culleradeta d'oli de sèsam torrat",
+        "Unes branquetes de coriandre fresc picat (opcional)"
+      ],
+      "instructions": "1. Barreja la salsa: En un bol petit, barreja la salsa de soja clara, la soja fosca, la salsa d'ostres i el sucre fins que es dissolgui. Reserva-ho a mà.\n2. Sofregit aromàtic: Escalfa un wok o una cassola ampla amb tapa a foc viu. Afegeix l'oli vegetal i immediatament incorpora l'all, el gingebre, la part blanca de la ceba tendra i el bitxo. Salteja-ho durant 30-45 segons sense parar de remenar, fins que deixi anar aroma sense cremar l'all.\n3. Cocció dels musclos: Puja el foc al màxim i afegeix els musclos. Aboca el vi Shaoxing pel voltant de les parets per aixecar els sucs i tapa de seguida hermèticament. Deixa coure al vapor durant uns 2-3 minuts a foc fort, sacsejant la cassola un parell de vegades.\n4. Incorporar la salsa: Destapa, aboca la barreja de salses reservada i remena ràpidament durant 1 minut més perquè els musclos s'impregnin del brou concentrat. Retira els exemplars que no s'hagin obert.\n5. Acabat: Apaga el foc, ruixa amb l'oli de sèsam torrat i afegeix la part verda de la ceba tendra i el coriandre fresc. Remena un cop i serveix de seguida ben calents.",
+      "tags": [
+        "Asiàtic",
+        "Entrant"
+      ],
+      "id": "musclos-a-la-marinera-estil-asiatic",
+      "added": "2026-09-07"
     },
     {
       "id": "nasu-dengaku-alberginies-amb-miso",
