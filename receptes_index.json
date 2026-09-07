@@ -1,5 +1,5 @@
 {
-  "total": 115,
+  "total": 116,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -915,6 +915,27 @@
       ],
       "id": "espaguetis-amb-escamarlans",
       "added": "2026-08-08"
+    },
+    {
+      "id": "espaguetis-amb-miso",
+      "name": "Espaguetis amb miso",
+      "source": "Web",
+      "ingredients": [
+        "350 g d'espaguetis",
+        "1 cda. de sèsam blanc o negre",
+        "50 g de mantega",
+        "25 g de pasta de miso clara"
+      ],
+      "instructions": "Coure els espaguetis seguint les indicacions del paquet.\nTostar el sèsam en una paella sense oli durant 4-5 minuts.\nMentrestant, fondre la mantega en una cassola o una paella, i afegir-hi el miso barrejant amb unes varetes.\nAbocar 100 ml de l'aigua de cocció de la pasta i portar a ebullició fins a obtenir una salsa cremosa. Retirar del foc.\nEscórrer la pasta i, encara humida, barrejar amb la mantega de miso.\nServir de seguida.",
+      "tags": [
+        "Asiàtic",
+        "Japonès",
+        "Principal",
+        "Vegetarià",
+        "Pasta",
+        "Miki"
+      ],
+      "added": "2026-09-07"
     },
     {
       "id": "estofat",
