@@ -1,5 +1,5 @@
 {
-  "total": 113,
+  "total": 114,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -1995,6 +1995,47 @@
         "Miki"
       ],
       "added": "2026-08-08"
+    },
+    {
+      "id": "ramen-amb-ragu-vega-especiat",
+      "name": "Ramen amb ragú vegà especiat",
+      "source": "Web",
+      "ingredients": [
+        "320 g de fideus xinesos secs (o 4 racions de fideus per a ramen)",
+        "400 ml de beguda de soja",
+        "400 ml de shojin dashi",
+        "2 cullerades de salsa de soja",
+        "4 cullerades de miso blanc",
+        "4 cullerades de pasta de sèsam",
+        "½-1 culleradeta de sal",
+        "Algunes fulles de coriandre",
+        "Llavors de sèsam",
+        "2 grapats de fulles d'espinacs",
+        "Rayu",
+        "150 ml de shojin dashi (per al ragú)",
+        "500g de carn picada (porc o vedella)",
+        "Les setes shiitake rehidratades del shojin dashi",
+        "½ ceba groga",
+        "2 cm de gingebre fresc",
+        "1 gra d'all",
+        "100 g de xampinyons",
+        "20 g de nous picades",
+        "2 cullerades d'oli vegetal neutre",
+        "2 cullerades de miso blanc (per al ragú)",
+        "1-1,5 cullerades de sucre sense refinar",
+        "1 cullerada de mirin",
+        "1 culleradeta d'oli de sèsam",
+        "Sal"
+      ],
+      "instructions": "Rehidrata la proteïna de soja seguint les instruccions del fabricant. Pela la ceba, el gingebre i l'all, i pica'ls finament. Talla els peus dels bolets shiitake secs i pica els shiitake i els xampinyons.\nEscalfa 2 cullerades d'oli a foc mig-alt en una cassola. Afegeix el gingebre i l'all picats abans que l'oli s'escalfi del tot. Quan comenci a desprendre aroma, afegeix-hi la ceba i salteja-ho uns 2 minuts. Afegeix els xampinyons i salteja'ls fins que estiguin fets i tendres. Afegeix la carn, el dashi, el miso, la salsa de soja, el sucre i el mirin. Remena constantment perquè el líquid s'evapori. Quan s'hagi evaporat gairebé del tot, incorpora les nous picades i l'oli de sèsam. Comprova el punt de sal i corregeix si cal.\nBlanqueja les fulles d'espinac 1 minut en una olla amb aigua lleugerament salada. Treu-les de l'aigua, espera que es templin i xafa-les amb cura per retirar l'aigua sobrant.\nEn un bol o ensaladera, dilueix bé els condiments (excepte la sal) en un mica de shojin dashi. Afegeix la beguda de soja i la resta del dashi. Comprova el punt de sal i corregeix si cal.\nReescalfa el ragú vegà especiat a foc baix en una cassola.\nCou els fideus en una olla gran plena d'aigua seguint les instruccions del fabricant. Escórre'ls en un colador, esbandeix-los sota un rajolí d'aigua i premsa els fideus amb la mà perquè s'escorrin del tot.\nReparteix la sopa, els fideus, el ragú i la guarnició en 4 bols grans. Rega-ho amb el rayu i consumeix immediatament.",
+      "tags": [
+        "Asiàtic",
+        "Japonès",
+        "Principal",
+        "Carn",
+        "Pasta"
+      ],
+      "added": "2026-09-07"
     },
     {
       "id": "recepte-cheesecake",
