@@ -1,5 +1,5 @@
 {
-  "total": 114,
+  "total": 115,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -1946,6 +1946,28 @@
         "Miki"
       ],
       "added": "2026-08-11"
+    },
+    {
+      "id": "pollastre-teriyaki",
+      "name": "Pollastre teriyaki",
+      "source": "Web",
+      "ingredients": [
+        "4 cuixes de pollastre desossades",
+        "4 cullerades de sake",
+        "Sal",
+        "150 ml de brou de pollastre",
+        "4 cullerades de salsa teriyaki",
+        "Oli per cuinar"
+      ],
+      "instructions": "Rentar la carn desossada de pollastre, eixugar-la i fregar-la amb sake per la part que no té pell.\nCol·locar-la en una safata amb la pell cap amunt i salar-la generosament. Tapar amb paper film i deixar reposar al frigorífic durant 2 hores.\nMentrestant, preparar la salsa barrejant el brou de pollastre i la salsa teriyaki.\nTallar per la meitat les peces de pollastre. Escalfar oli en una paella antiadherent gran, posar-hi el pollastre amb la pell cap avall i daurar a foc mitjà durant 10-12 minuts.\nDesprés, donar la volta a les peces i cuinar pel costat de la carn durant 6-8 minuts més.\nAfegir la salsa i deixar bullir un moment fins que s'espesseixi un poc. Servir de seguida.",
+      "tags": [
+        "Asiàtic",
+        "Japonès",
+        "Principal",
+        "Carn",
+        "Miki"
+      ],
+      "added": "2026-09-07"
     },
     {
       "id": "pollo-con-curry-tailandes",
