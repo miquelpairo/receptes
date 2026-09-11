@@ -1,5 +1,5 @@
 {
-  "total": 116,
+  "total": 117,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -1169,6 +1169,35 @@
         "Miki"
       ],
       "added": "2026-09-07"
+    },
+    {
+      "id": "ikameshi-calamars-farcits-d-arros",
+      "name": "Ikameshi (calamars farcits d'arròs)",
+      "source": "Web",
+      "ingredients": [
+        "10 peces (800 g) de calamars mitjans/petits",
+        "90 ml (80 g) d'arròs de gra rodó (sushi o bomba)",
+        "10 unitats d'escuradents de fusta",
+        "2-3 parells de potes de calamar picades finetes",
+        "1 cullerada petita de salsa de soja (per al farcit)",
+        "1 cullerada petita de sake (per al farcit)",
+        "1/2 cullerada petita de maizena o fècula (opcional)",
+        "600 ml de brou dashi",
+        "3 cullerades soperes de salsa de soja (per al brou)",
+        "3 cullerades soperes de sake (per al brou)",
+        "4 cullerades soperes de mirin",
+        "1.5 cullerades petites de sucre"
+      ],
+      "instructions": "1. Renta l'arròs 2-3 vegades fins que l'aigua surti clara. Posa'l en remull amb aigua tèbia (40-45 °C) durant 20-25 minuts per accelerar la hidratació del gra.\n2. Neteja els calamars: separa el mantell (bossa) del cap. Retira la ploma interior, buida'ls i renta'ls bé per dins i per fora. Asseca'ls amb paper absorbent. Separa les potes retirant el bec.\n3. Pica 2-3 parells de potes a dauets minúsculs. Reserva la resta de potes senceres.\n4. Escorre molt bé l'arròs amb un colador fi. Barreja'l en un bol amb les potes picades, la cullerada petita de soja, de sake i la maizena.\n5. Farcir els calamars només fins al 50% de la seva capacitat (aproximadament 1 cullerada rasa per peça) per evitar que rebentin en créixer l'arròs. Tanca l'obertura de cadascun amb un escuradents fent ziga-zaga.\n6. En una cassola ampla, aboca tots els ingredients del brou (dashi, soja, sake, mirin i sucre) i disposa els calamars plans en una sola capa.\n7. Porta a ebullició a foc mitjà, retira l'escuma de la superfície i baixa el foc al mínim. Cobreix directament sobre els calamars amb un cercle de paper d'alumini amb forats (tapa caiguda / otoshi-buta). Cou a foc suau durant 35 minuts.\n8. Retira el paper d'alumini, treu els calamars a un plat i puja el foc al màxim per reduir la salsa durant 5-8 minuts fins que agafi textura de xarop lleuger i brillant. Afegeix la resta de potes a mitja reducció.\n9. Retorna els calamars a la cassola durant 30 segons per lacar-los completament amb la salsa calenta.\n10. Retira els escuradents, talla els calamars a rodanxes gruixudes i serveix regats generosament amb la salsa reduïda i acompanyats de les potes.",
+      "tags": [
+        "Asiàtic",
+        "Japonès",
+        "Principal",
+        "Peix",
+        "Arròs",
+        "Miki"
+      ],
+      "added": "2026-09-11"
     },
     {
       "name": "Lassanya",
