@@ -1,5 +1,5 @@
 {
-  "total": 117,
+  "total": 118,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -557,6 +557,31 @@
         "Carn"
       ],
       "added": "2026-08-15"
+    },
+    {
+      "id": "chawanmushi-amb-musclos",
+      "name": "Chawanmushi amb musclos",
+      "source": "Web",
+      "ingredients": [
+        "3 ous camperols (talla L)",
+        "Suc de cocció dels musclos colat i refredat",
+        "Brou dashi refredat (quantitat necessària fins a sumar 500 ml amb el suc dels musclos)",
+        "15-20 musclos nets",
+        "1 culleradeta de salsa de soja",
+        "1 culleradeta de mirin",
+        "Pessic de sal (opcional)",
+        "Unes gotes d'oli vegetal neutre (per servir)",
+        "Cibulet picat (per servir)"
+      ],
+      "instructions": "1. Netejar els musclos i obrir-los al vapor en una cassola tapada amb 80 ml d'aigua (2-3 minuts). Retirar la carn de les closques i reservar-la tapada. Colar el suc resultant amb paper o gasa fina i deixar-lo refredar completament.\n2. Mesurar el suc dels musclos fred i afegir dashi fred fins a completar exactament 500 ml de líquid total. Incorporar-hi 1 culleradeta de salsa de soja i 1 culleradeta de mirin.\n3. En un bol, batre els 3 ous suaument sense incorporar aire ni escuma. Afegir la barreja de líquids i remenar amb suavitat.\n4. Passar tota la barreja per un colador fi per eliminar xalasses i bombolles.\n5. Repartir la barreja en 5 tasses de cafè amb llet (uns 120-130 ml per ració). Retirar bombolletes superficials i tapar cada tassa amb paper d'alumini.\n6. Encaixar la vaporera de bambú sobre un wok amb 3-4 dits d'aigua bullint (sense que l'aigua toqui la base del bambú). Col·locar les tasses a dins, baixar el foc al mínim per generar vapor suau, tapar i coure durant 11-13 minuts.\n7. Comprovar que el centre estigui quallat (amb tremolor de flam), destapar cada tassa, col·locar 3-4 musclos a sobre, tornar a tapar i coure al vapor 1 minut més per escalfar-los.\n8. Servir calent rematant cada tassa amb un fil de salsa de soja, unes gotes d'oli neutre i cibulet picat.",
+      "tags": [
+        "Asiàtic",
+        "Japonès",
+        "Entrant",
+        "Peix",
+        "Miki"
+      ],
+      "added": "2026-09-12"
     },
     {
       "id": "chop-suey-de-ternera",
