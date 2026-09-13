@@ -1,5 +1,5 @@
 {
-  "total": 118,
+  "total": 119,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -1130,6 +1130,24 @@
         "Carn"
       ],
       "added": "2026-08-10"
+    },
+    {
+      "id": "galetes-de-mantega",
+      "name": "Galetes de mantega",
+      "source": "Web",
+      "ingredients": [
+        "200 g de mantega pomada (a temperatura ambient)",
+        "120 g de sucre",
+        "280 g de farina de blat",
+        "1 culleradeta d'essència de vainilla"
+      ],
+      "instructions": "1. En un bol comenceu barrejant la mantega amb el sucre. Recordeu que la mantega ha d'estar a temperatura ambient per poder treballar-hi bé. Barregeu-ho molt bé.\n2. Un cop barrejat, afegiu-hi la culleradeta d'essència de vainilla.\n3. Continueu amb la farina tamisada. Passeu la farina per un colador abans d'incorporar-la al bol. Barregeu-ho molt bé.\n4. Ara és el moment de donar-hi forma. El més fàcil és fer un rotllet amb l'ajuda de paper film i ficar-lo a la nevera durant 1 hora més o menys. A partir d'aquí, tallarem rodanxes d'1 cm més o menys i les enfornarem.\n5. Les posem en una safata de forn tallades i les enfornem a 180 ºC durant uns 11-12 minuts. En el moment que veiem que es comencen a daurar les vores les traiem. Si veieu que estan tovetes no les deixeu més, quan es refreden s'endureixen.",
+      "tags": [
+        "Internacional",
+        "Rebosteria",
+        "Vegetarià"
+      ],
+      "added": "2026-09-13"
     },
     {
       "name": "Hamburgueses d'ànec",
