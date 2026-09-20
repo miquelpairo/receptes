@@ -1,5 +1,5 @@
 {
-  "total": 119,
+  "total": 120,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -644,6 +644,30 @@
         "Erola"
       ],
       "added": "2026-08-11"
+    },
+    {
+      "id": "cloisses-al-sake",
+      "name": "Cloïsses al sake",
+      "source": "Web",
+      "ingredients": [
+        "1 kg de cloïsses (o musclos)",
+        "2 cebollins fins i tendres",
+        "25 g de gingebre",
+        "1 cullerada d'oli per cuinar",
+        "100 ml de sake",
+        "200 ml de dashi (o fons de peix)",
+        "2 culleretes de salsa de soja dolça (o salsa de soja clara)",
+        "40 g de mantega"
+      ],
+      "instructions": "Raspallar les cloïsses sota l'aixeta d'aigua freda, netejar les barbes i rebutjar les cloïsses ja obertes que no es tanquin quan es premen. Rentar els cebollins i tallar-los en troços de 2-3 cm de llarg. Pelar el gingebre i tallar-lo primer a rodanxes i després a bastonets fins.\nEscalfar l'oli en una cassola i sofregir el gingebre i el cebollí. Afegir les cloïsses i remenar. Barrejar el sake amb el dashi i la salsa de soja e incorporar-ho. Portar a ebullició, tapar i coure les cloïsses 3-4 minuts al vapor.\nRetirar les cloïsses de la salsa amb una escumadora i disposar-les en un bol preescalfat. Afegir la mantega a la cassola i barrejar-ho tot amb unes varetes. Abocar sobre les cloïsses i servir de seguida.",
+      "tags": [
+        "Asiàtic",
+        "Japonès",
+        "Entrant",
+        "Peix",
+        "Miki"
+      ],
+      "added": "2026-09-20"
     },
     {
       "name": "Cookies americanes autèntiques",
