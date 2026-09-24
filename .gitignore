@@ -1,2 +1,7 @@
 credentials.json
 token.json
+__pycache__/
+*.pyc
+~$*.docx
+.DS_Store
+Thumbs.db
