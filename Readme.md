@@ -41,8 +41,10 @@ Receptari familiar i personal: una web estàtica (GitHub Pages) amb buscador i f
 | `index.html` | La web (HTML + CSS + JS en un sol fitxer) |
 | `receptes_index.json` | Les dades: totes les receptes i la taxonomia d'etiquetes |
 | `apps-script/Code.gs` | Codi del backend (Google Apps Script) |
-| `Scripts/` | Scripts Python per importar i indexar els DOCX originals |
-| `Coleccions/`, `Receptes_Individuales/`, `Processed/` | Documents Word originals |
+| `Docs/Reculls/` | Reculls originals en Word (Curs de RAMEN, Les receptes de l'àvia…) |
+| `Docs/Receptes/` | Receptes individuals en Word |
+| `Scripts/receptes_indexer.py` | Genera l'índex JSON a partir dels DOCX |
+| `Scripts/archive/` | Scripts d'un sol ús i la primera versió de la web |
 
 ## Format de `receptes_index.json`
 
@@ -107,8 +109,7 @@ Després de canviar el codi cal fer **Implementa → Gestiona implementacions �
 
 Es van fer servir per a la importació inicial des de Word. Requereixen `python-docx`.
 
-- `receptes_indexer.py`: genera un índex JSON a partir dels DOCX i Google Docs.
-- `dividir_receptes_avia.py`, `dividir_ramen.py`, `analizar_ramen.py`: divideixen els reculls en receptes individuals.
-- `listar_archivos.py`, `explorar_estructura.py`, `organizar_carpeta.py`: utilitats per ordenar la carpeta.
+- `Scripts/receptes_indexer.py`: genera un índex JSON a partir dels DOCX i Google Docs.
+- `Scripts/archive/`: scripts que ja han complert la seva funció (dividir els reculls, ordenar carpetes) i la primera versió del buscador (`receptes_buscador.html` + `receptes_dades.js`). Es guarden com a referència.
 
 `credentials.json` i `token.json` (accés a Google) estan exclosos al `.gitignore` i no s'han de pujar mai.
