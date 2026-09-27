@@ -1,5 +1,5 @@
 {
-  "total": 120,
+  "total": 121,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -49,6 +49,30 @@
       ],
       "id": "alberginia-amb-tahina",
       "added": "2026-08-09"
+    },
+    {
+      "id": "aletes-de-pollastre-a-l-estil-hong-kong",
+      "name": "Aletes de pollastre a l'estil Hong Kong",
+      "source": "Web",
+      "ingredients": [
+        "500 g d'aletes de pollastre",
+        "1 culleradeta d'oli de sèsam torrat",
+        "3 cullerades de salsa de soja clara",
+        "3 cullerades de mel líquida (i més per pintar)",
+        "1/2 cullerada d'all en pols o granulat",
+        "1 culleradeta d'oli vegetal",
+        "1 pessic de sal",
+        "1 pessic de pebre blanc"
+      ],
+      "instructions": "Preescalfa el forn a 160 °C amb ventilador i forra una safata de forn amb paper vegetal. Una altra opció és preparar la barbacoa.\nPosa les aletes en un cassó, cobreix-les amb aigua freda i porta-ho a ebullició; deixa-ho bullir 5 minuts, retirant les impureses que flotin amb una cullera gran. Retira les aletes amb una escumadora i reserva el caldo de pollastre per a altres usos.\nMentre es couen parcialment les aletes, barreja l'oli de sèsam, la salsa de soja, la mel, l'all, l'oli, la sal i el pebre en un bol. Posa les aletes escorregudes en aquest bol i remena perquè s'impregnin del marinat; a continuació, deixa-les reposar uns 5 minuts. També pots deixar-les tapades tota la nit al frigorífic.\nSi alses les aletes al forn, disposa-les sobre la safata forrada i cou-les 10 minuts; després treu-les i mulla-les amb el suc i el marinat acumulat a la safata. Pinta-les amb un mica més de mel i cou-les 5 minuts més. Si les fas a la barbacoa, pinta-les amb més mel, posa-les a la graella i cou-les 5-8 minuts per cada costat, fins que es torrin un xic.\nComprova la cocció tallant-les. Si no estan llestes, cou-les 5 minuts més.",
+      "tags": [
+        "Asiàtic",
+        "Xinès",
+        "Principal",
+        "Carn",
+        "Miki"
+      ],
+      "added": "2026-09-27"
     },
     {
       "name": "Amanida d'espinacs i maduixes",
