@@ -1,5 +1,5 @@
 {
-  "total": 121,
+  "total": 122,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -2908,6 +2908,35 @@
       ],
       "id": "yakisoba",
       "added": "2026-08-09"
+    },
+    {
+      "id": "yakisoba-de-marisc-amb-tonyina-estil-tataki-i-bolets-shimeji",
+      "name": "Yakisoba de marisc amb tonyina estil tataki i bolets shimeji",
+      "source": "Web",
+      "ingredients": [
+        "5 paquets (750 g) de fideus Yakisoba precuits",
+        "2 rodanxes de tonyina fresca",
+        "Calamars a rodanxes",
+        "Gambes pelades",
+        "1 manat de bolets shimeji (amb la base tallada)",
+        "Verdures a juliana fina: ceba tendra, pebrot (vermell i verd) i pastanaga",
+        "Oli suau per saltar",
+        "Wasabi (opcional, per servir al marge)",
+        "10-12 cullerades de salsa de soja",
+        "3 cullerades d'oli de sèsam",
+        "3 cullerades de vinagre (d'arròs o de poma)",
+        "1 cullerada de gingebre fresc ratllat"
+      ],
+      "instructions": "Preparar la salsa: Barreja en un bol la salsa de soja, l'oli de sèsam, el vinagre i el gingebre ratllat. Reserva-ho.\nSegellar la tonyina: Escalfa el wok al màxim amb un fil d'oli. Marca les rodanxes de tonyina durant 30-45 segons per banda perquè quedin fetes per fora però crues per dins. Retira-les, deixa-les reposar i talla-les a làmines d'1 cm de gruix.\nSaltar el marisc: Al mateix wok a foc molt viu, salta els calamars durant 2-3 minuts. A l'últim minut, afegeix-hi les gambes. Retira-ho i reserva-ho.\nSaltar les verdures: Afegeix una mica més d'oli al wok si és necessari. Incorpora les verdures en juliana i els bolets shimeji. Salta-ho tot sense parar de remenar durant 3-4 minuts perquè quedi al dente.\nIntegrar els fideus: Afegeix els 5 paquets de fideus directament al wok juntament amb les verdures. (Si el bloc de pasta està molt atapeït, hi pots tirar un rajolí minúscul d'aigua perquè el vapor els separi).\nAmanir i acabar: Aboca tres quartes parts de la salsa al wok. Remena a fons des de baix durant 2-3 minuts perquè la pasta s'escalfi i absorbeixi els sabors. Reincorpora els calamars i les gambes. Tasta-ho i ajusta-ho amb la resta de la salsa si cal.\nEmplatar: Reparteix els fideus als plats i corona'ls amb les làmines de tonyina. Posa una mica de wasabi al marge del plat per a qui vulgui acompanyar el peix.",
+      "tags": [
+        "Asiàtic",
+        "Japonès",
+        "Principal",
+        "Peix",
+        "Pasta",
+        "Miki"
+      ],
+      "added": "2026-10-04"
     },
     {
       "name": "Yakizake Don",
