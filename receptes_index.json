@@ -1,5 +1,5 @@
 {
-  "total": 122,
+  "total": 123,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -1639,6 +1639,36 @@
       ],
       "id": "nyoquis-de-ricotta",
       "added": "2026-08-09"
+    },
+    {
+      "id": "okonomiyaki",
+      "name": "Okonomiyaki",
+      "source": "Web",
+      "ingredients": [
+        "100 g de farina de blat",
+        "120 - 150 ml de brou dashi (o aigua amb pols de dashi)",
+        "1/2 col xina mitjana, tallada a la juliana ben fina",
+        "2 cebes tendres (la part verda), tallades a rodanxes fines",
+        "6-8 llesques de beicon",
+        "2 racions de noodles (yakisoba frescos o udon)",
+        "2 ous",
+        "Oli suau per cuinar",
+        "Salsa Okonomiyaki (4 cullerades de quetxup, 1 cullerada de salsa de soja clara, 1 cullerada de puré de poma i un raig de salsa worcester)",
+        "Maionesa japonesa",
+        "Flocs de bonítol sec (katsuobushi)",
+        "Alga aonori en pols"
+      ],
+      "instructions": "1. Preparació prèvia: Barreja la farina amb el dashi en un bol fins a obtenir una massa fina i sense grumolls. Deixa-la reposar. Talla la col xina i asseca-la una mica amb paper de cuina, ja que conté més aigua que la col blanca tradicional i pot humitejar en excés la planxa. Prepara tots els ingredients al voltant dels fogons perquè un cop comencis anirà tot molt ràpid.\n2. La base de crep: Escalfa una planxa gran o una paella ampla antiadherent a foc mitjà amb unes gotes d'oli. Aboca-hi un quart de la massa (reserva la resta) i estén-la ràpidament amb la base del cullerot formant una crep fina d'uns 20 cm de diàmetre.\n3. Apilar la muntanya: Sense esperar que la massa es cogui del tot, posa un grapat molt generós de col xina just a sobre de la crep. Semblarà massa, però la col xina redueix molt ràpid amb la calor. Espolvora una mica de ceba tendra per sobre i cobreix la col amb 3 o 4 llesques de beicon.\n4. L'adhesiu i el primer gir: Tira un rajolí molt fi de la massa que has reservat per sobre del beicon (això ajudarà a fer de \"cola\" perquè no caigui tot). Quan la base estigui cuita, posa una espàtula ampla per sota i una altra per sobre per subjectar-ho tot, i gira l'okonomiyaki de cop. El beicon ha de quedar tocant directament la planxa. Deixa-ho coure uns 4-5 minuts. L'aigua de la col xina generarà vapor i ajudarà a coure l'interior mentre el beicon es torna cruixent.\n5. Preparar els noodles: Mentre la torre es cou, aprofita un altre racó de la planxa (o una altra paella) per saltar els noodles amb una mica d'oli i un raig de salsa okonomiyaki perquè agafin color i gust. Dona'ls forma arrodonida perquè tinguin el mateix diàmetre que la crep.\n6. Muntar sobre els noodles: Amb ajuda de les dues espàtules, aixeca amb compte tota la torre (crep, col i beicon) i col·loca-la just a sobre del niu de noodles saltats.\n7. L'ou: A l'espai que ha quedat lliure a la planxa, trenca un ou. Amb la cantonada de l'espàtula trenca'n el rovell i estén l'ou formant un cercle de la mateixa mida que el teu okonomiyaki.\n8. Muntatge final i emplatat: Just abans que l'ou qualli del tot, aixeca la torre sencera (que ara té els noodles a la base) i posa-la sobre l'ou. Pressiona lleugerament cap avall. Deixa-ho uns segons perquè l'ou s'acabi de fer i, per última vegada, gira-ho tot junt perquè l'ou quedi a la part superior. Passa-ho a un plat.\n9. La guarnició: Pinta toda la superfície generosament amb la salsa okonomiyaki que has preparat. Fes unes línies amb la maionesa, espolvora els flocs de bonítol (veuràs com es mouen amb la calor) i remata amb una mica d'alga aonori.",
+      "tags": [
+        "Asiàtic",
+        "Japonès",
+        "Principal",
+        "Carn",
+        "Peix",
+        "Pasta",
+        "Miki"
+      ],
+      "added": "2026-10-11"
     },
     {
       "name": "Pa d'espelta amb nous i figues",
