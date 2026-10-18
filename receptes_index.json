@@ -1,5 +1,5 @@
 {
-  "total": 123,
+  "total": 124,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -371,6 +371,30 @@
       ],
       "id": "bonito-en-escabeche",
       "added": "2026-08-09"
+    },
+    {
+      "id": "bonitol-amb-tomaquet",
+      "name": "Bonítol amb tomàquet",
+      "source": "Web",
+      "ingredients": [
+        "4 tallades gruixudes de bonítol del nord fresc",
+        "1 ceba mitjana",
+        "1 kg de tomàquets madurs (o la mateixa quantitat de tomàquet triturat de conserva)",
+        "1 pebrot tipus italià, vermell o verd",
+        "3 dents d'all",
+        "2 culleradetes de polpa de pebrot xoricer",
+        "1 fulla de llorer",
+        "Sal",
+        "Oli d'oliva verge suau"
+      ],
+      "instructions": "Llava i eixuga les tallades de bonítol. Posa un mica d'oli d'oliva en una paella, sala el bonítol i daura les tallades a foc viu durant un minut per cada costat. Retira, treu la pell i reserva.\nPica finament la ceba i el pebrot. Ratlla els tomàquets en un ratllador per eliminar la pell, si fas servir tomàquet fresc, o tritura'l en una batedora, o bé utilitza tomàquet triturat de conserva.\nPela i pica els alls en un morter.\nPoxa la ceba a la paella amb el fons cobert d'oli, a foc baix fins que estigui transparent.\nAfegeix el pebrot i poxa'l fins que canviï de color. Afegeix l'all i dona-li unes voltes perquè perdi el gust de cru.\nAfegeix aleshores el tomàquet triturat o ratllat, la polpa del pebrot xoricer i el llorer, i redueix a foc molt suau fins que comenci gairebé a enganxar-se a la paella, com a mínim 30 minuts.\nEs tracta que es torri lleugerament la salsa per aportar més gust; si veus que es torra massa, afegeix un mica d'aigua immediatament, barreja i continua la reducció.\nRectifica la consistència afegint una mica d'aigua, sala i ho proves d'acidesa. Afegeix un mica de sucre o edulcorant si cal per neutralitzar-la.\nCol·loca les tallades de bonítol sense pell sobre la salsa i continua la cocció un minut.\nTapa, apaga el foc i deixa que el bonítol s'acabi de coure amb la calor remanent.\nSi pots, deixa reposar el guisat de bonítol amb tomàquet fins a l'endemà a la nevera, guanyarà en gust.",
+      "tags": [
+        "Espanyola",
+        "Principal",
+        "Peix",
+        "Miki"
+      ],
+      "added": "2026-10-18"
     },
     {
       "id": "bunyols-de-bacalla",
