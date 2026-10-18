@@ -1,5 +1,5 @@
 {
-  "total": 124,
+  "total": 125,
   "recipes": [
     {
       "name": "Ajoblanco de remolatxa",
@@ -1314,6 +1314,35 @@
         "Miki"
       ],
       "added": "2026-09-11"
+    },
+    {
+      "id": "kimchi-de-col-xinesa",
+      "name": "Kimchi de col xinesa",
+      "source": "Web",
+      "ingredients": [
+        "1 col xinesa (1 kg - 1,5 kg)",
+        "70 g de sal grossa",
+        "160 ml d'aigua (per a la salmorra)",
+        "1 cullerada de Maizena (midó de blat de moro)",
+        "120 ml d'aigua (per a la pasta)",
+        "1 cullerada de sucre",
+        "40-50 g de gochugaru (chile coreà en pols)",
+        "4 grans d'all",
+        "2,5 cm de gingebre fresc",
+        "1/2 ceba",
+        "2-3 cullerades de salsa de peix (o salsa de soja/tamari per a versió vegana)",
+        "1 nabo daikon petit (o nabo normal)",
+        "2 carotes",
+        "4-5 cebolletes verdes"
+      ],
+      "instructions": "1. Talla la col xinesa longitudinalment en quatre parts, retira el tronc dur de la base i trosseja-la en trossos de la mida d'un mos.\n2. En un bol molt gran, barreja la col amb la sal grossa i 160 ml d'aigua. Deixa-ho reposar entre 2 i 3 hores, donant-li la volta cada 30 minuts, fins que les fulles es doblin sense trencar-se.\n3. Renta la col amb aigua freda 3 vegades per eliminar l'excés de sal. Escorreu-la en un colador durant 15-20 minuts, premsant amb les mans per treure-li tota l'aigua possible.\n4. En un casset en fred, barreja 120 ml d'aigua, la Maizena i el sucre. Escalta a foc suau remenant sense parar durant 1 o 2 minuts fins que espessi i es torni translúcida. Deixa refredar completament.\n5. Tritura a la batedora la ceba, els grans d'all, el gingebre i la salsa de peix (o soja) fins a obtenir una pasta suau.\n6. En un bol gran, barreja la pasta de Maizena freda, la barreja triturada i el gochugaru. Afegeix el nabo, les carotes i les cebolletes tallades en juliana.\n7. Amb guants de cuina, barreja bé la col escorreguda amb la pasta vermella fins que quedi ben untada.\n8. Col·loca el kimchi en un pot de vidre hermètic premsant cap avall per eliminar l'aire i deixant un parell de centímetres buits a la part superior.\n9. Deixa fermentar el pot a temperatura ambient i en un lloc fosc de 1 a 3 dies, obrint-lo un cop al dia per alliberar el gas. Quan tingui el punt àcid desitjat, conserva'l a la nevera.",
+      "tags": [
+        "Asiàtic",
+        "Entrant",
+        "Vegetarià",
+        "Miki"
+      ],
+      "added": "2026-10-18"
     },
     {
       "name": "Lassanya",
