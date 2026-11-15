@@ -585,6 +585,13 @@
         const activeTags = new Set();
         let searchTerm = '';
 
+        // Escapa text per inserir-lo amb innerHTML (evita injectar HTML/JS des de les receptes)
+        function esc(v) {
+            return String(v == null ? '' : v)
+                .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+                .replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+        }
+
         // Estat admin
         let adminPassword = null;
         let currentRole = null;        // 'admin' | 'family' | null
@@ -723,9 +730,9 @@
             const wrap = document.createElement('div');
             wrap.className = 'filter-group';
             const chips = tags.map(t =>
-                `<button class="chip" data-tag="${t}">${t}<span class="chip-count">${counts[t]}</span></button>`
+                `<button class="chip" data-tag="${esc(t)}">${esc(t)}<span class="chip-count">${counts[t]}</span></button>`
             ).join('');
-            wrap.innerHTML = `<h4>${title}</h4><div class="chips">${chips}</div>`;
+            wrap.innerHTML = `<h4>${esc(title)}</h4><div class="chips">${chips}</div>`;
             return wrap;
         }
 
@@ -797,7 +804,7 @@
                 list.className = 'compact-list';
                 list.innerHTML = recipes.map(r => {
                     const tags = orderTags(r.tags || []).join(' · ');
-                    return `<button class="compact-item" data-goto="${r.id}"><span class="compact-name">${r.name}</span>${tags ? `<span class="compact-tags">${tags}</span>` : ''}</button>`;
+                    return `<button class="compact-item" data-goto="${esc(r.id)}"><span class="compact-name">${esc(r.name)}</span>${tags ? `<span class="compact-tags">${esc(tags)}</span>` : ''}</button>`;
                 }).join('');
                 return;
             }
@@ -810,31 +817,31 @@
                 card.id = 'rec-' + r.id;
 
                 const tagsHtml = r.tags.map(t =>
-                    `<span class="tag${activeTags.has(t) ? ' active' : ''}" data-tag="${t}">${t}</span>`
+                    `<span class="tag${activeTags.has(t) ? ' active' : ''}" data-tag="${esc(t)}">${esc(t)}</span>`
                 ).join('');
 
                 const adminHtml = isAdmin() ? `
                     <div class="admin-bar">
-                        <button class="admin-edit" data-editrec="${r.id}">Editar recepta</button>
-                        <button class="admin-edit" data-edit="${r.id}">Editar tags</button>
-                        <button class="admin-del" data-del="${r.id}">Esborrar</button>
+                        <button class="admin-edit" data-editrec="${esc(r.id)}">Editar recepta</button>
+                        <button class="admin-edit" data-edit="${esc(r.id)}">Editar tags</button>
+                        <button class="admin-del" data-del="${esc(r.id)}">Esborrar</button>
                     </div>` : '';
 
                 const editorHtml = (isAdmin() && editingId === r.id) ? renderEditor(r) : '';
 
                 const ingHtml = r.ingredients.length > 0
-                    ? `<div class="ingredients"><h3>Ingredients</h3><ul>${r.ingredients.map(i => `<li>${i}</li>`).join('')}</ul></div>`
+                    ? `<div class="ingredients"><h3>Ingredients</h3><ul>${r.ingredients.map(i => `<li>${esc(i)}</li>`).join('')}</ul></div>`
                     : '';
 
                 card.innerHTML = `
-                    <div class="recipe-title">${r.name}</div>
+                    <div class="recipe-title">${esc(r.name)}</div>
                     <div class="tags">${tagsHtml}</div>
                     ${adminHtml}
                     ${editorHtml}
                     ${ingHtml}
                     <div class="instructions-wrapper">
                         <button class="toggle-btn" onclick="toggleInstructions(${index})">Veure la recepta</button>
-                        <div class="instructions" id="inst-${index}">${r.instructions}</div>
+                        <div class="instructions" id="inst-${index}">${esc(r.instructions)}</div>
                     </div>
                 `;
                 list.appendChild(card);
@@ -844,16 +851,16 @@
         function renderEditor(r) {
             const groups = TAG_GROUPS.map(g => {
                 const chips = g.tags.map(t =>
-                    `<button class="edit-chip${editDraft.has(t) ? ' sel' : ''}" data-tag="${t}">${t}</button>`
+                    `<button class="edit-chip${editDraft.has(t) ? ' sel' : ''}" data-tag="${esc(t)}">${esc(t)}</button>`
                 ).join('');
                 const add = isAdmin()
-                    ? `<button type="button" class="addtag-btn" data-addtag-axis="${g.title}">+ etiqueta</button>` : '';
-                return `<div class="edit-group"><span>${g.title}</span><div>${chips}${add}</div></div>`;
+                    ? `<button type="button" class="addtag-btn" data-addtag-axis="${esc(g.title)}">+ etiqueta</button>` : '';
+                return `<div class="edit-group"><span>${esc(g.title)}</span><div>${chips}${add}</div></div>`;
             }).join('');
             return `<div class="tag-editor">
                 ${groups}
                 <div class="edit-actions">
-                    <button class="btn-save" data-save="${r.id}">Desar tags</button>
+                    <button class="btn-save" data-save="${esc(r.id)}">Desar tags</button>
                     <button class="btn-cancel" data-cancel="1">Cancel·lar</button>
                 </div>
             </div>`;
@@ -991,11 +998,11 @@
             const cont = document.getElementById('fTags');
             cont.innerHTML = TAG_GROUPS.map(g => {
                 const chips = g.tags.map(t =>
-                    `<button type="button" class="form-chip${formDraft.has(t) ? ' sel' : ''}" data-tag="${t}">${t}</button>`
+                    `<button type="button" class="form-chip${formDraft.has(t) ? ' sel' : ''}" data-tag="${esc(t)}">${esc(t)}</button>`
                 ).join('');
                 const add = isAdmin()
-                    ? `<button type="button" class="addtag-btn" data-addtag-axis="${g.title}">+ etiqueta</button>` : '';
-                return `<div class="edit-group"><span>${g.title}</span><div>${chips}${add}</div></div>`;
+                    ? `<button type="button" class="addtag-btn" data-addtag-axis="${esc(g.title)}">+ etiqueta</button>` : '';
+                return `<div class="edit-group"><span>${esc(g.title)}</span><div>${chips}${add}</div></div>`;
             }).join('');
         }
 

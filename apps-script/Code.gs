@@ -268,12 +268,34 @@ const ROLE_ACTIONS = {
   family: ['auth', 'saveRecipe', 'parseText', 'parseImages'],
 };
 
+// Límit d'intents fallits (global: Apps Script no veu la IP de qui crida).
+// Superat el límit, es bloquegen TOTS els logins fins que caduca la finestra.
+const LOGIN_MAX_FAILS = 20;
+const LOGIN_WINDOW_S  = 15 * 60;
+
+function loginBlocked_() {
+  const n = Number(CacheService.getScriptCache().get('login_fails') || 0);
+  return n >= LOGIN_MAX_FAILS;
+}
+
+function registerLoginFail_() {
+  const cache = CacheService.getScriptCache();
+  const n = Number(cache.get('login_fails') || 0) + 1;
+  cache.put('login_fails', String(n), LOGIN_WINDOW_S);
+}
+
 function doPost(e) {
   const out = ContentService.createTextOutput().setMimeType(ContentService.MimeType.JSON);
   try {
+    if (loginBlocked_()) {
+      return out.setContent(JSON.stringify({ ok: false, error: 'Massa intents fallits. Torna-ho a provar d\'aquí a 15 minuts.' }));
+    }
     const body = JSON.parse(e.postData.contents);
     const role = resolveRole_(body.password);
-    if (!role) return out.setContent(JSON.stringify({ ok: false, error: 'Contrasenya incorrecta.' }));
+    if (!role) {
+      registerLoginFail_();
+      return out.setContent(JSON.stringify({ ok: false, error: 'Contrasenya incorrecta.' }));
+    }
 
     const allowed = ROLE_ACTIONS[role] || [];
     if (allowed.indexOf(body.action) === -1) throw new Error('Acció no permesa per al teu rol.');
